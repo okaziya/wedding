@@ -32,10 +32,10 @@ export const Hero = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07")',
+            'url("https://images.unsplash.com/photo-1499002238440-d264edd596ec")',
         }}
       >
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/20 bg-gradient-to-b from-transparent to-black/40" />
       </div>
       
       {/* Rain effect */}
@@ -43,7 +43,7 @@ export const Hero = () => {
         {[...Array(50)].map((_, i) => (
           <div
             key={i}
-            className="absolute animate-rain bg-blue-200/30 w-[1px] h-[10px]"
+            className="absolute animate-rain bg-blue-200/20 w-[1px] h-[10px]"
             style={{
               left: `${Math.random() * 100}%`,
               top: `-${Math.random() * 100}%`,

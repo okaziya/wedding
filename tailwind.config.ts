@@ -20,10 +20,10 @@ export default {
     extend: {
       colors: {
         wedding: {
-          primary: "#F8D7DA",
-          secondary: "#8B9D83",
-          accent: "#4A4A4A",
-          background: "#FDF8F5",
+          primary: "#F2FCE2",    // Soft meadow green
+          secondary: "#FEF7CD",  // Soft wildflower yellow
+          accent: "#E5DEFF",     // Soft wildflower purple
+          background: "#D3E4FD", // Soft sky blue
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
