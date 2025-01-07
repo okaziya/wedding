@@ -38,7 +38,7 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-black/30" />
       </div>
       <div className="relative text-center text-white z-10 animate-fade-in">
-        <h1 className="font-playfair text-6xl md:text-7xl mb-4">Sarah & John</h1>
+        <h1 className="font-playfair text-6xl md:text-7xl mb-4">Mats & Liza</h1>
         <p className="font-inter text-xl mb-8">December 31, 2024</p>
         <div className="grid grid-cols-4 gap-4 max-w-xl mx-auto">
           {Object.entries(timeLeft).map(([unit, value]) => (
