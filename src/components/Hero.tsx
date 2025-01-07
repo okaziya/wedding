@@ -27,7 +27,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-screen flex items-center justify-center">
+    <div className="relative h-screen flex items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -37,6 +37,23 @@ export const Hero = () => {
       >
         <div className="absolute inset-0 bg-black/30" />
       </div>
+      
+      {/* Rain effect */}
+      <div className="absolute inset-0 pointer-events-none">
+        {[...Array(50)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute animate-rain bg-blue-200/30 w-[1px] h-[10px]"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `-${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 2}s`,
+              animationDuration: `${0.8 + Math.random() * 0.3}s`,
+            }}
+          />
+        ))}
+      </div>
+
       <div className="relative text-center text-white z-10 animate-fade-in">
         <h1 className="font-mono text-6xl md:text-7xl mb-4">Mats & Liza</h1>
         <p className="font-mono text-xl mb-8">June 14, 2025</p>
