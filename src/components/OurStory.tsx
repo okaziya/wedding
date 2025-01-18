@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 export const OurStory = () => {
   const timeline = [
     {
-      date: "June 2020",
+      date: "June 11th 2024",
       title: "First Meeting",
       description: "We met at a local coffee shop on a rainy Sunday morning.",
     },
