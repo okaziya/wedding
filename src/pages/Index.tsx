@@ -1,7 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { OurStory } from "@/components/OurStory";
 import { EventDetails } from "@/components/EventDetails";
-import { RSVP } from "@/components/RSVP";
 
 const Index = () => {
   return (
@@ -9,7 +8,6 @@ const Index = () => {
       <Hero />
       <OurStory />
       <EventDetails />
-      <RSVP />
     </div>
   );
 };
