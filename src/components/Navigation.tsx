@@ -75,7 +75,7 @@ export const Navigation = () => {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-              {({ close }) => (
+              {({ close }: { close: () => void }) => (
                 <nav className="flex flex-col gap-4">
                   <MenuContent onNavigate={close} />
                 </nav>
