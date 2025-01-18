@@ -32,10 +32,10 @@ export const Hero = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5")', // Swedish wildflower meadow with traditional red Dalarna houses in background
+            'url("https://images.unsplash.com/photo-1498837167922-ddd27525d352")', // Swedish meadow with white and yellow wildflowers
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-black/20" />
       </div>
       
       {/* Rain effect */}
