@@ -27,15 +27,15 @@ export const Navigation = () => {
     "Liza & Mats",
   ];
 
-  const MenuContent = () => (
+  const MenuContent = ({ onNavigate }: { onNavigate?: () => void }) => (
     <>
-      <Link to="/" className="block py-2">
+      <Link to="/" className="block py-2" onClick={onNavigate}>
         Welcome
       </Link>
-      <Link to="/vision" className="block py-2">
+      <Link to="/vision" className="block py-2" onClick={onNavigate}>
         Vision and Mission
       </Link>
-      <Link to="/program" className="block py-2">
+      <Link to="/program" className="block py-2" onClick={onNavigate}>
         Event Program
       </Link>
       <div className="py-2">
@@ -46,16 +46,17 @@ export const Navigation = () => {
               key={participant}
               to={`/participants/${participant.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}
               className="block py-1.5 text-sm"
+              onClick={onNavigate}
             >
               {participant}
             </Link>
           ))}
         </div>
       </div>
-      <Link to="/maps" className="block py-2">
+      <Link to="/maps" className="block py-2" onClick={onNavigate}>
         Maps
       </Link>
-      <Link to="/blog" className="block py-2">
+      <Link to="/blog" className="block py-2" onClick={onNavigate}>
         Blog
       </Link>
     </>
@@ -67,17 +68,21 @@ export const Navigation = () => {
         {/* Mobile Menu */}
         <div className="md:hidden">
           <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-              <nav className="flex flex-col gap-4">
-                <MenuContent />
-              </nav>
-            </SheetContent>
+            {({ close }) => (
+              <>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6" />
+                    <span className="sr-only">Toggle menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+                  <nav className="flex flex-col gap-4">
+                    <MenuContent onNavigate={close} />
+                  </nav>
+                </SheetContent>
+              </>
+            )}
           </Sheet>
         </div>
 
