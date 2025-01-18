@@ -7,7 +7,7 @@ export const MobileNavigation = () => {
   return (
     <div className="md:hidden">
       <Sheet>
-        {({ open }) => (
+        {({ open }: { open: (open: boolean) => void }) => (
           <>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
