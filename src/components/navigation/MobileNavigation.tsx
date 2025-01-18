@@ -7,21 +7,17 @@ export const MobileNavigation = () => {
   return (
     <div className="md:hidden">
       <Sheet>
-        {({ open }: { open: (open: boolean) => void }) => (
-          <>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-              <nav className="flex flex-col gap-4">
-                <MenuItems onNavigate={() => open(false)} />
-              </nav>
-            </SheetContent>
-          </>
-        )}
+        <SheetTrigger asChild>
+          <Button variant="ghost" size="icon">
+            <Menu className="h-6 w-6" />
+            <span className="sr-only">Toggle menu</span>
+          </Button>
+        </SheetTrigger>
+        <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+          <nav className="flex flex-col gap-4">
+            <MenuItems onNavigate={() => {}} />
+          </nav>
+        </SheetContent>
       </Sheet>
     </div>
   );
