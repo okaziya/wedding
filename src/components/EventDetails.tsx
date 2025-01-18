@@ -15,14 +15,14 @@ export const EventDetails = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="w-5 h-5 mr-2 text-wedding-secondary" />
-                  <span className="font-inter">4:00 PM</span>
+                  <span className="font-inter">15:00 CET</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 mr-2 text-wedding-secondary" />
                   <span className="font-inter">
-                    St. Mary's Church<br />
-                    123 Wedding Ave<br />
-                    New York, NY 10001
+                    Siljansnäs kyrka<br />
+                    Leksand<br />
+                    Dalarna, Sweden
                   </span>
                 </div>
               </div>
