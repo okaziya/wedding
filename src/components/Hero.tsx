@@ -32,7 +32,7 @@ export const Hero = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1498837167922-ddd27525d352")', // Swedish meadow with white and yellow wildflowers
+            'url("https://www.resmalsverige.se/upload/articles/tallberg.jpg")', // Tällberg view with traditional houses and Lake Siljan
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-black/20" />
