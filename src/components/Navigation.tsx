@@ -68,21 +68,19 @@ export const Navigation = () => {
         {/* Mobile Menu */}
         <div className="md:hidden">
           <Sheet>
-            {({ close }) => (
-              <>
-                <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon">
-                    <Menu className="h-6 w-6" />
-                    <span className="sr-only">Toggle menu</span>
-                  </Button>
-                </SheetTrigger>
-                <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-                  <nav className="flex flex-col gap-4">
-                    <MenuContent onNavigate={close} />
-                  </nav>
-                </SheetContent>
-              </>
-            )}
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Toggle menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+              {({ close }) => (
+                <nav className="flex flex-col gap-4">
+                  <MenuContent onNavigate={close} />
+                </nav>
+              )}
+            </SheetContent>
           </Sheet>
         </div>
 
