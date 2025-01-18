@@ -35,14 +35,14 @@ export const EventDetails = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="w-5 h-5 mr-2 text-wedding-secondary" />
-                  <span className="font-inter">6:00 PM</span>
+                  <span className="font-inter">17:00 CET</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 mr-2 text-wedding-secondary" />
                   <span className="font-inter">
-                    The Grand Hotel<br />
-                    456 Celebration St<br />
-                    New York, NY 10001
+                    Roddens Hus<br />
+                    Västanvik<br />
+                    Leksand, Sweden
                   </span>
                 </div>
               </div>
