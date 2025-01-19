@@ -30,6 +30,16 @@ const Participant = () => {
         packingList: "Todo @Mats, fill out!",
         image: randomImage
       };
+    } else if (participantId === "nastyas-family") {
+      return {
+        role: "Sister of the Bride and Family",
+        presentation: "Nastya is the sister of Liza and comes with her family; husband Kostya (married 20 years), 8 year old son X, 15 year old daughter Y. The family live in a house outside Kaliningrad and *Todo @Liza; fill out things about them*.",
+        welcomeMessage: "Nastya, Kostya, X, and Y; thank you for crossing the Baltic Sea for us! We look forward to see you and show you around one of our favorite places in Sweden. Hopefully, this will be the first of many visits in the future.",
+        travelPlans: "We believe you will arrive by ship to Stockholm, rent a car, and drive to arrive in Siljansnäs by the reception at 17:00 on Friday June 13th. Please think about how long you will stay around and let us know about intended schedule after the ceremony weekend.",
+        accommodation: "During the ceremony event weekend, your family will stay in cottage 108 at Siljansnäs Stugby, see map under \"Maps\" page.",
+        packingList: "Todo @Mats, fill out!",
+        image: randomImage
+      };
     }
     return {
       role: "Wedding Participant",
