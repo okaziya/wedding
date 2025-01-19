@@ -21,7 +21,7 @@ const Blog = () => {
           </div>
           <div className="mt-6 flex justify-center">
             <img 
-              src="/lovable-uploads/05d877b3-4eb1-4689-8da1-9dc001a68117.png" 
+              src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent('https://okaziya.github.io/wedding/')}`}
               alt="QR Code to wedding website" 
               className="w-48 h-48"
             />
