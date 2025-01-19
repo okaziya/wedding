@@ -88,6 +88,16 @@ export const OurStory = () => {
       title: "First Christmas Holiday",
       description: "Mats, Liza & Åke goes on a 6-day road trip to celebrate first Christmas holidays with family in Siljansnäs.",
     },
+    {
+      date: "December 27th, 2024",
+      title: "Finalized place, date & time for wedding ceremony",
+      description: "Booked the local church in Siljansnäs (Mats' home village), booked accommodation for the guests up on the mountain and in surrounding areas, announced the final date and time details as Saturday June 14th at 15:00 CET.",
+    },
+    {
+      date: "January 18th, 2024",
+      title: "Booked main event venue for the ceremony",
+      description: "Booked Roddens Hus as the main venue, as well as a conference room up on the mountain for gathering point next to accommodations in Siljansnäs Stugby",
+    },
   ];
 
   return (
