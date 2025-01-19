@@ -1,6 +1,6 @@
-import { useParams } from "react-router-dom";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { useParams, Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 const Participant = () => {
   const { id } = useParams();
@@ -23,7 +23,11 @@ const Participant = () => {
     if (participantId === "ira") {
       return {
         role: "Mother of the Bride",
-        description: "Ira is the bride's mother and plays a special role in this celebration.",
+        presentation: "Ira is the mother of Liza and live in Irkutsk. She likes to do business and travel around Asia.",
+        welcomeMessage: "Ira, we are so happy that you go through all the visa hassle to attend our ceremony. We hope you will get a better idea about how we relate to each other as a couple and why we make Sweden our home for the future.",
+        travelPlans: "You are believed to arrive early in the week before the ceremony around June 10th. We will arrange for transportation from Stockholm to Siljansnäs in conjunction with our own travel schedule. Please think about how long you will stay and let us know about duration of your stay and intended activities after the ceremony.",
+        accommodation: "During the ceremony event weekend, you will stay in cottage 109 at Siljansnäs Stugby, see map under \"Maps\" page.",
+        packingList: "Todo @Mats, fill out!",
         image: randomImage
       };
     }
@@ -54,14 +58,72 @@ const Participant = () => {
             {id?.split("-").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")}
           </h1>
           
-          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 md:p-6 shadow-lg w-full">
-            {details ? (
-              <div className="space-y-4">
-                <p className="text-lg font-medium text-center">{details.role}</p>
-                <p className="text-center text-base md:text-lg">{details.description}</p>
-              </div>
-            ) : (
-              <p className="text-center text-base md:text-lg">Participant details coming soon!</p>
+          <div className="space-y-6 w-full">
+            <Card>
+              <CardHeader>
+                <CardTitle>Role</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>{details?.role}</p>
+              </CardContent>
+            </Card>
+
+            {details?.presentation && (
+              <Card>
+                <CardHeader>
+                  <CardTitle>Presentation</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>{details.presentation}</p>
+                </CardContent>
+              </Card>
+            )}
+
+            {details?.welcomeMessage && (
+              <Card>
+                <CardHeader>
+                  <CardTitle>Welcome Message</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>{details.welcomeMessage}</p>
+                </CardContent>
+              </Card>
+            )}
+
+            {details?.travelPlans && (
+              <Card>
+                <CardHeader>
+                  <CardTitle>Expected Travel Plans</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>{details.travelPlans}</p>
+                </CardContent>
+              </Card>
+            )}
+
+            {details?.accommodation && (
+              <Card>
+                <CardHeader>
+                  <CardTitle>Accommodation</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>{details.accommodation}</p>
+                  <Link to="/maps" className="text-blue-600 hover:underline mt-2 inline-block">
+                    View Maps
+                  </Link>
+                </CardContent>
+              </Card>
+            )}
+
+            {details?.packingList && (
+              <Card>
+                <CardHeader>
+                  <CardTitle>Packing List Recommendations</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>{details.packingList}</p>
+                </CardContent>
+              </Card>
             )}
           </div>
         </div>
