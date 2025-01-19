@@ -3,6 +3,7 @@
 
 Open the web app in your iPhone Safari browser via the URL https://okaziya.github.io/wedding/ or by scanning
 the following QR code:
+
 ![QR code for the Wedding Event App](../public/gh-pages-qr.png)
 
 ## Step 1: Click the "Share" button as depicted below
