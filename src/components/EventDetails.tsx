@@ -15,7 +15,7 @@ export const EventDetails = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="w-5 h-5 mr-2 text-wedding-secondary" />
-                  <span className="font-inter">15:00 CET</span>
+                  <span className="font-inter">15:00 CET on Saturday, June 14th</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 mr-2 text-wedding-secondary" />
@@ -35,7 +35,7 @@ export const EventDetails = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="w-5 h-5 mr-2 text-wedding-secondary" />
-                  <span className="font-inter">17:00 CET</span>
+                  <span className="font-inter">17:00 CET on Friday, June 13th</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 mr-2 text-wedding-secondary" />
