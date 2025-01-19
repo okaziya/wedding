@@ -1,21 +1,92 @@
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 export const OurStory = () => {
   const timeline = [
     {
-      date: "June 11th 2024",
-      title: "First Meeting",
-      description: "We met at a local coffee shop on a rainy Sunday morning.",
+      date: "June 13th, 2024",
+      title: "Started watching \"Jordan B Peterson on Marriage\" on The Daily Wire",
+      description: <>We started watching "Part 1: The Promise" (<Link to="https://www.dailywire.com/episode/1-the-promise" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">watch here</Link>) and thinking about committing.</>,
     },
     {
-      date: "December 2020",
-      title: "First Date",
-      description: "Dinner at our favorite Italian restaurant in the city.",
+      date: "June 14th, 2024",
+      title: "Decided to commit to each other",
+      description: <>We continued watching "On Marriage, part 2: Negotiation" (<Link to="https://www.dailywire.com/episode/negotiation" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">watch here</Link>) and decided to commit to each other, until death.</>,
     },
     {
-      date: "August 2023",
-      title: "The Proposal",
-      description: "A surprise proposal during our vacation in Paris.",
+      date: "June 19th, 2024",
+      title: "Midsummer with family in Siljansnäs",
+      description: "Liza, Mats & Åke went on a five-day road trip to spend Midsummer holidays in Siljansnäs, first meeting with Mats mother and sister parts of the family.",
+    },
+    {
+      date: "July 5th, 2024",
+      title: "Mats & Åke goes to Prague",
+      description: "Mats & Åke goes to Czechia to help relocate Liza and all her belongings to new home.",
+    },
+    {
+      date: "July 8th, 2024",
+      title: "Liza comes home to Stockholm",
+      description: "Liza arrives at Arlanda from Prague with all her remaining belongings and the dog Dusty.",
+    },
+    {
+      date: "July 10th, 2024",
+      title: "Liza's residency in Sweden approved",
+      description: "The Swedish Tax Agency approves Liza's relocation to Sweden.",
+    },
+    {
+      date: "July 11th, 2024",
+      title: "First birthday & Dusty finds a home",
+      description: "Celebrating Liza's 30 year birthday, and same day Dusty moves into his new home with Birgitta.",
+    },
+    {
+      date: "July 20th, 2024",
+      title: "First time on a cruise ship",
+      description: "Liza, Mats & Åke goes on a cruise to Helsinki, Finland; first vacation trip abroad.",
+    },
+    {
+      date: "July 27th, 2024",
+      title: "First time hiking in the forest up north",
+      description: "Liza, Mats & Åke goes to Dalarna for overnight hiking in the forest with friends Yongtao and Niclas.",
+    },
+    {
+      date: "August 2nd, 2024",
+      title: "Family on Church Camp",
+      description: "Liza getting introduced to Mats' church during a weekend at Drakudden",
+    },
+    {
+      date: "August 5th, 2024",
+      title: "Liza start studying Swedish",
+      description: "First Swedish A1 course at Folkuniversitetet",
+    },
+    {
+      date: "September 14th, 2024",
+      title: "Road trip, meeting with Mats' father",
+      description: "Liza, Mats & Åke goes on a road trip up north to visit Mats' father Janne over the weekend.",
+    },
+    {
+      date: "September 28th, 2024",
+      title: "Road trip, meeting with Mats' friends",
+      description: "Liza, Mats & Åke goes on a road trip down south to visit Mats' friends in Undenäs over the weekend.",
+    },
+    {
+      date: "October 1st, 2024",
+      title: "Liza starts working in Sweden",
+      description: "Finally done with employer in Czech Republic, on the road to full integration in Sweden!",
+    },
+    {
+      date: "October 21st, 2024",
+      title: "Second birthday, Mats 40 years",
+      description: "Celebrating Mats' 40 year birthday with family and friends.",
+    },
+    {
+      date: "December 14th, 2024",
+      title: "Third birthday, Åke 8 years",
+      description: "Celebrating Åke's 8 year birthday with family and friends.",
+    },
+    {
+      date: "December 22nd, 2024",
+      title: "First Christmas Holiday",
+      description: "Mats, Liza & Åke goes on a 6-day road trip to celebrate first Christmas holidays with family in Siljansnäs.",
     },
   ];
 
