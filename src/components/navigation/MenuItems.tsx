@@ -1,18 +1,23 @@
 import { Link } from "react-router-dom";
 
-export const participants = [
-  "Ira",
-  "Nastya's family",
-  "Janne & Ann-Katrin",
-  "Marie's family",
-  "Yongtao",
-  "Alexander",
-  "Marcin & Miroslav",
-  "Dima & Ana",
-  "Boris",
-  "Carin & Jonny",
-  "Fotografen Lena",
-  "Liza & Mats",
+interface ParticipantMapping {
+  name: string;
+  id: string;
+}
+
+export const participants: ParticipantMapping[] = [
+  { name: "Ira", id: "ira" },
+  { name: "Nastya's family", id: "nastya" },
+  { name: "Janne & Ann-Katrin", id: "janne" },
+  { name: "Marie's family", id: "marie" },
+  { name: "Yongtao", id: "yongtao" },
+  { name: "Alexander", id: "alexander" },
+  { name: "Marcin & Miroslav", id: "marcin" },
+  { name: "Dima & Ana", id: "dima" },
+  { name: "Boris", id: "boris" },
+  { name: "Carin & Jonny", id: "carin" },
+  { name: "Fotografen Lena", id: "lena" },
+  { name: "Liza & Mats", id: "couple" },
 ];
 
 interface MenuItemsProps {
@@ -35,12 +40,12 @@ export const MenuItems = ({ onNavigate }: MenuItemsProps) => (
       <div className="pl-4">
         {participants.map((participant) => (
           <Link
-            key={participant}
-            to={`/participants/${participant.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}
+            key={participant.name}
+            to={`/participants/${participant.id}`}
             className="block py-1.5 text-sm"
             onClick={onNavigate}
           >
-            {participant}
+            {participant.name}
           </Link>
         ))}
       </div>

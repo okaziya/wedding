@@ -39,11 +39,11 @@ export const DesktopNavigation = () => {
               <div className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
                 {participants.map((participant) => (
                   <Link
-                    key={participant}
-                    to={`/participants/${participant.toLowerCase().replace(/[^a-z0-9]/g, "-")}`}
+                    key={participant.name}
+                    to={`/participants/${participant.id}`}
                     className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                   >
-                    {participant}
+                    {participant.name}
                   </Link>
                 ))}
               </div>
