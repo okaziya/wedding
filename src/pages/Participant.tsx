@@ -30,7 +30,7 @@ const Participant = () => {
         packingList: "Todo @Mats, fill out!",
         image: randomImage
       };
-    } else if (participantId === "nastyas-family") {
+    } else if (participantId === "nastya") {
       return {
         role: "Sister of the Bride and Family",
         presentation: "Nastya is the sister of Liza and comes with her family; husband Kostya (married 20 years), 8 year old son X, 15 year old daughter Y. The family live in a house outside Kaliningrad and *Todo @Liza; fill out things about them*.",
