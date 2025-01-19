@@ -1,7 +1,11 @@
 {
-  "short_name": "Liza+Mats",
-  "name": "Liza+Mats 14/6",
-  "description": "Mats & Liza's wedding on June 14th",
+  "short_name": "Liza+Mats, 14/6",
+  "name": "Mats & Liza's Wedding, 14/6",
+  "description": "Mats & Liza's wedding ceremony on June 14th",
+  "start_url": "/wedding/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
   "icons": [
     {
       "src": "lm-icon-512x512.png",
