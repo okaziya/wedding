@@ -31,6 +31,7 @@ const Participant = () => {
         image: randomImage
       };
     } else if (participantId === "nastya") {
+      const basePath = import.meta.env.PROD ? '/wedding' : '';
       return {
         role: "Sister of the Bride & Her Beautiful Family",
         presentation: "Welcome, Nastya and Family!\n\nWe are so thrilled to welcome my dear sister Nastya, her husband Kostya, and their wonderful children Vika and Sema to our wedding!\n\nNastya and I share the same father but have different mothers, and though we didn't grow up in the same household, her presence in my adult life has been truly transformative. Nastya has inspired me in countless ways, particularly through the beautiful family she and Kostya have built together since their youth. Their love and commitment, raising their teenage daughter Vika and their lively 9-year-old son Sema, are a testament to the strength of their bond.\n\nNot only has Nastya had a profound impact on my personal life, but she's also been a positive influence on so many others. As a professional nutritionist with years of experience, she's dedicated to promoting a healthy and balanced lifestyle. Because of her guidance and expertise, I feel confident that my own family will enjoy nutritious and wholesome food, grow stronger, and live happier lives. For that, Nastya, we are endlessly grateful.\n\nNastya, Kostya, Vika, and Sema, we can't wait to see you in person and celebrate this special day together. Your presence will make this occasion even more joyful and meaningful for us all.\n\nThank you for being a part of our lives and for inspiring us in so many ways. Welcome to the celebration—let's make unforgettable memories together!",
@@ -39,10 +40,10 @@ const Participant = () => {
         accommodation: "During the ceremony event weekend, your family will stay in cottage 108 at Siljansnäs Stugby, see map under \"Maps\" page.",
         packingList: "Todo @Mats, fill out!",
         images: [
-          "/lovable-uploads/d43340f3-e06c-4c82-b56a-26d9efe47658.png",
-          "/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png"
+          `${basePath}/lovable-uploads/d43340f3-e06c-4c82-b56a-26d9efe47658.png`,
+          `${basePath}/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png`
         ],
-        image: "/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png" // Default image for single image display
+        image: `${basePath}/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png` // Default image for single image display
       };
     }
     return {
