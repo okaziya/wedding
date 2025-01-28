@@ -15,7 +15,7 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
             <img
               src={img}
               alt={`${title} - photo ${index + 1}`}
-              className="rounded-lg object-cover w-full h-full"
+              className="rounded-lg object-contain w-full h-full"
             />
           </AspectRatio>
         ))}
@@ -29,7 +29,7 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
         <img
           src={image}
           alt={title}
-          className="rounded-lg object-cover w-full h-full"
+          className="rounded-lg object-contain w-full h-full"
         />
       </AspectRatio>
     </div>
