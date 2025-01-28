@@ -4,17 +4,18 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 const Participant = () => {
   const { id } = useParams();
+  const basePath = '/wedding';
   
   const getParticipantDetails = (participantId: string) => {
     console.log("Getting details for participant:", participantId);
     
     // Array of landscape placeholder images for other participants
     const placeholderImages = [
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-      "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-      "https://images.unsplash.com/photo-1493962853295-0fd70327578a"
+      `${basePath}/lovable-uploads/placeholder1.png`,
+      `${basePath}/lovable-uploads/placeholder2.png`,
+      `${basePath}/lovable-uploads/placeholder3.png`,
+      `${basePath}/lovable-uploads/placeholder4.png`,
+      `${basePath}/lovable-uploads/placeholder5.png`
     ];
 
     // Get a random image from the array
@@ -31,7 +32,6 @@ const Participant = () => {
         image: randomImage
       };
     } else if (participantId === "nastya") {
-      const basePath = '/wedding';
       return {
         role: "Sister of the Bride & Her Beautiful Family",
         presentation: "Welcome, Nastya and Family!\n\nWe are so thrilled to welcome my dear sister Nastya, her husband Kostya, and their wonderful children Vika and Sema to our wedding!\n\nNastya and I share the same father but have different mothers, and though we didn't grow up in the same household, her presence in my adult life has been truly transformative. Nastya has inspired me in countless ways, particularly through the beautiful family she and Kostya have built together since their youth. Their love and commitment, raising their teenage daughter Vika and their lively 9-year-old son Sema, are a testament to the strength of their bond.\n\nNot only has Nastya had a profound impact on my personal life, but she's also been a positive influence on so many others. As a professional nutritionist with years of experience, she's dedicated to promoting a healthy and balanced lifestyle. Because of her guidance and expertise, I feel confident that my own family will enjoy nutritious and wholesome food, grow stronger, and live happier lives. For that, Nastya, we are endlessly grateful.\n\nNastya, Kostya, Vika, and Sema, we can't wait to see you in person and celebrate this special day together. Your presence will make this occasion even more joyful and meaningful for us all.\n\nThank you for being a part of our lives and for inspiring us in so many ways. Welcome to the celebration—let's make unforgettable memories together!",
