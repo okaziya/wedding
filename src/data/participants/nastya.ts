@@ -7,11 +7,11 @@ export const nastyaDetails: ParticipantDetails = {
   welcomeMessage: "Nastya, Kostya, X, and Y; thank you for crossing the Baltic Sea for us! We look forward to see you and show you around one of our favorite places in Sweden. Hopefully, this will be the first of many visits in the future.",
   travelPlans: "We believe you will arrive by ship to Stockholm, rent a car, and drive to arrive in Siljansnäs by the reception at 17:00 on Friday June 13th. Please think about how long you will stay around and let us know about intended schedule after the ceremony weekend.",
   accommodation: "During the ceremony event weekend, your family will stay in cottage 108 at Siljansnäs Stugby, see map under \"Maps\" page.",
-  packingList: "Todo @Mats, fill out!",
+  packingList: "- Umbrella\n- Rain coat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   images: [
     '/wedding/lovable-uploads/d43340f3-e06c-4c82-b56a-26d9efe47658.png',
     '/wedding/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png'
   ],
   image: '/wedding/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png',
-  contact: "+46 123 456 789"
+  contact: "WhatsApp: TODO @ Liza"
 };
