@@ -13,5 +13,5 @@ export const nastyaDetails: ParticipantDetails = {
     '/wedding/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png'
   ],
   image: '/wedding/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png',
-  contact: "WhatsApp: TODO @ Liza"
+  contact: "WhatsApp via Liza, +46 730 500 244"
 };

@@ -8,5 +8,5 @@ export const iraDetails: ParticipantDetails = {
   travelPlans: "You are believed to arrive early in the week before the ceremony around June 10th. We will arrange for transportation from Stockholm to Siljansnäs in conjunction with our own travel schedule. Please think about how long you will stay and let us know about duration of your stay and intended activities after the ceremony.",
   accommodation: "During the ceremony event weekend, you will stay in cottage 109 at Siljansnäs Stugby, see map under \"Maps\" page.",
   packingList: "Todo @Mats, fill out!",
-  contact: null
+  contact: "WhatsApp via Liza, +46 730 500 244"
 };
