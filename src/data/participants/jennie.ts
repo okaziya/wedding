@@ -8,5 +8,5 @@ export const jennieDetails: ParticipantDetails = {
   accommodation: "During the event weekend, you will stay in cottage 116 with Yongtao, Liza, Mats & Åke. See map under \"Maps\" page.",
   travelPlans: "We believe you will head to Leksand with us a few days ahead of the event and help us prepare. Alternatively, you might arrive by train from Stockholm to Leksand at 20:41 on Friday June 13th.",
   packingList: "- Umbrella\n- Rain coat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "- WhatsApp: TODO @ Mats"
+  contact: "WhatsApp via Mats, +46 730 567 567"
 };

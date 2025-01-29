@@ -8,5 +8,5 @@ export const carinDetails: ParticipantDetails = {
   accommodation: "You will live in your hose on Långbäcksgattu as per usual.",
   travelPlans: "Not applicable.",
   packingList: "Not applicable.",
-  contact: "WhatsApp: TODO @ Mats"
+  contact: "WhatsApp via Mats, +46 730 567 567"
 };

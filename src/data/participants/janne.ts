@@ -8,5 +8,5 @@ export const janneDetails: ParticipantDetails = {
   accommodation: "During the event weekend, you will stay in Lundbjörken with Marie and her family. See map under \"Maps\" page.",
   travelPlans: "We believe you will arrive by car on Friday June 13th (or some day before) and attend the wedding reception at 17:00.",
   packingList: "Not applicable.",
-  contact: "WhatsApp: TODO @ Mats"
+  contact: "WhatsApp via Mats, +46 730 567 567"
 };
