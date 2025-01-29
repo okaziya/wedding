@@ -8,5 +8,6 @@ export const marieDetails: ParticipantDetails = {
   travelPlans: "We believe you will arrive by car latest on Friday June 13th and join us at the reception at 17:00.",
   accommodation: "During the event weekend, your family will stay in the family summer cottage in Lundbjörken.",
   packingList: "Not applicable.",
-  contact: null
+  contact: null,
+  image: "/wedding/lovable-uploads/97c13f19-5650-4b5d-ad20-f7a304891bde.png"
 };
