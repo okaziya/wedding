@@ -67,7 +67,7 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
       accommodation: "During the event weekend, you will stay in cottage 116 at Siljansnäs Stugby with Liza, Åke, Mats & Jennie. See map under \"Maps\" page.",
       packingList: "- Umbrella\n- Rain coat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
       image: randomImage,
-      contact: null
+      contact: "WhatsApp: +46 70 473 70 72"
     };
   }
   return {
