@@ -6,18 +6,19 @@ interface ParticipantMapping {
 }
 
 export const participants: ParticipantMapping[] = [
-  { name: "Ira", id: "ira" },
-  { name: "Nastya's family", id: "nastya" },
-  { name: "Janne & Ann-Katrin", id: "janne" },
-  { name: "Marie's family", id: "marie" },
-  { name: "Yongtao", id: "yongtao" },
-  { name: "Alexander", id: "alexander" },
-  { name: "Marcin & Miroslav", id: "marcin" },
-  { name: "Dima & Ana", id: "dima" },
-  { name: "Boris", id: "boris" },
-  { name: "Carin & Jonny", id: "carin" },
-  { name: "Fotografen Lena", id: "lena" },
-  { name: "Liza & Mats", id: "couple" },
+  { name: "Liza's mother Ira", id: "ira" },
+  { name: "Liza's sister Nastya", id: "nastya" },
+  { name: "Mats' father Janne with Ann-Katrin", id: "janne" },
+  { name: "Mats' mother Carin with Jonny", id: "carin" },
+  { name: "Mats' sister Marie with family", id: "marie" },
+  { name: "Liza's friends Dima with Anna", id: "dima" },
+  { name: "Liza's friend Alexander", id: "alexander" },
+  { name: "Liza's friend Boris", id: "boris" },
+  { name: "Liza's friend Marcin with Miroslav", id: "marcin" },
+  { name: "Mats' friend Yongtao", id: "yongtao" },
+  { name: "Mats' friend Jennie", id: "jennie" },
+  { name: "Liza & Mats with Åke", id: "couple" },
+  { name: "Wedding photographer Lena", id: "lena" },
 ];
 
 interface MenuItemsProps {
