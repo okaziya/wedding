@@ -17,8 +17,8 @@ export const participants: ParticipantMapping[] = [
   { name: "Liza's friend Marcin", id: "marcin" },
   { name: "Mats' friend Yongtao", id: "yongtao" },
   { name: "Mats' friend Jennie", id: "jennie" },
-  { name: "The Wedding Couple", id: "couple" },
-  { name: "Wedding photographer Lena", id: "lena" },
+  { name: "Wedding Couple, Liza+Mats", id: "couple" },
+  { name: "Photographer Lena", id: "lena" },
 ];
 
 interface MenuItemsProps {
