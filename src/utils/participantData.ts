@@ -53,7 +53,10 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
         image: `${basePath}/lovable-uploads/732531e8-64f2-4f07-848d-43605481ac87.png` 
       };
     case "couple":
-      return { ...coupleDetails, image: randomImage };
+      return { 
+        ...coupleDetails, 
+        image: `${basePath}/lovable-uploads/6c4951a7-37e2-45c0-ae57-f21e72e85c34.png` 
+      };
     default:
       return {
         title: "Wedding Participant",
