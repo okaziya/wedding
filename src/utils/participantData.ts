@@ -57,6 +57,18 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
       image: randomImage,
       contact: null
     };
+  } else if (participantId === "yongtao") {
+    return {
+      title: "Mats' friend Yongtao",
+      role: "Friend of the Groom",
+      description: "Yongtao has been one of Mats' closest friends for 10 years. She lives in the south of Stockholm with two adult sons, Kevin 18 and William 21 years old. During her free time she enjoys dancing, swimming outdoors, and spending time with family.",
+      welcomeMessage: "Very welcome, Yongtao! We look forward to you joining our ceremony in Siljansnäs, thank you for your support, and for all our past and future events together.",
+      travelPlans: "We believe you will arrive by car latest on Friday June 13th and join us at the reception at 17:00.",
+      accommodation: "During the event weekend, you family will stay in the family summer cottage in Lundbjörken.",
+      packingList: "Not applicable.",
+      image: randomImage,
+      contact: null
+    };
   }
   return {
     title: "Wedding Participant",
