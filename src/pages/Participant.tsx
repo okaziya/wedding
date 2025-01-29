@@ -27,20 +27,20 @@ const Participant = () => {
   return (
     <div className="min-h-screen pt-16 md:pt-24 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="flex justify-between items-center mb-6 mt-8 md:mt-0">
+        <div className="flex justify-between items-center mb-6 mt-8 md:mt-0 gap-4">
           <Link 
             to={`/participants/${prevParticipant.id}`}
             className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
           >
-            <ChevronLeft className="h-4 w-4" />
-            <span className="text-[10px] md:text-sm truncate max-w-[120px] md:max-w-none">{prevParticipant.name}</span>
+            <ChevronLeft className="h-4 w-4 flex-shrink-0" />
+            <span className="text-[10px] md:text-sm text-left leading-tight">{prevParticipant.name}</span>
           </Link>
           <Link 
             to={`/participants/${nextParticipant.id}`}
             className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
           >
-            <span className="text-[10px] md:text-sm truncate max-w-[120px] md:max-w-none">{nextParticipant.name}</span>
-            <ChevronRight className="h-4 w-4" />
+            <span className="text-[10px] md:text-sm text-right leading-tight">{nextParticipant.name}</span>
+            <ChevronRight className="h-4 w-4 flex-shrink-0" />
           </Link>
         </div>
 
