@@ -28,7 +28,7 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
     case "nastya":
       return nastyaDetails;
     case "marie":
-      return { ...marieDetails, image: randomImage };
+      return marieDetails;
     case "yongtao":
       return yongtaoDetails;
     case "dima":
