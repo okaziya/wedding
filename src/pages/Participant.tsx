@@ -14,7 +14,7 @@ const Participant = () => {
   return (
     <div className="min-h-screen pt-16 md:pt-24 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-6 mt-6 md:mt-0">
           <h1 className="text-3xl md:text-4xl font-playfair mb-6 md:mb-12 text-center break-words">
             {details.title}
           </h1>
