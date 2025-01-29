@@ -10,6 +10,7 @@ import { carinDetails } from "../data/participants/carin";
 import { coupleDetails } from "../data/participants/couple";
 import { lenaDetails } from "../data/participants/lena";
 import { alexanderDetails } from "../data/participants/alexander";
+import { borisDetails } from "../data/participants/boris";
 
 const basePath = '/wedding';
 
@@ -63,6 +64,8 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
       return { ...lenaDetails, image: randomImage };
     case "alexander":
       return { ...alexanderDetails, image: randomImage };
+    case "boris":
+      return { ...borisDetails, image: randomImage };
     default:
       return {
         title: "Wedding Participant",
