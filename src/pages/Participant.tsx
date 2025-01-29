@@ -33,13 +33,13 @@ const Participant = () => {
             className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
           >
             <ChevronLeft className="h-4 w-4" />
-            <span className="text-sm">{prevParticipant.name}</span>
+            <span className="text-xs md:text-sm truncate max-w-[120px] md:max-w-none">{prevParticipant.name}</span>
           </Link>
           <Link 
             to={`/participants/${nextParticipant.id}`}
             className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
           >
-            <span className="text-sm">{nextParticipant.name}</span>
+            <span className="text-xs md:text-sm truncate max-w-[120px] md:max-w-none">{nextParticipant.name}</span>
             <ChevronRight className="h-4 w-4" />
           </Link>
         </div>
