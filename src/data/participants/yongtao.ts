@@ -8,5 +8,6 @@ export const yongtaoDetails: ParticipantDetails = {
   travelPlans: "We believe you will arrive by car latest on Friday June 13th and join us at the reception at 17:00.",
   accommodation: "During the event weekend, you will stay in cottage 116 at Siljansnäs Stugby with Liza, Åke, Mats & Jennie. See map under \"Maps\" page.",
   packingList: "- Umbrella\n- Rain coat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp: +46 70 473 70 72"
+  contact: "WhatsApp: +46 70 473 70 72",
+  image: "/wedding/lovable-uploads/c2c6e261-8e22-4ca8-abb0-3c9eb297db12.png"
 };
