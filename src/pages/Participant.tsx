@@ -27,7 +27,7 @@ const Participant = () => {
   return (
     <div className="min-h-screen pt-16 md:pt-24 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="flex justify-between items-center mb-6">
+        <div className="flex justify-between items-center mb-6 mt-8 md:mt-0">
           <Link 
             to={`/participants/${prevParticipant.id}`}
             className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
