@@ -8,16 +8,16 @@ interface ParticipantMapping {
 export const participants: ParticipantMapping[] = [
   { name: "Liza's mother Ira", id: "ira" },
   { name: "Liza's sister Nastya", id: "nastya" },
-  { name: "Mats' father Janne with Ann-Katrin", id: "janne" },
-  { name: "Mats' mother Carin with Jonny", id: "carin" },
-  { name: "Mats' sister Marie with family", id: "marie" },
-  { name: "Liza's friends Dima with Anna", id: "dima" },
+  { name: "Mats' father Janne", id: "janne" },
+  { name: "Mats' mother Carin", id: "carin" },
+  { name: "Mats' sister Marie", id: "marie" },
+  { name: "Liza's friend Dima", id: "dima" },
   { name: "Liza's friend Alexander", id: "alexander" },
   { name: "Liza's friend Boris", id: "boris" },
-  { name: "Liza's friend Marcin with Miroslav", id: "marcin" },
+  { name: "Liza's friend Marcin", id: "marcin" },
   { name: "Mats' friend Yongtao", id: "yongtao" },
   { name: "Mats' friend Jennie", id: "jennie" },
-  { name: "Liza & Mats with Åke", id: "couple" },
+  { name: "The Wedding Couple", id: "couple" },
   { name: "Wedding photographer Lena", id: "lena" },
 ];
 
