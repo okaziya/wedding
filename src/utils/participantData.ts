@@ -8,6 +8,7 @@ import { jennieDetails } from "../data/participants/jennie";
 import { janneDetails } from "../data/participants/janne";
 import { carinDetails } from "../data/participants/carin";
 import { coupleDetails } from "../data/participants/couple";
+import { lenaDetails } from "../data/participants/lena";
 
 const basePath = '/wedding';
 
@@ -57,6 +58,8 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
         ...coupleDetails, 
         image: `${basePath}/lovable-uploads/6c4951a7-37e2-45c0-ae57-f21e72e85c34.png` 
       };
+    case "lena":
+      return { ...lenaDetails, image: randomImage };
     default:
       return {
         title: "Wedding Participant",
