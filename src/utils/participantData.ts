@@ -64,8 +64,8 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
       description: "Yongtao has been one of Mats' closest friends for 10 years. She lives in the south of Stockholm with two adult sons, Kevin 18 and William 21 years old. During her free time she enjoys dancing, swimming outdoors, and spending time with family.",
       welcomeMessage: "Very welcome, Yongtao! We look forward to you joining our ceremony in Siljansnäs, thank you for your support, and for all our past and future events together.",
       travelPlans: "We believe you will arrive by car latest on Friday June 13th and join us at the reception at 17:00.",
-      accommodation: "During the event weekend, you family will stay in the family summer cottage in Lundbjörken.",
-      packingList: "Not applicable.",
+      accommodation: "During the event weekend, you will stay in cottage 116 at Siljansnäs Stugby with Liza, Åke, Mats & Jennie. See map under \"Maps\" page.",
+      packingList: "- Umbrella\n- Rain coat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
       image: randomImage,
       contact: null
     };
