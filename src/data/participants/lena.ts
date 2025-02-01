@@ -7,6 +7,6 @@ export const lenaDetails: ParticipantDetails = {
   description: "Lena is a friend of Liza from Prague, they met many years ago and have crossed paths from time to time. She likes her photography work and playing with her puppy.",
   accommodation: "During the event weekend, you will stay in cottage 109 with Ira, Dima and Anna. See map under \"Maps\" page.",
   travelPlans: "We believe you will arrive to Leksand by bus or train early afternoon on Friday, June 13th. Liza will pick you up by car on arrival. Please share your exact travel plans when all tickets are booked.",
-  packingList: "- Umbrella\n- Rain coat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
+  packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "- WhatsApp via Liza, +46 730 500 244"
 };

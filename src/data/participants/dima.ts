@@ -7,6 +7,6 @@ export const dimaDetails: ParticipantDetails = {
   description: "Dima has been a close friend of Liza for 10 years, he is coming with his partner Anna. They live in Prague, Czech Republic. They like to go to the gym, eat tasty food and go travel together.",
   accommodation: "During the event weekend, you will stay in cottage 109 with Ira. See map under \"Maps\" page.",
   travelPlans: "We believe you will arrive by train from Stockholm to Leksand at 20:41 on Friday June 13th, where Liza will pick you up by minivan.",
-  packingList: "- Umbrella\n- Rain coat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
+  packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "WhatsApp via Liza, +46 730 500 244"
 };
