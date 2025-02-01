@@ -5,9 +5,7 @@ export const EventDetails = () => {
   return (
     <section className="py-20 bg-wedding-primary/20" id="details">
       <div className="container mx-auto px-4">
-        <h2 className="font-playfair text-4xl md:text-5xl text-center mb-12 text-wedding-accent">
-          Event Details
-        </h2>
+        <h2 className="font-playfair text-4xl md:text-5xl text-center mb-12 text-wedding-accent">Event Details</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card className="animate-fade-in bg-white">
             <div className="p-6">
@@ -20,8 +18,10 @@ export const EventDetails = () => {
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 mr-2 text-wedding-secondary" />
                   <span className="font-inter">
-                    Siljansnäs kyrka<br />
-                    Leksand<br />
+                    Siljansnäs kyrka
+                    <br />
+                    Leksand
+                    <br />
                     Dalarna, Sweden
                   </span>
                 </div>
@@ -40,8 +40,10 @@ export const EventDetails = () => {
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 mr-2 text-wedding-secondary" />
                   <span className="font-inter">
-                    Roddens Hus<br />
-                    Västanvik<br />
+                    Roddens Hus
+                    <br />
+                    Västanvik
+                    <br />
                     Leksand, Sweden
                   </span>
                 </div>

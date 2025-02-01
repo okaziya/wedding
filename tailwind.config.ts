@@ -2,12 +2,7 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-  ],
+  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
     container: {
@@ -20,9 +15,9 @@ export default {
     extend: {
       colors: {
         wedding: {
-          primary: "#E7F4D7",    // Swedish meadow green
-          secondary: "#FFE5D9",  // Midsummer sunset
-          accent: "#B8C0FF",     // Swedish bluebell
+          primary: "#E7F4D7", // Swedish meadow green
+          secondary: "#FFE5D9", // Midsummer sunset
+          accent: "#B8C0FF", // Swedish bluebell
           background: "#F9F7F7", // Nordic light
         },
         border: "hsl(var(--border))",
@@ -62,7 +57,16 @@ export default {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         inter: ["Inter", "sans-serif"],
-        mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
+        mono: [
+          "ui-monospace",
+          "SFMono-Regular",
+          "Menlo",
+          "Monaco",
+          "Consolas",
+          "Liberation Mono",
+          "Courier New",
+          "monospace",
+        ],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -91,7 +95,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.8s ease-out",
-        "rain": "rain 1s linear infinite",
+        rain: "rain 1s linear infinite",
       },
     },
   },

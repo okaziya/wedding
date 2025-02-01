@@ -5,8 +5,8 @@ const Program = () => {
       events: [
         { time: "15:00", description: "Wedding Ceremony at Siljansnäs kyrka" },
         { time: "17:00", description: "Reception at Roddens Hus, Västanvik" },
-      ]
-    }
+      ],
+    },
   ];
 
   return (
