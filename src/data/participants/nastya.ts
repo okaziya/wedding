@@ -13,36 +13,5 @@ export const nastyaDetails: ParticipantDetails = {
     '/wedding/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png'
   ],
   image: '/wedding/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png',
-  contact: "WhatsApp via Liza, +46 730 500 244",
-  languages: [
-    {
-      name: "Nastya",
-      languages: [
-        { language: "Russian", level: "Proficient (C2)" },
-        { language: "English", level: "Intermediate (B1)" }
-      ]
-    },
-    {
-      name: "Kostya",
-      languages: [
-        { language: "Russian", level: "Proficient (C2)" },
-        { language: "Polish", level: "Upper Intermediate (B2)" },
-        { language: "English", level: "Upper Intermediate (B2)" }
-      ]
-    },
-    {
-      name: "Vika",
-      languages: [
-        { language: "Russian", level: "Proficient (C2)" },
-        { language: "English", level: "Intermediate (B1)" }
-      ]
-    },
-    {
-      name: "Sema",
-      languages: [
-        { language: "Russian", level: "Proficient (C2)" },
-        { language: "English", level: "Upper Intermediate (B2)" }
-      ]
-    }
-  ]
+  contact: "WhatsApp via Liza, +46 730 500 244"
 };
