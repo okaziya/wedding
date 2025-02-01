@@ -66,7 +66,8 @@ const Participant = () => {
             {details.description && (
               <ParticipantSection 
                 title="Description" 
-                content={details.description} 
+                content={details.description}
+                languages={details.languages}
               />
             )}
 
