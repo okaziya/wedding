@@ -1,4 +1,3 @@
-
 # How to add the _Liza+Mats Wedding Event App_ to your iPhone
 
 Open the web app in your iPhone Safari browser via the URL https://okaziya.github.io/wedding/ or by scanning

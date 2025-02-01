@@ -18,23 +18,21 @@ export const DesktopNavigation = () => {
               Welcome
             </Link>
           </NavigationMenuItem>
-          
+
           <NavigationMenuItem>
             <Link to="/vision" className="text-sm font-medium">
               Vision and Mission
             </Link>
           </NavigationMenuItem>
-          
+
           <NavigationMenuItem>
             <Link to="/program" className="text-sm font-medium">
               Event Program
             </Link>
           </NavigationMenuItem>
-          
+
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-sm font-medium">
-              Participants
-            </NavigationMenuTrigger>
+            <NavigationMenuTrigger className="text-sm font-medium">Participants</NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
                 {participants.map((participant) => (
@@ -49,13 +47,13 @@ export const DesktopNavigation = () => {
               </div>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          
+
           <NavigationMenuItem>
             <Link to="/maps" className="text-sm font-medium">
               Maps
             </Link>
           </NavigationMenuItem>
-          
+
           <NavigationMenuItem>
             <Link to="/blog" className="text-sm font-medium">
               Blog

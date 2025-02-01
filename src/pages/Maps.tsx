@@ -1,11 +1,5 @@
 const Maps = () => {
-  const locations = [
-    "Siljansnäs stugby",
-    "Siljansnäs centrum",
-    "Lundbjörken",
-    "Roddens Hus",
-    "Leksand overview map"
-  ];
+  const locations = ["Siljansnäs stugby", "Siljansnäs centrum", "Lundbjörken", "Roddens Hus", "Leksand overview map"];
 
   return (
     <div className="min-h-screen pt-24 px-4">

@@ -31,13 +31,12 @@ export const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage:
-            'url("https://www.resmalsverige.se/upload/articles/tallberg.jpg")', // Tällberg view with traditional houses and Lake Siljan
+          backgroundImage: 'url("https://www.resmalsverige.se/upload/articles/tallberg.jpg")', // Tällberg view with traditional houses and Lake Siljan
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-black/20" />
       </div>
-      
+
       {/* Rain effect */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(50)].map((_, i) => (

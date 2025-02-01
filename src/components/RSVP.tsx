@@ -27,9 +27,7 @@ export const RSVP = () => {
   return (
     <section className="py-20 bg-wedding-background" id="rsvp">
       <div className="container mx-auto px-4">
-        <h2 className="font-playfair text-4xl md:text-5xl text-center mb-12 text-wedding-accent">
-          RSVP
-        </h2>
+        <h2 className="font-playfair text-4xl md:text-5xl text-center mb-12 text-wedding-accent">RSVP</h2>
         <Card className="max-w-md mx-auto animate-fade-in bg-white">
           <form onSubmit={handleSubmit} className="p-6 space-y-6">
             <div className="space-y-2">
