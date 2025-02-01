@@ -25,7 +25,7 @@ const Participant = () => {
   const nextParticipant = participants[nextIndex];
 
   return (
-    <div className="min-h-screen pt-16 md:pt-24 px-4">
+    <div className="min-h-screen pt-16 md:pt-24 px-4 pb-24">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between items-center mb-6 mt-8 md:mt-0 gap-4">
           <Link 
