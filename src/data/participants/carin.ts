@@ -11,7 +11,9 @@ export const carinDetails: ParticipantDetails = {
     "Mats' mother Carin and Jonny lives in Siljansnäs outside Leksand— the home village for Mats and his sister " +
     "Marie —and they have been living there for mostly all their lives. Marie had her wedding in the same church " +
     "long ago, and now it is Mats turn. When not helping out with wedding planning, Carin and Jonny takes an active " +
-    "part in the local community and act as cornerstones of the local folk dance group.",
+    "part in the local community and act as cornerstones of the local folk dance group.\n" +
+    "\n" +
+    "Languages: Swedish & English",
   accommodation: "You will live in your house on Långbäcksgattu as per usual.",
   travelPlans: "Not applicable.",
   packingList: "Not applicable.",

@@ -7,7 +7,9 @@ export const borisDetails: ParticipantDetails = {
     "Boris is an old friend of Liza, they got to know each other while she was living in Prague and have been out on " +
     "many inspiring adventures together. Boris currently lives in Tel Aviv and he's passionate about business, " +
     "finance and investments. When he's off work he likes to spend time at the gym and attend various sport " +
-    "activities.",
+    "activities.\n" +
+    "\n" +
+    "Languages: English, Russian, Czech",
   accommodation:
     "During the event weekend, you will stay in cottage 111 with Alexander, Marcin and Miroslav. See map under " +
     "\"Maps\" page.",
