@@ -16,4 +16,5 @@ export const carinDetails: ParticipantDetails = {
   travelPlans: "Not applicable.",
   packingList: "Not applicable.",
   contact: "WhatsApp via Mats, +46 730 567 567",
+  image: "/wedding/lovable-uploads/732531e8-64f2-4f07-848d-43605481ac87.png"
 };

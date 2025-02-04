@@ -16,4 +16,5 @@ export const janneDetails: ParticipantDetails = {
     "17:00.",
   packingList: "Not applicable.",
   contact: "WhatsApp via Mats, +46 730 567 567",
+  image: "/wedding/lovable-uploads/00e4c80d-232a-46e2-92eb-1613b2f32956.png"
 };

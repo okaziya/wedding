@@ -17,4 +17,5 @@ export const jennieDetails: ParticipantDetails = {
     "you might arrive by train from Stockholm to Leksand at 20:41 on Friday June 13th.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "WhatsApp via Mats, +46 730 567 567",
+  image: "/wedding/lovable-uploads/887c36d2-c067-4711-8d15-5e08d37c7020.png"
 };

@@ -32,7 +32,7 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
 
   switch (participantId) {
     case "ira":
-      return { ...iraDetails, image: randomImage };
+      return iraDetails;
     case "nastya":
       return nastyaDetails;
     case "marie":
@@ -40,33 +40,24 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
     case "yongtao":
       return yongtaoDetails;
     case "dima":
-      return { ...dimaDetails, image: randomImage };
+      return dimaDetails;
     case "jennie":
-      return {
-        ...jennieDetails,
-        image: `${basePath}/lovable-uploads/887c36d2-c067-4711-8d15-5e08d37c7020.png`,
-      };
+      return jennieDetails;
     case "janne":
-      return {
-        ...janneDetails,
-        image: `${basePath}/lovable-uploads/00e4c80d-232a-46e2-92eb-1613b2f32956.png`,
-      };
+      return janneDetails;
     case "carin":
-      return {
-        ...carinDetails,
-        image: `${basePath}/lovable-uploads/732531e8-64f2-4f07-848d-43605481ac87.png`,
-      };
+      return carinDetails;
     case "couple":
       return {
         ...coupleDetails,
         image: `${basePath}/lovable-uploads/6c4951a7-37e2-45c0-ae57-f21e72e85c34.png`,
       };
     case "lena":
-      return { ...lenaDetails, image: randomImage };
+      return lenaDetails;
     case "alexander":
       return { ...alexanderDetails, image: randomImage };
     case "boris":
-      return { ...borisDetails, image: randomImage };
+      return borisDetails;
     case "marcin":
       return { ...marcinDetails, image: randomImage };
     default:
