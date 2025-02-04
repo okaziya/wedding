@@ -2,7 +2,8 @@ import { ParticipantDetails } from "../../types/participant";
 
 export const coupleDetails: ParticipantDetails = {
   title: "Wedding Couple, Liza & Mats with Åke",
-  role: "Wedding Couple",
+  role: "The Wedding Couple",
+  image: "/wedding/participants/couple.png",
   welcomeMessage:
     "A big welcome to ourselves, Mats & Liza! Great job making this app, organizing the event, posting invitation " +
     "letters and everything. We're looking forward to swearing loyalty to each other accompanied by our closest " +

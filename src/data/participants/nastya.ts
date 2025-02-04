@@ -2,7 +2,13 @@ import { ParticipantDetails } from "@/types/participant";
 
 export const nastyaDetails: ParticipantDetails = {
   title: "Liza's sister Nastya and her family",
-  role: "Sister of the Bride & Her Beautiful Family",
+  role: "Sister of the Bride",
+  image: "/wedding/participants/nastya.png",
+  welcomeMessage:
+    "Welcome, Nastya and Family! We are so thrilled to welcome my dear sister Nastya, her husband Kostya, and their " +
+    "wonderful children Vika and Sema to our wedding! Thank you for crossing the Baltic Sea for us! We look forward " +
+    "to seeing you and showing you around one of our favorite places in Sweden. Hopefully, this will be the first of " +
+    "many visits in the future.",
   description:
     "Nastya is my stepsister, and though we didn't grow up together, her presence in my adult life has been truly " +
     "transformative. She has inspired me in countless ways, especially through the strong and loving family she and " +
@@ -15,11 +21,6 @@ export const nastyaDetails: ParticipantDetails = {
     "Nastya, we are endlessly grateful.\n" +
     "\n" +
     "Languages: Russian and basic English, Kostya also speaks Polish",
-  welcomeMessage:
-    "Welcome, Nastya and Family! We are so thrilled to welcome my dear sister Nastya, her husband Kostya, and their " +
-    "wonderful children Vika and Sema to our wedding! Thank you for crossing the Baltic Sea for us! We look forward " +
-    "to seeing you and showing you around one of our favorite places in Sweden. Hopefully, this will be the first of " +
-    "many visits in the future.",
   travelPlans:
     "We believe you will arrive by ship to Stockholm, rent a car, and drive to arrive in Siljansnäs by the " +
     "reception at 17:00 on Friday June 13th. Please think about how long you will stay around and let us know about " +
@@ -28,6 +29,5 @@ export const nastyaDetails: ParticipantDetails = {
     "During the ceremony event weekend, your family will stay in cottage 108 at Siljansnäs Stugby, see map under " +
     "\"Maps\" page.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  image: "/wedding/lovable-uploads/d2fc6622-81d5-4e76-95fc-d69ebcbabf18.png",
   contact: "WhatsApp via Liza, +46 730 500 244",
 };

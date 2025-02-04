@@ -13,22 +13,8 @@ import { alexanderDetails } from "../data/participants/alexander";
 import { borisDetails } from "../data/participants/boris";
 import { marcinDetails } from "../data/participants/marcin";
 
-const basePath = "/wedding";
-
-// Array of landscape placeholder images for other participants
-const placeholderImages = [
-  `${basePath}/lovable-uploads/placeholder1.png`,
-  `${basePath}/lovable-uploads/placeholder2.png`,
-  `${basePath}/lovable-uploads/placeholder3.png`,
-  `${basePath}/lovable-uploads/placeholder4.png`,
-  `${basePath}/lovable-uploads/placeholder5.png`,
-];
-
 export const getParticipantDetails = (participantId: string): ParticipantDetails => {
   console.log("Getting details for participant:", participantId);
-
-  // Get a random image from the array
-  const randomImage = placeholderImages[Math.floor(Math.random() * placeholderImages.length)];
 
   switch (participantId) {
     case "ira":
@@ -48,25 +34,21 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
     case "carin":
       return carinDetails;
     case "couple":
-      return {
-        ...coupleDetails,
-        image: `${basePath}/lovable-uploads/6c4951a7-37e2-45c0-ae57-f21e72e85c34.png`,
-      };
+      return coupleDetails;
     case "lena":
       return lenaDetails;
     case "alexander":
-      return { ...alexanderDetails, image: randomImage };
+      return alexanderDetails;
     case "boris":
       return borisDetails;
     case "marcin":
-      return { ...marcinDetails, image: randomImage };
+      return marcinDetails;
     default:
       return {
-        title: "Wedding Participant",
-        role: "Wedding Participant",
-        description: "Details coming soon!",
-        image: randomImage,
-        contact: null,
+        title: "Not Found",
+        role: "404",
+        description: "Details unavailable, check the page name!",
+        contact: "Contact Liza/Mats for technical support",
       };
   }
 };

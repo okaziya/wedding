@@ -3,6 +3,7 @@ import { ParticipantDetails } from "../../types/participant";
 export const lenaDetails: ParticipantDetails = {
   title: "Liza's photographer Lena",
   role: "Wedding Photographer",
+  image: "/wedding/participants/lena.png",
   welcomeMessage:
     "Very welcome, Lena! We are so happy you agreed to join as wedding photographer for our ceremony. We hope you " +
     "will have a great time while making lots of memorable photos from this weekend!",
@@ -18,6 +19,5 @@ export const lenaDetails: ParticipantDetails = {
     "We believe you will arrive to Leksand by bus or train early afternoon on Friday, June 13th. Liza will pick you " +
     "up by car on arrival. Please share your exact travel plans when all tickets are booked.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp via Liza, +46 730 500 244",
-  image: "/wedding/lovable-uploads/63f43200-5aec-4d20-94e8-075150c825a4.png"
+  contact: "WhatsApp via Liza, +46 730 500 244"
 };

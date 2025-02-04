@@ -18,10 +18,10 @@ export const alexanderDetails: ParticipantDetails = {
   accommodation:
     "During the event weekend, you will stay in cottage 111 with Boris, Marcin and Miroslav. See map under \"Maps\" " +
     "page.",
-  packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp via Liza, +46 730 500 244",
   travelPlans:
     "We believe you will rent a car in Stockholm with Marcin, Miroslav and Boris, and then arrive at the reception " +
     "in Siljansnäs at 17:00 on Friday, June 13th. Looking forward to learning about your detailed travel plans as " +
     "soon as available!",
+  packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
+  contact: "WhatsApp via Liza, +46 730 500 244",
 };

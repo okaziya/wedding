@@ -2,7 +2,7 @@ import { ParticipantDetails } from "../../types/participant";
 
 export const marcinDetails: ParticipantDetails = {
   title: "Liza's friends Marcin & Miroslav",
-  role: "Friends",
+  role: "Friends of the Bride",
   description:
     "Marcin and Miroslav are old friends of Liza, they got to know each other while she was living in Prague and " +
     "have been out on many inspiring adventures together. They live in Poland and spend their days working and " +

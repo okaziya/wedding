@@ -2,7 +2,8 @@ import { ParticipantDetails } from "../../types/participant";
 
 export const carinDetails: ParticipantDetails = {
   title: "Mats' mother Carin with Jonny",
-  role: "Family",
+  role: "Mother of the Groom",
+  image: "/wedding/participants/carin.png",
   welcomeMessage:
     "Very welcome, Carin and Jonny! Thank you for aiding with and participating in our ceremony in Siljansnäs, it " +
     "means a lot to have our close families gathered for the event. We would also like to share our gratitude for " +
@@ -17,6 +18,5 @@ export const carinDetails: ParticipantDetails = {
   accommodation: "You will live in your house on Långbäcksgattu as per usual.",
   travelPlans: "Not applicable.",
   packingList: "Not applicable.",
-  contact: "WhatsApp via Mats, +46 730 567 567",
-  image: "/wedding/lovable-uploads/732531e8-64f2-4f07-848d-43605481ac87.png"
+  contact: "WhatsApp via Mats, +46 730 567 567"
 };
