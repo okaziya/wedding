@@ -24,10 +24,6 @@ export const nastyaDetails: ParticipantDetails = {
     "During the ceremony event weekend, your family will stay in cottage 108 at Siljansnäs Stugby, see map under " +
     "\"Maps\" page.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  images: [
-    "/wedding/lovable-uploads/d43340f3-e06c-4c82-b56a-26d9efe47658.png",
-    "/wedding/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png",
-  ],
-  image: "/wedding/lovable-uploads/99dfa8d4-a4b4-4bf9-b893-1141b73139ba.png",
+  image: "/wedding/lovable-uploads/d2fc6622-81d5-4e76-95fc-d69ebcbabf18.png",
   contact: "WhatsApp via Liza, +46 730 500 244",
 };
