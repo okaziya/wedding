@@ -15,4 +15,5 @@ export const dimaDetails: ParticipantDetails = {
     "pick you up by minivan.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "WhatsApp via Liza, +46 730 500 244",
+  image: "/wedding/lovable-uploads/a0a205f0-75ad-4219-b87a-5446b6f7aff1.png"
 };
