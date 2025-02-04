@@ -16,4 +16,5 @@ export const lenaDetails: ParticipantDetails = {
     "up by car on arrival. Please share your exact travel plans when all tickets are booked.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "WhatsApp via Liza, +46 730 500 244",
+  image: "/wedding/lovable-uploads/63f43200-5aec-4d20-94e8-075150c825a4.png"
 };
