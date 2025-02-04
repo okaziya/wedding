@@ -5,7 +5,9 @@ export const iraDetails: ParticipantDetails = {
   role: "Mother of the Bride",
   description:
     "Ira is the mother of Liza and live in the far east. She likes to do business and travel around Asia. She is a " +
-    "very good cook and likes to take care of her family.",
+    "very good cook and likes to take care of her family.\n" +
+    "\n" +
+    "Languages: Russian and basic English",
   welcomeMessage:
     "Ira, we are so happy that you go through all the visa hassle to attend our ceremony. We hope you will get a " +
     "better idea about how we relate to each other as a couple and why we make Sweden our home for the future.",

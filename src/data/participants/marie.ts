@@ -6,7 +6,9 @@ export const marieDetails: ParticipantDetails = {
   description:
     "Marie and her husband William lives in a house in Uppsala with their two children Hugo 8 years old and Alva 6 " +
     "years. On their free time they enjoy lots of sports activities, everything from dancing and winter sports to " +
-    "soccer and ju-jitsu.",
+    "soccer and ju-jitsu.\n" +
+    "\n" +
+    "Languages: Swedish & English, additionally German for Marie & William",
   welcomeMessage:
     "Marie, William, Hugo and Alva; we look forward to you joining our ceremony in Siljansnäs, thank you for your " +
     "support and all our joint events.",

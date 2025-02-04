@@ -8,7 +8,9 @@ export const dimaDetails: ParticipantDetails = {
     "support and coming to visit our home country. We you you'll be back again and again!",
   description:
     "Dima has been a close friend of Liza for 10 years, he is coming with his partner Anna. They live in Prague, " +
-    "Czech Republic. They like to go to the gym, eat tasty food and go travel together.",
+    "Czech Republic. They like to go to the gym, eat tasty food and go travel together.\n" +
+    "\n" +
+    "Languages: Czech & English, additionally Russian for Dima",
   accommodation: 'During the event weekend, you will stay in cottage 109 with Ira. See map under "Maps" page.',
   travelPlans:
     "We believe you will arrive by train from Stockholm to Leksand at 20:41 on Friday June 13th, where Liza will " +

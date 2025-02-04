@@ -6,7 +6,9 @@ export const jennieDetails: ParticipantDetails = {
   description:
     "Jennie has been a close friend of Mats for 15 years, she lives in Uppsala north of Stockholm with her many " +
     "animals. She has a son, Tiberius, and spends her time reading, working, traveling and volunteering for " +
-    "different NGOs.",
+    "different NGOs.\n" +
+    "\n" +
+    "Languages: Swedish & English",
   welcomeMessage:
     "Very welcome, Jennie! We look forward to you joining our ceremony in Siljansnäs, thank you for your support and " +
     "a life-long friendship ahead of us.",

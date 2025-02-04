@@ -7,10 +7,14 @@ export const nastyaDetails: ParticipantDetails = {
     "Nastya is my stepsister, and though we didn't grow up together, her presence in my adult life has been truly " +
     "transformative. She has inspired me in countless ways, especially through the strong and loving family she and " +
     "Kostya have built. Their commitment to each other and their children is a beautiful example of love and " +
-    "dedication.\n\nBeyond her role in our family, Nastya is also a skilled and passionate nutritionist with years " +
+    "dedication.\n" +
+    "\n" +
+    "Beyond her role in our family, Nastya is also a skilled and passionate nutritionist with years " +
     "of experience. She has helped many people embrace a healthier and more balanced lifestyle. Thanks to her " +
     "guidance, I feel confident that my own family will benefit from better nutrition and well-being. For that, " +
-    "Nastya, we are endlessly grateful.\n\nLanguages: Russian and basic English, Kostya also speaks Polish",
+    "Nastya, we are endlessly grateful.\n" +
+    "\n" +
+    "Languages: Russian and basic English, Kostya also speaks Polish",
   welcomeMessage:
     "Welcome, Nastya and Family! We are so thrilled to welcome my dear sister Nastya, her husband Kostya, and their " +
     "wonderful children Vika and Sema to our wedding! Thank you for crossing the Baltic Sea for us! We look forward " +

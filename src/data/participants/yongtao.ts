@@ -6,7 +6,9 @@ export const yongtaoDetails: ParticipantDetails = {
   description:
     "Yongtao has been one of Mats' closest friends for 10 years. She lives in the south of Stockholm and has two " +
     "adult sons, Kevin 18 and William 21 years old. During her free time she enjoys dancing, swimming outdoors, and " +
-    "spending time with family.\n\nLanguages: Swedish, English, Chinese",
+    "spending time with family.\n" +
+    "\n" +
+    "Languages: Swedish, English, Chinese",
   welcomeMessage:
     "Very welcome, Yongtao! We look forward to you joining our ceremony in Siljansnäs, thank you for your support, " +
     "and for all our past and future events together.",
