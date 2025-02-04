@@ -17,4 +17,5 @@ export const borisDetails: ParticipantDetails = {
     "plans as soon as available!",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "WhatsApp via Liza, +46 730 500 244",
+  image: "/wedding/lovable-uploads/5e7a11ee-18c4-4a66-8c80-db84514b62c0.png"
 };
