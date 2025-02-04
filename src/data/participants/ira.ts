@@ -19,4 +19,5 @@ export const iraDetails: ParticipantDetails = {
     'forward to learning about your detailed travel plans as soon as available!',
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "WhatsApp via Liza, +46 730 500 244",
+  image: "/wedding/lovable-uploads/7008c6ef-7bf7-4c05-a8d0-b3d8e674ef78.png"
 };
