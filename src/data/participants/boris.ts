@@ -9,7 +9,7 @@ export const borisDetails: ParticipantDetails = {
     "finance and investments. When he's off work he likes to spend time at the gym and attend various sport " +
     "activities.\n" +
     "\n" +
-    "Languages: English, Russian, Czech",
+    "Languages: English, Russian, Hebrew & Czech",
   accommodation:
     "During the event weekend, you will stay in cottage 111 with Alexander, Marcin and Miroslav. See map under " +
     "\"Maps\" page.",

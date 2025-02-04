@@ -10,7 +10,7 @@ export const lenaDetails: ParticipantDetails = {
     "Lena is a friend of Liza from Prague, they met many years ago and have crossed paths from time to time. She " +
     "likes her photography work and playing with her puppy.\n" +
     "\n" +
-    "Languages: Czech & English",
+    "Languages: English, Russian & Czech",
   accommodation:
     'During the event weekend, you will stay in cottage 109 with Ira, Dima and Anna. See map under "Maps" page.',
   travelPlans:

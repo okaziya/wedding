@@ -8,7 +8,7 @@ export const marcinDetails: ParticipantDetails = {
     "have been out on many inspiring adventures together. They live in Poland and spend their days working and " +
     "studying.\n" +
     "\n" +
-    "Languages: Polish, English, Swedish, Russian",
+    "Languages: English & Polish for both, additionally Swedish for Marcin and Russian for Miroslav",
   accommodation:
     'During the event weekend, you will stay in cottage 111 with Alexander and Boris. See map under "Maps" page.',
   travelPlans:
