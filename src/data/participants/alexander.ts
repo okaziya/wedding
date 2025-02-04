@@ -3,11 +3,16 @@ import { ParticipantDetails } from "@/types/participant";
 export const alexanderDetails: ParticipantDetails = {
   title: "Liza's friend Alexander",
   role: "Friend of the Bride",
+  welcomeMessage:
+    "Very welcome, Alexander! We look forward to you joining our ceremony in Siljansnäs, thank you for your support " +
+    "and coming to visit our home country. We hope you'll enjoy the Swedish countryside and the local culture!",
   description:
-    "Alexander is an old friend of Liza, they got to know each other while she was living in Prague and have been " +
-    "out on many inspiring adventures together. Alexander currently lives in California and he's passionate about " +
-    "fine art, culture and business. When he's off work he likes to spend time with his partner Alan, go to the gym, " +
-    "and attend various sport activities.\n" +
+    "Alexander is an old and very close friend of Liza, they got to know each other while she was living in Prague. " +
+    "They met long ago, when Liza was working as a hairdresser and Alexander became her English teacher. Throughout " +
+    "the years they have been going on vacation travels to beautiful historical sites in Poland, Hungary, and around " +
+    "the Czech Republic. Liza and Alexander love walking and talking together while eating chocolate. Alexander " +
+    "lives in America and he's passionate about art and culture. When he's off work he likes to enjoy the beauty of " +
+    "the world, play the accordion, spend time with his partner Alan, his dog Caroline, and going to the gym.\n" +
     "\n" +
     "Languages: English, Russian & German",
   accommodation:

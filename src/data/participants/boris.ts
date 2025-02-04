@@ -3,11 +3,14 @@ import { ParticipantDetails } from "../../types/participant";
 export const borisDetails: ParticipantDetails = {
   title: "Liza's friend Boris",
   role: "Friend",
+  welcomeMessage:
+    "Very welcome, Boris! We look forward to you joining our ceremony in Siljansnäs, thank you for your support and " +
+    "coming to visit our home country. We hope you'll enjoy the Swedish countryside and local culture!",
   description:
     "Boris is an old friend of Liza, they got to know each other while she was living in Prague and have been out on " +
-    "many inspiring adventures together. Boris currently lives in Tel Aviv and he's passionate about business, " +
-    "finance and investments. When he's off work he likes to spend time at the gym and attend various sport " +
-    "activities.\n" +
+    "many inspiring adventures together. Boris lives in Prague and he is travelling a lot (India and Kamchatka, for " +
+    "example), or visiting his mother in Israel. He specialize in Venture Capital investments and likes to organize " +
+    "local social events on various intellectual topics.\n" +
     "\n" +
     "Languages: English, Russian, Hebrew & Czech",
   accommodation:
