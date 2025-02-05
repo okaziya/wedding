@@ -5,21 +5,23 @@ export const iraDetails: ParticipantDetails = {
   role: "Mother of the Bride",
   image: "/wedding/participants/ira.jpeg",
   welcomeMessage:
-    "Ira, we are so happy that you go through all the visa hassle to attend our ceremony. We hope you will get a " +
-    "better idea about how we relate to each other as a couple and why we make Sweden our home for the future.",
+    "Ira, we are so happy that you're going through all the visa hassle and long travels to attend our big " +
+    "ceremony. We hope you will get a better idea about how we relate to each other as a couple, why we make Sweden " +
+    "our home for the future, and an understanding of the local culture here.",
   description:
-    "Ira is the mother of Liza and live in the far east. She likes to do business and travel around Asia. She is a " +
-    "very good cook and likes to take care of her family.\n" +
+    "Ira is the mother of Liza and live in the far east. She is a real estate investor, likes to do business and " +
+    "travel around the world. On her free time she enjoys swimming, spending time with family and children, and " +
+    "going for long walks in the nature. She started learning English as first foreign language due to the wedding " +
+    "pre-announcement before New Year's.\n" +
     "\n" +
     "Languages: Russian and basic English",
   accommodation:
     'During the event weekend, you will stay in cottage 109 with Lena, Dima and Anna. See map under "Maps" page. ' +
-    "Before and after the event, we will arrange so that you live nearby us in Stockholm and Siljansnäs. Looking " +
-    "forward to learning about your detailed travel plans as soon as available!",
+    "Before and after the event, we will arrange so that you live nearby us in Stockholm and Siljansnäs.",
   travelPlans:
-    "You are believed to arrive early in the week before the ceremony around June 10th. We will arrange for " +
+    "We believe you will arrive early in the week before the ceremony, around June 10th. We will arrange for " +
     "transportation from Stockholm to Siljansnäs in conjunction with our own travel schedule. Please think about how " +
-    "long you will stay and let us know about intended activities after the ceremony.",
+    "long you will stay and let us know about your intentions after the ceremony, we will help you with planning!",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "WhatsApp via Liza, +46 730 500 244",
 };
