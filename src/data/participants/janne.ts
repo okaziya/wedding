@@ -1,4 +1,4 @@
-import { ParticipantDetails } from "../../types/participant";
+import { ParticipantDetails } from "@/types/participant.ts";
 
 export const janneDetails: ParticipantDetails = {
   title: "Mats' father Janne with Ann-Katrin",
@@ -18,5 +18,5 @@ export const janneDetails: ParticipantDetails = {
     "We believe you will arrive by car on Friday June 13th (or some day before) and attend the wedding reception at " +
     "17:00.",
   packingList: "Not applicable.",
-  contact: "WhatsApp via Mats, +46 730 567 567"
+  contact: "WhatsApp via Mats, +46 730 567 567",
 };

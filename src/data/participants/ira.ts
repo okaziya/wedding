@@ -14,12 +14,12 @@ export const iraDetails: ParticipantDetails = {
     "Languages: Russian and basic English",
   accommodation:
     'During the event weekend, you will stay in cottage 109 with Lena, Dima and Anna. See map under "Maps" page. ' +
-    'Before and after the event, we will arrange so that you live nearby us in Stockholm and Siljansnäs. Looking ' +
-    'forward to learning about your detailed travel plans as soon as available!',
+    "Before and after the event, we will arrange so that you live nearby us in Stockholm and Siljansnäs. Looking " +
+    "forward to learning about your detailed travel plans as soon as available!",
   travelPlans:
     "You are believed to arrive early in the week before the ceremony around June 10th. We will arrange for " +
     "transportation from Stockholm to Siljansnäs in conjunction with our own travel schedule. Please think about how " +
     "long you will stay and let us know about intended activities after the ceremony.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp via Liza, +46 730 500 244"
+  contact: "WhatsApp via Liza, +46 730 500 244",
 };

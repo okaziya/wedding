@@ -15,8 +15,8 @@ export const yongtaoDetails: ParticipantDetails = {
     "Languages: Swedish, English, Chinese",
   accommodation:
     "During the event weekend, you will stay in cottage 116 at Siljansnäs Stugby with Liza, Åke, Mats & Jennie. See " +
-    "map under \"Maps\" page.",
+    'map under "Maps" page.',
   travelPlans: "We believe you will arrive by car latest on Friday June 13th and join us at the reception at 17:00.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp via Mats, +46 730 567 567"
+  contact: "WhatsApp via Mats, +46 730 567 567",
 };

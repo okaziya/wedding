@@ -1,4 +1,4 @@
-import { ParticipantDetails } from "../../types/participant";
+import { ParticipantDetails } from "@/types/participant.ts";
 
 export const lenaDetails: ParticipantDetails = {
   title: "Liza's photographer Lena",
@@ -14,10 +14,10 @@ export const lenaDetails: ParticipantDetails = {
     "\n" +
     "Languages: English, Russian & Czech",
   accommodation:
-    "During the event weekend, you will stay in cottage 109 with Ira, Dima and Anna. See map under \"Maps\" page.",
+    'During the event weekend, you will stay in cottage 109 with Ira, Dima and Anna. See map under "Maps" page.',
   travelPlans:
     "We believe you will arrive to Leksand by bus or train early afternoon on Friday, June 13th. Liza will pick you " +
     "up by car on arrival. Please share your exact travel plans when all tickets are booked.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp via Liza, +46 730 500 244"
+  contact: "WhatsApp via Liza, +46 730 500 244",
 };

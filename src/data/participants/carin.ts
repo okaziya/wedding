@@ -1,4 +1,4 @@
-import { ParticipantDetails } from "../../types/participant";
+import { ParticipantDetails } from "@/types/participant.ts";
 
 export const carinDetails: ParticipantDetails = {
   title: "Mats' mother Carin with Jonny",
@@ -18,5 +18,5 @@ export const carinDetails: ParticipantDetails = {
   accommodation: "You will live in your house on Långbäcksgattu as per usual.",
   travelPlans: "Not applicable.",
   packingList: "Not applicable.",
-  contact: "WhatsApp via Mats, +46 730 567 567"
+  contact: "WhatsApp via Mats, +46 730 567 567",
 };

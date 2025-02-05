@@ -1,9 +1,9 @@
-
 import { ParticipantDetails } from "@/types/participant";
 
 export const alexanderDetails: ParticipantDetails = {
   title: "Liza's friend Alexander",
   role: "Friend of the Bride",
+  image: "/wedding/participants/alexander.png",
   welcomeMessage:
     "Very welcome, Alexander! We look forward to you joining our ceremony in Siljansnäs, thank you for your support " +
     "and coming to visit our home country. We hope you'll enjoy the Swedish countryside and the local culture!",
@@ -17,7 +17,7 @@ export const alexanderDetails: ParticipantDetails = {
     "\n" +
     "Languages: English, Russian & German",
   accommodation:
-    "During the event weekend, you will stay in cottage 111 with Boris, Marcin and Miroslav. See map under \"Maps\" " +
+    'During the event weekend, you will stay in cottage 111 with Boris, Marcin and Miroslav. See map under "Maps" ' +
     "page.",
   travelPlans:
     "We believe you will rent a car in Stockholm with Marcin, Miroslav and Boris, and then arrive at the reception " +
@@ -25,5 +25,4 @@ export const alexanderDetails: ParticipantDetails = {
     "soon as available!",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "WhatsApp via Liza, +46 730 500 244",
-  image: "/lovable-uploads/1a79bb59-a6d3-4a7a-ad46-3f077e63bcca.png"
 };

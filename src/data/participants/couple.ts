@@ -1,4 +1,4 @@
-import { ParticipantDetails } from "../../types/participant";
+import { ParticipantDetails } from "@/types/participant.ts";
 
 export const coupleDetails: ParticipantDetails = {
   title: "Wedding Couple, Liza & Mats with Åke",

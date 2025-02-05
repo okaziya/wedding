@@ -1,4 +1,4 @@
-import { ParticipantDetails } from "../../types/participant";
+import { ParticipantDetails } from "@/types/participant.ts";
 
 export const marcinDetails: ParticipantDetails = {
   title: "Liza's friends Marcin & Miroslav",
