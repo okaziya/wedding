@@ -4,7 +4,7 @@ import { ParticipantDetails } from "@/types/participant";
 export const yongtaoDetails: ParticipantDetails = {
   title: "Mats' friend Yongtao",
   role: "Friend of the Groom",
-  image: "/lovable-uploads/87da76bd-2c15-4cfd-a123-865341879e2e.png",
+  image: "/wedding/participants/yongtao.png",
   welcomeMessage:
     "Very welcome, Yongtao! We look forward to you joining our ceremony in Siljansnäs, thank you for your support, " +
     "and for all our past and future events together.",
