@@ -3,7 +3,7 @@ import { ParticipantDetails } from "@/types/participant";
 export const iraDetails: ParticipantDetails = {
   title: "Liza's mother Ira",
   role: "Mother of the Bride",
-  image: "/wedding/participants/ira.png",
+  image: "/wedding/participants/ira.jpeg",
   welcomeMessage:
     "Ira, we are so happy that you go through all the visa hassle to attend our ceremony. We hope you will get a " +
     "better idea about how we relate to each other as a couple and why we make Sweden our home for the future.",

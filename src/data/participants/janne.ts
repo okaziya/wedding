@@ -3,7 +3,7 @@ import { ParticipantDetails } from "@/types/participant.ts";
 export const janneDetails: ParticipantDetails = {
   title: "Mats' father Janne with Ann-Katrin",
   role: "Father of the Groom",
-  image: "/wedding/participants/janne.png",
+  image: "/wedding/participants/janne.jpeg",
   description:
     "Mats' father Janne and Ann-Katrin lives 45 minutes west of Sundsvall in Attmarby village, they have two horses, " +
     "cats and a lot of houses. They like to do repairs their houses, care for the horses, and engage in crafting.\n" +

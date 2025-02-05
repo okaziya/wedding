@@ -3,7 +3,7 @@ import { ParticipantDetails } from "@/types/participant.ts";
 export const dimaDetails: ParticipantDetails = {
   title: "Liza's friends Dima & Anna",
   role: "Friends of the Bride",
-  image: "/wedding/participants/dima.png",
+  image: "/wedding/participants/dima.jpeg",
   welcomeMessage:
     "Very welcome, Dima & Anna! We look forward to you joining our ceremony in Siljansnäs, thank you for your " +
     "support and coming to visit our home country. We hope you'll be back again and again!",

@@ -3,7 +3,7 @@ import { ParticipantDetails } from "@/types/participant";
 export const alexanderDetails: ParticipantDetails = {
   title: "Liza's friend Alexander",
   role: "Friend of the Bride",
-  image: "/wedding/participants/alexander.png",
+  image: "/wedding/participants/alexander.jpeg",
   welcomeMessage:
     "Very welcome, Alexander! We look forward to you joining our ceremony in Siljansnäs, thank you for your support " +
     "and coming to visit our home country. We hope you'll enjoy the Swedish countryside and the local culture!",
