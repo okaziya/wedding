@@ -1,3 +1,4 @@
+
 import { ParticipantDetails } from "@/types/participant";
 
 export const alexanderDetails: ParticipantDetails = {
@@ -24,4 +25,5 @@ export const alexanderDetails: ParticipantDetails = {
     "soon as available!",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "WhatsApp via Liza, +46 730 500 244",
+  image: "/lovable-uploads/1a79bb59-a6d3-4a7a-ad46-3f077e63bcca.png"
 };
