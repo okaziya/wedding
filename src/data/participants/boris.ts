@@ -20,7 +20,7 @@ export const borisDetails: ParticipantDetails = {
   travelPlans:
     "We believe you will rent a car in Stockholm with Marcin, Miroslav and Alexander, and then arrive at the " +
     "reception in Siljansnäs at 17:00 on Friday, June 13th. Looking forward to learning about your detailed travel " +
-    "plans as soon as available!",
+    "plans as soon as they are available!",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "WhatsApp via Liza, +46 730 500 244",
 };

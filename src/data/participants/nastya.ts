@@ -21,13 +21,13 @@ export const nastyaDetails: ParticipantDetails = {
     "Nastya, we are endlessly grateful.\n" +
     "\n" +
     "Languages: Russian and basic English, Kostya also speaks Polish",
+  accommodation:
+    "During the ceremony event weekend, your family will stay in cottage 108 at Siljansnäs Stugby, see map under " +
+    '"Maps" page.',
   travelPlans:
     "We believe you will arrive by ship to Stockholm, rent a car, and drive to arrive in Siljansnäs by the " +
     "reception at 17:00 on Friday June 13th. Please think about how long you will stay around and let us know about " +
     "intended schedule after the ceremony weekend.",
-  accommodation:
-    "During the ceremony event weekend, your family will stay in cottage 108 at Siljansnäs Stugby, see map under " +
-    '"Maps" page.',
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contact: "WhatsApp via Liza, +46 730 500 244",
 };
