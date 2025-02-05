@@ -3,6 +3,7 @@ import { ParticipantDetails } from "@/types/participant.ts";
 export const marcinDetails: ParticipantDetails = {
   title: "Liza's friends Marcin & Miroslav",
   role: "Friends of the Bride",
+  image: "/wedding/participants/marcin.jpeg",
   welcomeMessage:
     "Very welcome, Marcin & Miroslav! We look forward to you joining our ceremony in Siljansnäs, thank you for " +
     "your support and coming to visit our home country. We hope you'll enjoy the time with us, as well as the unique " +
