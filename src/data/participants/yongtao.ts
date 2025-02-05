@@ -1,4 +1,3 @@
-
 import { ParticipantDetails } from "@/types/participant";
 
 export const yongtaoDetails: ParticipantDetails = {
