@@ -38,12 +38,12 @@
       "type": "image/png"
     },
     {
-      "src": "lm-icon-64x64.png",
+      "src": "lm-icon-new-64x64.png",
       "sizes": "64x64",
       "type": "image/png"
     },
     {
-      "src": "lm-icon-48x48.png",
+      "src": "lm-icon-new-48x48.png",
       "sizes": "48x48",
       "type": "image/png"
     },
