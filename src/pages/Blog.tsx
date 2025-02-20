@@ -6,6 +6,14 @@ const Blog = () => {
         <h1 className="text-4xl font-playfair mb-12 text-center">Blog</h1>
 
         <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
+          <h2 className="text-2xl font-playfair mb-2">First batch of invites sent via mail</h2>
+          <time className="text-sm text-gray-500 mb-4 block">February 20th, 2025</time>
+          <p className="text-lg mb-6">
+            We received all prints from the supplier, prepared all invitation letters, and handed over the first batch to the post office.
+          </p>
+        </article>
+
+        <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
           <h2 className="text-2xl font-playfair mb-2">Initial designs by @mkl-adsn finalized</h2>
           <time className="text-sm text-gray-500 mb-4 block">February 17th, 2025</time>
           <p className="text-lg mb-6">
@@ -20,14 +28,6 @@ const Blog = () => {
               @mkl-adsn
             </a>
             .
-          </p>
-        </article>
-
-        <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
-          <h2 className="text-2xl font-playfair mb-2">First batch of invites sent via mail</h2>
-          <time className="text-sm text-gray-500 mb-4 block">February 20th, 2025</time>
-          <p className="text-lg mb-6">
-            We received all prints from the supplier, prepared all invitation letters, and handed over the first batch to the post office.
           </p>
         </article>
 
