@@ -7,7 +7,7 @@ const Blog = () => {
 
         <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
           <h2 className="text-2xl font-playfair mb-2">Initial designs by @mkl-adsn finalized</h2>
-          <time className="text-sm text-gray-500 mb-4 block">February 27th, 2024</time>
+          <time className="text-sm text-gray-500 mb-4 block">February 27th, 2025</time>
           <p className="text-lg mb-6">
             We finalized the area map, invitation cards, new logo, and app installation instructions for print and
             distribution. Designs contributed by{" "}
@@ -25,7 +25,7 @@ const Blog = () => {
 
         <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
           <h2 className="text-2xl font-playfair mb-2">All participant pictures and descriptions put in place</h2>
-          <time className="text-sm text-gray-500 mb-4 block">February 6th, 2024</time>
+          <time className="text-sm text-gray-500 mb-4 block">February 6th, 2025</time>
           <p className="text-lg mb-6">
             We completed the last participant details for the scope of our big event; everyone now has a picture, a
             welcome message, and a short description for other participants to read.
