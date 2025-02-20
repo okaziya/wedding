@@ -8,7 +8,7 @@ const Maps = () => {
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg w-full max-w-[595px]"> {/* A4 width in pixels */}
             <div className="aspect-[1/1.4142]"> {/* A4 aspect ratio */}
               <img 
-                src="/area-map.png" 
+                src="/wedding/area-map.png"
                 alt="Area map"
                 className="w-full h-full object-contain rounded-lg"
               />
