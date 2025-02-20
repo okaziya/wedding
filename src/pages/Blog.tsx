@@ -7,7 +7,7 @@ const Blog = () => {
 
         <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
           <h2 className="text-2xl font-playfair mb-2">Initial designs by @mkl-adsn finalized</h2>
-          <time className="text-sm text-gray-500 mb-4 block">February 27th, 2025</time>
+          <time className="text-sm text-gray-500 mb-4 block">February 17th, 2025</time>
           <p className="text-lg mb-6">
             We finalized the area map, invitation cards, new logo, and app installation instructions for print and
             distribution. Designs contributed by{" "}
@@ -34,7 +34,7 @@ const Blog = () => {
 
         <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
           <h2 className="text-2xl font-playfair mb-2">Made Liza+Mats app installable on iPhone/Android</h2>
-          <time className="text-sm text-gray-500 mb-4 block">January 19th, 2024</time>
+          <time className="text-sm text-gray-500 mb-4 block">January 19th, 2025</time>
           <p className="text-lg mb-6">
             Today we completed a series of updates that makes the wedding event app installable on your Android/iPhone
             home screen. Please see setup instructions for{" "}
@@ -61,7 +61,7 @@ const Blog = () => {
 
         <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg">
           <h2 className="text-2xl font-playfair mb-2">Mats & Liza getting started programming</h2>
-          <time className="text-sm text-gray-500 mb-4 block">January 18th, 2024</time>
+          <time className="text-sm text-gray-500 mb-4 block">January 18th, 2025</time>
           <p className="text-lg mb-6">
             Today we built an embryo of something for the wedding. We promise that the domain won't change.
           </p>
