@@ -9,28 +9,6 @@ export const EventDetails = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card className="animate-fade-in bg-white">
             <div className="p-6">
-              <h3 className="font-playfair text-2xl mb-4 text-wedding-accent">Ceremony</h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <Clock className="w-5 h-5 mr-2 text-wedding-secondary" />
-                  <span className="font-inter">15:00 CET on Saturday, June 14th</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPin className="w-5 h-5 mr-2 text-wedding-secondary" />
-                  <span className="font-inter">
-                    Siljansnäs kyrka
-                    <br />
-                    Leksand
-                    <br />
-                    Dalarna, Sweden
-                  </span>
-                </div>
-              </div>
-            </div>
-          </Card>
-
-          <Card className="animate-fade-in bg-white">
-            <div className="p-6">
               <h3 className="font-playfair text-2xl mb-4 text-wedding-accent">Reception</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
@@ -45,6 +23,28 @@ export const EventDetails = () => {
                     Västanvik
                     <br />
                     Leksand, Sweden
+                  </span>
+                </div>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="animate-fade-in bg-white">
+            <div className="p-6">
+              <h3 className="font-playfair text-2xl mb-4 text-wedding-accent">Ceremony</h3>
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <Clock className="w-5 h-5 mr-2 text-wedding-secondary" />
+                  <span className="font-inter">15:00 CET on Saturday, June 14th</span>
+                </div>
+                <div className="flex items-center">
+                  <MapPin className="w-5 h-5 mr-2 text-wedding-secondary" />
+                  <span className="font-inter">
+                    Siljansnäs kyrka
+                    <br />
+                    Leksand
+                    <br />
+                    Dalarna, Sweden
                   </span>
                 </div>
               </div>
