@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { resolve } from "path";
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   base: "/wedding/", // ✅ Ensures correct GitHub Pages paths
   server: {
     host: "0.0.0.0",
@@ -15,9 +15,9 @@ export default defineConfig(({ mode }) => ({
     assetsDir: "assets",
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "public/index.html"), // ✅ Only use `index.html`
-        script: resolve(__dirname, "public/script.js"), // ✅ Ensure `script.js` is built
+        main: resolve(__dirname, "public/index.html"), // ✅ Vite builds only index.html
       },
+      external: ["script.js"], // ✅ Prevent Vite from processing script.js
     },
   },
   plugins: [react()],
@@ -26,4 +26,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));
+});

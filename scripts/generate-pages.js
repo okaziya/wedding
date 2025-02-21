@@ -31,6 +31,12 @@ const participants = JSON.parse(fs.readFileSync("./participants.json", "utf-8"))
 // Define all static pages
 const staticPages = ["index", "vision", "program", "maps", "blog", ...participants.map((id) => `participants/${id}`)];
 
+// Copy `script.js` from `public/` to `dist/`
+fs.copyFileSync("public/script.js", "dist/script.js");
+
+// Read `dist/index.html` (after build)
+let template = fs.readFileSync("dist/index.html", "utf-8");
+
 waitForAssets()
   .then((jsFiles) => {
     // ✅ Find the correct built JavaScript file
@@ -53,7 +59,7 @@ waitForAssets()
       const dir = `dist/${page}`;
       fs.mkdirSync(dir, { recursive: true });
 
-      fs.writeFileSync(`${dir}/index.html`, fs.readFileSync("dist/index.html", "utf-8"));
+      fs.writeFileSync(`${dir}/index.html`, template);
       console.log(`✅ Created: ${dir}/index.html`);
     });
 
