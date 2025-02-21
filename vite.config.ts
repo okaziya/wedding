@@ -13,15 +13,15 @@ export default defineConfig({
     outDir: "dist",
     emptyOutDir: true,
     assetsDir: "assets",
+    cssCodeSplit: true, // ✅ Forces CSS to be extracted
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "public/index.html"), // ✅ Vite builds only index.html
+        main: resolve(__dirname, "public/index.html"),
       },
-      external: ["script.js"], // ✅ Prevent Vite from processing script.js
     },
   },
   css: {
-    devSourcemap: true, // ✅ Helps debug styles in the browser
+    devSourcemap: true, // ✅ Helps debug styles
   },
   plugins: [react()],
   resolve: {
