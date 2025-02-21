@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-// Function to wait until assets exist in `dist/assets/`
+// Function to wait until CSS and JS assets exist
 function waitForAssets() {
   const distAssetsPath = "dist/assets/";
   let retries = 5;
@@ -44,7 +44,6 @@ let template = fs.readFileSync("dist/index.html", "utf-8");
 
 waitForAssets()
   .then(({ jsFiles, cssFiles }) => {
-    // ✅ Find the correct built JavaScript and CSS files
     const mainJsFile = jsFiles.find((file) => file.startsWith("main-"));
     const mainCssFile = cssFiles.find((file) => file.startsWith("main-"));
 
@@ -52,16 +51,14 @@ waitForAssets()
       throw new Error("❌ No valid JavaScript or CSS file found.");
     }
 
-    // ✅ Use `/wedding/assets/...` for GitHub Pages
     const scriptPath = `/wedding/assets/${mainJsFile}`;
     const cssPath = `/wedding/assets/${mainCssFile}`;
     console.log(`🔹 Using script: ${scriptPath}`);
     console.log(`🔹 Using CSS: ${cssPath}`);
 
-    // ✅ Inject the correct CSS path into `index.html`
+    // ✅ Inject correct CSS path into `index.html`
     let updatedTemplate = template.replace("</head>", `  <link rel="stylesheet" href="${cssPath}">\n</head>`);
 
-    // ✅ Generate static pages with updated template
     staticPages.forEach((page) => {
       const dir = `dist/${page}`;
       fs.mkdirSync(dir, { recursive: true });
@@ -70,9 +67,12 @@ waitForAssets()
       console.log(`✅ Created: ${dir}/index.html`);
     });
 
-    // ✅ Update `dist/script.js` to load the correct JavaScript file
     fs.writeFileSync("dist/script.js", `import "${scriptPath}";`);
     console.log("✅ Updated: dist/script.js");
+
+    // ✅ Also update `dist/index.html` to include the correct stylesheet
+    fs.writeFileSync("dist/index.html", updatedTemplate);
+    console.log("✅ Updated: dist/index.html with CSS");
 
     console.log("🎉 All static pages generated with correct CSS & JS paths!");
   })
