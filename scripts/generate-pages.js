@@ -29,33 +29,31 @@ function waitForAssets() {
 const participants = JSON.parse(fs.readFileSync("./participants.json", "utf-8"));
 
 // Define all static pages
-const staticPages = ["vision", "program", "maps", "blog", ...participants.map((id) => `participants/${id}`)];
-
-// Read template content
-let template = fs.readFileSync("public/template.html", "utf-8");
+const staticPages = ["index", "vision", "program", "maps", "blog", ...participants.map((id) => `participants/${id}`)];
 
 waitForAssets()
   .then((jsFiles) => {
-    // ✅ Pick the first JS file in `dist/assets/`
-    const mainJsFile = jsFiles.find((file) => file.endsWith(".js"));
+    // ✅ Find the correct built JavaScript file
+    const mainJsFile = jsFiles.find((file) => file.startsWith("main-"));
 
     if (!mainJsFile) {
       throw new Error("❌ No valid JavaScript file found.");
     }
 
-    // ✅ Use `/wedding/assets/` to match GitHub Pages structure
+    // ✅ Use `/wedding/assets/...` for GitHub Pages
     const scriptPath = `/wedding/assets/${mainJsFile}`;
     console.log(`🔹 Using script: ${scriptPath}`);
 
-    // ✅ Replace the placeholder with the actual script path
-    template = template.replace("%VITE_SCRIPT_PATH%", scriptPath);
+    // ✅ Update `dist/script.js` to load the correct JavaScript file
+    fs.writeFileSync("dist/script.js", `import "${scriptPath}";`);
+    console.log("✅ Updated: dist/script.js");
 
     // ✅ Generate static pages
     staticPages.forEach((page) => {
       const dir = `dist/${page}`;
       fs.mkdirSync(dir, { recursive: true });
 
-      fs.writeFileSync(`${dir}/index.html`, template);
+      fs.writeFileSync(`${dir}/index.html`, fs.readFileSync("dist/index.html", "utf-8"));
       console.log(`✅ Created: ${dir}/index.html`);
     });
 
