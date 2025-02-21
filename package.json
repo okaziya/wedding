@@ -5,9 +5,9 @@
   "type": "module",
   "homepage": "https://okaziya.github.io/wedding/",
   "scripts": {
-    "prebuild": "node scripts/generate-pages.js",
+    "prebuild": "rm -rf dist",
+    "build": "vite build && node scripts/generate-pages.js",
     "dev": "vite",
-    "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "format": "prettier --write .",
