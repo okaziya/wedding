@@ -20,6 +20,9 @@ export default defineConfig({
       external: ["script.js"], // ✅ Prevent Vite from processing script.js
     },
   },
+  css: {
+    devSourcemap: true, // ✅ Helps debug styles in the browser
+  },
   plugins: [react()],
   resolve: {
     alias: {

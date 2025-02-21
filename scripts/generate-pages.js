@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-// Function to wait until JS files exist
+// Function to wait until assets exist in `dist/assets/`
 function waitForAssets() {
   const distAssetsPath = "dist/assets/";
   let retries = 5;
@@ -9,17 +9,22 @@ function waitForAssets() {
   return new Promise((resolve, reject) => {
     const checkFiles = setInterval(() => {
       if (fs.existsSync(distAssetsPath)) {
-        const jsFiles = fs.readdirSync(distAssetsPath).filter((file) => file.endsWith(".js"));
-        if (jsFiles.length > 0) {
+        const files = fs.readdirSync(distAssetsPath);
+        const jsFiles = files.filter((file) => file.endsWith(".js"));
+        const cssFiles = files.filter((file) => file.endsWith(".css"));
+
+        if (jsFiles.length > 0 && cssFiles.length > 0) {
           clearInterval(checkFiles);
-          resolve(jsFiles);
+          resolve({ jsFiles, cssFiles });
         }
       }
 
       retries -= 1;
       if (retries <= 0) {
         clearInterval(checkFiles);
-        reject(new Error("❌ No JavaScript file found in `dist/assets/`. Ensure `vite build` ran successfully."));
+        reject(
+          new Error("❌ No JavaScript or CSS file found in `dist/assets/`. Ensure `vite build` ran successfully.")
+        );
       }
     }, 1000);
   });
@@ -38,32 +43,38 @@ fs.copyFileSync("public/script.js", "dist/script.js");
 let template = fs.readFileSync("dist/index.html", "utf-8");
 
 waitForAssets()
-  .then((jsFiles) => {
-    // ✅ Find the correct built JavaScript file
+  .then(({ jsFiles, cssFiles }) => {
+    // ✅ Find the correct built JavaScript and CSS files
     const mainJsFile = jsFiles.find((file) => file.startsWith("main-"));
+    const mainCssFile = cssFiles.find((file) => file.startsWith("main-"));
 
-    if (!mainJsFile) {
-      throw new Error("❌ No valid JavaScript file found.");
+    if (!mainJsFile || !mainCssFile) {
+      throw new Error("❌ No valid JavaScript or CSS file found.");
     }
 
     // ✅ Use `/wedding/assets/...` for GitHub Pages
     const scriptPath = `/wedding/assets/${mainJsFile}`;
+    const cssPath = `/wedding/assets/${mainCssFile}`;
     console.log(`🔹 Using script: ${scriptPath}`);
+    console.log(`🔹 Using CSS: ${cssPath}`);
+
+    // ✅ Inject the correct CSS path into `index.html`
+    let updatedTemplate = template.replace("</head>", `  <link rel="stylesheet" href="${cssPath}">\n</head>`);
+
+    // ✅ Generate static pages with updated template
+    staticPages.forEach((page) => {
+      const dir = `dist/${page}`;
+      fs.mkdirSync(dir, { recursive: true });
+
+      fs.writeFileSync(`${dir}/index.html`, updatedTemplate);
+      console.log(`✅ Created: ${dir}/index.html`);
+    });
 
     // ✅ Update `dist/script.js` to load the correct JavaScript file
     fs.writeFileSync("dist/script.js", `import "${scriptPath}";`);
     console.log("✅ Updated: dist/script.js");
 
-    // ✅ Generate static pages
-    staticPages.forEach((page) => {
-      const dir = `dist/${page}`;
-      fs.mkdirSync(dir, { recursive: true });
-
-      fs.writeFileSync(`${dir}/index.html`, template);
-      console.log(`✅ Created: ${dir}/index.html`);
-    });
-
-    console.log("🎉 All static pages generated with correct script paths!");
+    console.log("🎉 All static pages generated with correct CSS & JS paths!");
   })
   .catch((error) => {
     console.error(error.message);
