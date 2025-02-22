@@ -1,4 +1,3 @@
-
 const Blog = () => {
   return (
     <div className="min-h-screen pt-24 pb-24 px-4">
@@ -9,7 +8,8 @@ const Blog = () => {
           <h2 className="text-2xl font-playfair mb-2">First batch of invites sent via mail</h2>
           <time className="text-sm text-gray-500 mb-4 block">February 20th, 2025</time>
           <p className="text-lg mb-6">
-            We received all prints from the supplier, prepared all invitation letters, and handed over the first batch to the post office.
+            We received all prints from the supplier, prepared all invitation letters, and handed over the first batch
+            to the post office.
           </p>
         </article>
 
@@ -84,11 +84,7 @@ const Blog = () => {
             </a>
           </div>
           <div className="mt-6 flex justify-center">
-            <img
-              src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent("https://okaziya.github.io/wedding/")}`}
-              alt="QR Code to wedding website"
-              className="w-48 h-48"
-            />
+            <img src="/wedding/images/gh-pages-qr.png" alt="QR Code to wedding website" className="w-48 h-48" />
           </div>
         </article>
       </div>

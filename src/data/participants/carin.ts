@@ -3,7 +3,7 @@ import { ParticipantDetails } from "@/types/participant.ts";
 export const carinDetails: ParticipantDetails = {
   title: "Mats' mother Carin with Jonny",
   role: "Mother of the Groom",
-  image: "/wedding/participants/carin.jpeg",
+  image: "/wedding/images/participants/carin.jpeg",
   welcomeMessage:
     "Very welcome, Carin and Jonny! Thank you for aiding with and participating in our ceremony in Siljansnäs, it " +
     "means a lot to have our close families gathered for the event. We would also like to share our gratitude for " +

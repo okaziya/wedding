@@ -3,7 +3,7 @@ import { ParticipantDetails } from "@/types/participant";
 export const nastyaDetails: ParticipantDetails = {
   title: "Liza's sister Nastya and her family",
   role: "Sister of the Bride",
-  image: "/wedding/participants/nastya.jpeg",
+  image: "/wedding/images/participants/nastya.jpeg",
   welcomeMessage:
     "Welcome, Nastya, Kostya, Vika and Sema! We are so thrilled to welcome you to our wedding. Thank you for " +
     "crossing the Baltic Sea for us! We look forward to seeing you and showing you around one of our favorite " +

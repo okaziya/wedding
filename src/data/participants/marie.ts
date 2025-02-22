@@ -3,7 +3,7 @@ import { ParticipantDetails } from "@/types/participant";
 export const marieDetails: ParticipantDetails = {
   title: "Mats' sister Marie and her family",
   role: "Sister of the Groom",
-  image: "/wedding/participants/marie.jpeg",
+  image: "/wedding/images/participants/marie.jpeg",
   welcomeMessage:
     "Marie, William, Hugo and Alva; we look forward to you joining our ceremony in Siljansnäs, thank you for your " +
     "support and all our joint events.",

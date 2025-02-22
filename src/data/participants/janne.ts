@@ -3,7 +3,7 @@ import { ParticipantDetails } from "@/types/participant.ts";
 export const janneDetails: ParticipantDetails = {
   title: "Mats' father Janne with Ann-Katrin",
   role: "Father of the Groom",
-  image: "/wedding/participants/janne.jpeg",
+  image: "/wedding/images/participants/janne.jpeg",
   welcomeMessage:
     "Very welcome, Janne and Ann-Katrin! Thank you for joining our ceremony in Siljansnäs, it means a lot to have " +
     "our close families gathered for the event.",

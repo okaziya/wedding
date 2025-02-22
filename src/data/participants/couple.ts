@@ -3,7 +3,7 @@ import { ParticipantDetails } from "@/types/participant.ts";
 export const coupleDetails: ParticipantDetails = {
   title: "Wedding Couple, Liza & Mats with Åke",
   role: "The Wedding Couple",
-  image: "/wedding/participants/couple.jpeg",
+  image: "/wedding/images/participants/couple.jpeg",
   welcomeMessage:
     "A big welcome to ourselves, Mats & Liza! Great job making this app, organizing the event, posting invitation " +
     "letters and everything. We're looking forward to swearing loyalty to each other accompanied by our closest " +
