@@ -3,7 +3,7 @@ import { ParticipantDetails } from "@/types/participant.ts";
 export const jennieDetails: ParticipantDetails = {
   title: "Mats' friend Jennie",
   role: "Friend of he Groom",
-  image: "/wedding/participants/jennie.jpeg",
+  image: "/wedding/images/participants/jennie.jpeg",
   welcomeMessage:
     "Very welcome, Jennie! We look forward to you joining our ceremony in Siljansnäs, thank you for your support and " +
     "a life-long friendship ahead of us.",

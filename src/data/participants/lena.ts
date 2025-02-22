@@ -3,7 +3,7 @@ import { ParticipantDetails } from "@/types/participant.ts";
 export const lenaDetails: ParticipantDetails = {
   title: "Liza's photographer Lena",
   role: "Wedding Photographer",
-  image: "/wedding/participants/lena.jpeg",
+  image: "/wedding/images/participants/lena.jpeg",
   welcomeMessage:
     "Very welcome, Lena! We are so happy you agreed to join as wedding photographer for our ceremony. We hope you " +
     "will have a great time while making lots of memorable photos from this weekend!",

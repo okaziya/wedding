@@ -5,10 +5,10 @@
   "type": "module",
   "homepage": "https://okaziya.github.io/wedding/",
   "scripts": {
-    "prebuild": "rm -rf dist",
-    "build": "vite build && node scripts/generate-pages.js",
     "dev": "vite",
+    "build": "vite build",
     "build:dev": "vite build --mode development",
+    "postbuild": "node generate-static-routes.mjs",
     "lint": "eslint .",
     "format": "prettier --write .",
     "preview": "vite preview"
