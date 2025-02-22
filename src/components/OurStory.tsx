@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -7,7 +6,7 @@ export const OurStory = () => {
   const timeline = [
     {
       date: "June 13th, 2024",
-      title: 'Started watching "Jordan B Peterson on Marriage" on The Daily Wire',
+      title: 'Started watching "Jordan B Peterson on Marriage" on The Daily Wire",
       description: (
         <>
           We started watching "Part 1: The Promise" (
@@ -66,11 +65,13 @@ export const OurStory = () => {
       date: "July 10th, 2024",
       title: "Liza's residency in Sweden approved",
       description: "The Swedish Tax Agency approves Liza's relocation to Sweden.",
+      image: "/wedding/images/our-story/240710.jpeg"
     },
     {
       date: "July 11th, 2024",
       title: "First birthday & Dusty finds a home",
       description: "Celebrating Liza's 30 year birthday, and same day Dusty moves into his new home with Birgitta.",
+      image: "/wedding/images/our-story/240711.jpeg"
     },
     {
       date: "July 20th, 2024",
@@ -82,32 +83,38 @@ export const OurStory = () => {
       title: "First time hiking in the forest up north",
       description:
         "Liza, Mats & Åke goes to Dalarna for overnight hiking in the forest with friends Yongtao and Niclas.",
+      image: "/wedding/images/our-story/240727.jpeg"
     },
     {
       date: "August 2nd, 2024",
       title: "Family on Church Camp",
       description: "Liza getting introduced to Mats' church during a weekend at Drakudden",
+      image: "/wedding/images/our-story/240802.jpeg"
     },
     {
       date: "August 5th, 2024",
       title: "Liza start studying Swedish",
       description: "First Swedish A1 course at Folkuniversitetet",
+      image: "/wedding/images/our-story/240805.jpeg"
     },
     {
       date: "September 14th, 2024",
       title: "Road trip, meeting with Mats' father",
       description: "Liza, Mats & Åke goes on a road trip up north to visit Mats' father Janne over the weekend.",
+      image: "/wedding/images/our-story/240914.jpeg"
     },
     {
       date: "September 28th, 2024",
       title: "Road trip, meeting with Mats' friends",
       description:
         "Liza, Mats & Åke goes on a road trip down south to visit Mats' friends in Undenäs over the weekend.",
+      image: "/wedding/images/our-story/240928.jpeg"
     },
     {
       date: "October 1st, 2024",
       title: "Liza starts working in Sweden",
       description: "Finally done with employer in Czech Republic, on the road to full integration in Sweden!",
+      image: "/wedding/images/our-story/241001.jpeg"
     },
     {
       date: "October 21st, 2024",
