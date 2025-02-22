@@ -1,5 +1,7 @@
+
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 export const OurStory = () => {
   const timeline = [
@@ -20,6 +22,7 @@ export const OurStory = () => {
           ) and thinking about committing.
         </>
       ),
+      image: "/wedding/images/our-story/240613b.jpeg"
     },
     {
       date: "June 14th, 2024",
@@ -38,22 +41,26 @@ export const OurStory = () => {
           ) and decided to commit to each other, until death.
         </>
       ),
+      image: "/wedding/images/our-story/240614.jpeg"
     },
     {
       date: "June 19th, 2024",
       title: "Midsummer with family in Siljansnäs",
       description:
         "Liza, Mats & Åke went on a five-day road trip to spend Midsummer holidays in Siljansnäs, first meeting with Mats mother and sister parts of the family.",
+      image: "/wedding/images/our-story/240619.jpeg"
     },
     {
       date: "July 5th, 2024",
       title: "Mats & Åke goes to Prague",
       description: "Mats & Åke goes to Czechia to help relocate Liza and all her belongings to new home.",
+      image: "/wedding/images/our-story/240705.jpeg"
     },
     {
       date: "July 8th, 2024",
       title: "Liza comes home to Stockholm",
       description: "Liza arrives at Arlanda from Prague with all her remaining belongings and the dog Dusty.",
+      image: "/wedding/images/our-story/240708.jpeg"
     },
     {
       date: "July 10th, 2024",
@@ -142,7 +149,16 @@ export const OurStory = () => {
               <div className="p-6">
                 <div className="font-playfair text-xl text-wedding-secondary mb-2">{event.date}</div>
                 <h3 className="font-playfair text-2xl mb-2 text-wedding-accent">{event.title}</h3>
-                <p className="font-inter text-gray-600">{event.description}</p>
+                <p className="font-inter text-gray-600 mb-4">{event.description}</p>
+                {event.image && (
+                  <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
+                    <img
+                      src={event.image}
+                      alt={event.title}
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                )}
               </div>
             </Card>
           ))}
