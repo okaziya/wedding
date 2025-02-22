@@ -151,7 +151,7 @@ export const OurStory = () => {
                 <h3 className="font-playfair text-2xl mb-2 text-wedding-accent">{event.title}</h3>
                 <p className="font-inter text-gray-600 mb-4">{event.description}</p>
                 {event.image && (
-                  <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg">
+                  <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-lg">
                     <img
                       src={event.image}
                       alt={event.title}
