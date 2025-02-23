@@ -33,8 +33,10 @@ export const MobileNavigation = () => {
           <nav className="flex flex-col gap-4 font-[Merriweather] text-[#B14B57] font-bold text-[14px]">
             <MenuItems onNavigate={() => {}} variant="mobile" />
           </nav>
-          <SheetClose className="absolute right-6 top-[15px] text-[#B14B57] hover:opacity-80">
-            <CloseIcon />
+          <SheetClose asChild className="absolute right-6 top-[15px] text-[#B14B57] hover:opacity-80">
+            <button>
+              <CloseIcon />
+            </button>
           </SheetClose>
         </SheetContent>
       </Sheet>
