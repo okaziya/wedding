@@ -1,8 +1,16 @@
 
-import { Menu, X } from "lucide-react";
+import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { MenuItems } from "./MenuItems";
+
+const MenuIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 7H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <path d="M3 12H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <path d="M3 17H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+  </svg>
+);
 
 export const MobileNavigation = () => {
   return (
@@ -15,7 +23,7 @@ export const MobileNavigation = () => {
             className="text-[#B14B57] px-6 py-[15px]"
           >
             <span className="font-[Merriweather] mr-2">MENU</span>
-            <Menu className="h-6 w-6" />
+            <MenuIcon />
           </Button>
         </SheetTrigger>
         <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-[#FAF7F1] border-none">
