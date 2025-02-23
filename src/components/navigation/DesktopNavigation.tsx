@@ -48,9 +48,9 @@ export const DesktopNavigation = () => {
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="fixed left-0 right-0 bg-[#FAF7F1]">
-                  <div className="p-6 flex justify-center">
-                    <div className="flex justify-center gap-6">
-                      <div className="w-[280px] text-center">
+                  <div className="p-6 w-full max-w-7xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                      <div className="w-full max-w-[280px] mx-auto text-center">
                         {participants.slice(0, Math.ceil(participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
@@ -66,7 +66,7 @@ export const DesktopNavigation = () => {
                           );
                         })}
                       </div>
-                      <div className="w-[280px] text-center">
+                      <div className="w-full max-w-[280px] mx-auto text-center">
                         {participants.slice(Math.ceil(participants.length / 3), Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
@@ -82,7 +82,7 @@ export const DesktopNavigation = () => {
                           );
                         })}
                       </div>
-                      <div className="w-[280px] text-center">
+                      <div className="w-full max-w-[280px] mx-auto text-center">
                         {participants.slice(Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
