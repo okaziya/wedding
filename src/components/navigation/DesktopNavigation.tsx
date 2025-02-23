@@ -1,5 +1,6 @@
 
 import { Link, useLocation } from "react-router-dom";
+import { ChevronDown } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -42,7 +43,8 @@ export const DesktopNavigation = () => {
 
             <NavigationMenuItem className="text-center">
               <NavigationMenuTrigger className={`hover:opacity-80 uppercase ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}>
-                Participants
+                <span>Participants</span>
+                <ChevronDown className="w-5 h-5 ml-1 text-[#B14B57]" />
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="fixed left-0 right-0 bg-[#FAF7F1]">
