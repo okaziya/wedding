@@ -19,7 +19,7 @@ export const DesktopNavigation = () => {
 
   return (
     <div className="hidden md:block">
-      <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px]">
+      <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px] relative w-full">
         <NavigationMenuList className="gap-6">
           <NavigationMenuItem>
             <Link to="/" className={linkClasses("/")}>
@@ -43,9 +43,9 @@ export const DesktopNavigation = () => {
             <NavigationMenuTrigger className={`hover:opacity-80 uppercase ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}>
               Participants
             </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="grid w-[800px] p-6 bg-[#FAF7F1]">
-                <div className="grid grid-cols-3 gap-8">
+            <NavigationMenuContent className="w-screen left-0">
+              <div className="p-6 bg-[#FAF7F1] w-full">
+                <div className="grid grid-cols-3 gap-8 max-w-screen-xl mx-auto">
                   {participants.map((participant) => {
                     const participantPath = `/participants/${participant.id}`;
                     return (
