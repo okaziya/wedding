@@ -47,7 +47,7 @@ export const DesktopNavigation = () => {
               <div className="fixed left-0 right-0 bg-[#FAF7F1]">
                 <div className="p-6 flex justify-center">
                   <div className="flex justify-center gap-6">
-                    <div className="w-[280px]">
+                    <div className="w-[280px] text-center">
                       {participants.slice(0, Math.ceil(participants.length / 3)).map((participant) => {
                         const participantPath = `/participants/${participant.id}`;
                         return (
@@ -63,7 +63,7 @@ export const DesktopNavigation = () => {
                         );
                       })}
                     </div>
-                    <div className="w-[280px]">
+                    <div className="w-[280px] text-center">
                       {participants.slice(Math.ceil(participants.length / 3), Math.ceil(2 * participants.length / 3)).map((participant) => {
                         const participantPath = `/participants/${participant.id}`;
                         return (
@@ -79,7 +79,7 @@ export const DesktopNavigation = () => {
                         );
                       })}
                     </div>
-                    <div className="w-[280px]">
+                    <div className="w-[280px] text-center">
                       {participants.slice(Math.ceil(2 * participants.length / 3)).map((participant) => {
                         const participantPath = `/participants/${participant.id}`;
                         return (
