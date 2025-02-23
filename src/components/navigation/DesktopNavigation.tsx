@@ -47,7 +47,7 @@ export const DesktopNavigation = () => {
                 <ChevronDown className="w-5 h-5 ml-1 text-[#B14B57]" />
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="fixed left-0 right-0 bg-transparent">
+                <div className="fixed left-0 right-0 bg-[#FAF7F1]">
                   <div className="p-6 flex justify-center">
                     <div className="flex justify-center gap-6">
                       <div className="w-[280px] text-center">
