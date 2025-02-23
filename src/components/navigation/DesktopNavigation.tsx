@@ -55,7 +55,7 @@ export const DesktopNavigation = () => {
                             <Link
                               key={participant.name}
                               to={participantPath}
-                              className={`block py-1.5 hover:opacity-80 ${
+                              className={`block h-12 leading-[48px] text-base hover:opacity-80 ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
@@ -71,7 +71,7 @@ export const DesktopNavigation = () => {
                             <Link
                               key={participant.name}
                               to={participantPath}
-                              className={`block py-1.5 hover:opacity-80 ${
+                              className={`block h-12 leading-[48px] text-base hover:opacity-80 ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
@@ -87,7 +87,7 @@ export const DesktopNavigation = () => {
                             <Link
                               key={participant.name}
                               to={participantPath}
-                              className={`block py-1.5 hover:opacity-80 ${
+                              className={`block h-12 leading-[48px] text-base hover:opacity-80 ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
