@@ -42,12 +42,12 @@ export const DesktopNavigation = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem className="text-center">
-              <NavigationMenuTrigger className={`hover:opacity-80 uppercase ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}>
-                <span>Participants</span>
+              <NavigationMenuTrigger className={`hover:opacity-80 uppercase bg-transparent ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}>
+                Participants
                 <ChevronDown className="w-5 h-5 ml-1 text-[#B14B57]" />
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="fixed left-0 right-0 bg-[#FAF7F1]">
+                <div className="fixed left-0 right-0 bg-transparent">
                   <div className="p-6 flex justify-center">
                     <div className="flex justify-center gap-6">
                       <div className="w-[280px] text-center">
