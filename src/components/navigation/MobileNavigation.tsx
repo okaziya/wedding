@@ -14,7 +14,7 @@ export const MobileNavigation = () => {
   return <div className="md:hidden">
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="ghost" size="icon" className="text-[#B14B57] px-4 py-3">
+          <Button variant="ghost" size="icon" className="text-[#B14B57] p-0 w-fit">
             <span className="font-[Merriweather] mr-2">MENU</span>
             <MenuIcon />
           </Button>
