@@ -14,32 +14,32 @@ export const DesktopNavigation = () => {
   const linkClasses = (path: string) => {
     const isActive = location.pathname === path || 
                     (path !== '/' && location.pathname.startsWith(path));
-    return `hover:opacity-80 uppercase ${isActive ? 'text-[#571E25]' : ''}`;
+    return `hover:opacity-80 uppercase text-center ${isActive ? 'text-[#571E25]' : ''}`;
   };
 
   return (
     <div className="hidden md:block">
       <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px]">
         <NavigationMenuList className="gap-6">
-          <NavigationMenuItem>
+          <NavigationMenuItem className="text-center">
             <Link to="/" className={linkClasses("/")}>
               Welcome
             </Link>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className="text-center">
             <Link to="/vision" className={linkClasses("/vision")}>
               Vision & Mission
             </Link>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className="text-center">
             <Link to="/program" className={linkClasses("/program")}>
               Schedule
             </Link>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className="text-center">
             <NavigationMenuTrigger className={`hover:opacity-80 uppercase ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}>
               Participants
             </NavigationMenuTrigger>
@@ -101,13 +101,13 @@ export const DesktopNavigation = () => {
             </NavigationMenuContent>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className="text-center">
             <Link to="/maps" className={linkClasses("/maps")}>
               Map
             </Link>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className="text-center">
             <Link to="/blog" className={linkClasses("/blog")}>
               Blog
             </Link>
