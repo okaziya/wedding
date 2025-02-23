@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import {
   NavigationMenu,
@@ -19,8 +18,8 @@ export const DesktopNavigation = () => {
 
   return (
     <div className="hidden md:block">
-      <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px]">
-        <NavigationMenuList className="gap-6">
+      <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px] w-full">
+        <NavigationMenuList className="gap-6 justify-center w-full">
           <NavigationMenuItem className="text-center">
             <Link to="/" className={linkClasses("/")}>
               Welcome
