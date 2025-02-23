@@ -45,8 +45,8 @@ export const DesktopNavigation = () => {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="fixed left-0 right-0 bg-[#FAF7F1]">
-                <div className="p-6">
-                  <div className="grid grid-cols-3 gap-8 max-w-screen-xl mx-auto px-[25px]">
+                <div className="p-6 flex justify-center">
+                  <div className="grid grid-cols-3 gap-8 max-w-screen-xl w-full px-[25px]">
                     {participants.map((participant) => {
                       const participantPath = `/participants/${participant.id}`;
                       return (
