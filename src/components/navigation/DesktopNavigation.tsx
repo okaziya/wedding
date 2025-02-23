@@ -39,13 +39,13 @@ export const DesktopNavigation = () => {
             </Link>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className="relative">
             <NavigationMenuTrigger className={`hover:opacity-80 uppercase ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}>
               Participants
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="w-screen left-0">
-              <div className="p-6 bg-[#FAF7F1] w-full">
-                <div className="grid grid-cols-3 gap-8 max-w-screen-xl mx-auto">
+            <NavigationMenuContent className="absolute left-1/2 transform -translate-x-1/2 w-[100vw]">
+              <div className="p-6 bg-[#FAF7F1]">
+                <div className="grid grid-cols-3 gap-8 max-w-screen-xl mx-auto px-[25px]">
                   {participants.map((participant) => {
                     const participantPath = `/participants/${participant.id}`;
                     return (
