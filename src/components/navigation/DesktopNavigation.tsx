@@ -41,7 +41,7 @@ export const DesktopNavigation = () => {
                     <Link
                       key={participant.name}
                       to={`/participants/${participant.id}`}
-                      className="block py-1.5 hover:opacity-80"
+                      className="block py-1.5 hover:opacity-80 text-[#B14B57]"
                     >
                       {participant.name}
                     </Link>

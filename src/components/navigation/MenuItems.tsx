@@ -42,16 +42,21 @@ export const MenuItems = ({ onNavigate, variant = "desktop" }: MenuItemsProps) =
         <Link to="/program" className={linkClasses} onClick={onNavigate}>
           SCHEDULE
         </Link>
-        {participants.map((participant) => (
-          <Link
-            key={participant.name}
-            to={`/participants/${participant.id}`}
-            className="block py-1.5 hover:opacity-80"
-            onClick={onNavigate}
-          >
-            {participant.name}
-          </Link>
-        ))}
+        <div className="py-2">
+          <div className="mb-2 uppercase">Participants</div>
+          <div className="pl-4">
+            {participants.map((participant) => (
+              <Link
+                key={participant.name}
+                to={`/participants/${participant.id}`}
+                className="block py-1.5 hover:opacity-80 text-[#B14B57]"
+                onClick={onNavigate}
+              >
+                {participant.name}
+              </Link>
+            ))}
+          </div>
+        </div>
         <Link to="/maps" className={linkClasses} onClick={onNavigate}>
           MAP
         </Link>
