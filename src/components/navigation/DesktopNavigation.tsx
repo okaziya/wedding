@@ -46,21 +46,55 @@ export const DesktopNavigation = () => {
             <NavigationMenuContent>
               <div className="fixed left-0 right-0 bg-[#FAF7F1]">
                 <div className="p-6 flex justify-center">
-                  <div className="grid grid-cols-3 gap-8 max-w-screen-xl w-full px-[25px]">
-                    {participants.map((participant) => {
-                      const participantPath = `/participants/${participant.id}`;
-                      return (
-                        <Link
-                          key={participant.name}
-                          to={participantPath}
-                          className={`block py-1.5 hover:opacity-80 ${
-                            location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
-                          }`}
-                        >
-                          {participant.name}
-                        </Link>
-                      );
-                    })}
+                  <div className="flex justify-center gap-6">
+                    <div className="w-[280px]">
+                      {participants.slice(0, Math.ceil(participants.length / 3)).map((participant) => {
+                        const participantPath = `/participants/${participant.id}`;
+                        return (
+                          <Link
+                            key={participant.name}
+                            to={participantPath}
+                            className={`block py-1.5 hover:opacity-80 ${
+                              location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
+                            }`}
+                          >
+                            {participant.name}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                    <div className="w-[280px]">
+                      {participants.slice(Math.ceil(participants.length / 3), Math.ceil(2 * participants.length / 3)).map((participant) => {
+                        const participantPath = `/participants/${participant.id}`;
+                        return (
+                          <Link
+                            key={participant.name}
+                            to={participantPath}
+                            className={`block py-1.5 hover:opacity-80 ${
+                              location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
+                            }`}
+                          >
+                            {participant.name}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                    <div className="w-[280px]">
+                      {participants.slice(Math.ceil(2 * participants.length / 3)).map((participant) => {
+                        const participantPath = `/participants/${participant.id}`;
+                        return (
+                          <Link
+                            key={participant.name}
+                            to={participantPath}
+                            className={`block py-1.5 hover:opacity-80 ${
+                              location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
+                            }`}
+                          >
+                            {participant.name}
+                          </Link>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               </div>
