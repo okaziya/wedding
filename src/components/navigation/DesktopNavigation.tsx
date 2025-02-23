@@ -19,7 +19,7 @@ export const DesktopNavigation = () => {
 
   return (
     <div className="hidden md:block">
-      <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px] relative w-full">
+      <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px]">
         <NavigationMenuList className="gap-6">
           <NavigationMenuItem>
             <Link to="/" className={linkClasses("/")}>
@@ -39,27 +39,29 @@ export const DesktopNavigation = () => {
             </Link>
           </NavigationMenuItem>
 
-          <NavigationMenuItem className="relative">
+          <NavigationMenuItem>
             <NavigationMenuTrigger className={`hover:opacity-80 uppercase ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}>
               Participants
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="absolute left-1/2 transform -translate-x-1/2 w-[100vw]">
-              <div className="p-6 bg-[#FAF7F1]">
-                <div className="grid grid-cols-3 gap-8 max-w-screen-xl mx-auto px-[25px]">
-                  {participants.map((participant) => {
-                    const participantPath = `/participants/${participant.id}`;
-                    return (
-                      <Link
-                        key={participant.name}
-                        to={participantPath}
-                        className={`block py-1.5 hover:opacity-80 ${
-                          location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
-                        }`}
-                      >
-                        {participant.name}
-                      </Link>
-                    );
-                  })}
+            <NavigationMenuContent>
+              <div className="fixed left-0 right-0 bg-[#FAF7F1]">
+                <div className="p-6">
+                  <div className="grid grid-cols-3 gap-8 max-w-screen-xl mx-auto px-[25px]">
+                    {participants.map((participant) => {
+                      const participantPath = `/participants/${participant.id}`;
+                      return (
+                        <Link
+                          key={participant.name}
+                          to={participantPath}
+                          className={`block py-1.5 hover:opacity-80 ${
+                            location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
+                          }`}
+                        >
+                          {participant.name}
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </NavigationMenuContent>
