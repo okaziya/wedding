@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -11,51 +12,53 @@ import { participants } from "./MenuItems";
 export const DesktopNavigation = () => {
   return (
     <div className="hidden md:block">
-      <NavigationMenu>
+      <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px]">
         <NavigationMenuList className="gap-6">
           <NavigationMenuItem>
-            <Link to="/" className="text-sm font-medium">
+            <Link to="/" className="hover:opacity-80 uppercase">
               Welcome
             </Link>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Link to="/vision" className="text-sm font-medium">
-              Vision and Mission
+            <Link to="/vision" className="hover:opacity-80 uppercase">
+              Vision & Mission
             </Link>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Link to="/program" className="text-sm font-medium">
-              Event Program
+            <Link to="/program" className="hover:opacity-80 uppercase">
+              Schedule
             </Link>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-sm font-medium">Participants</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="hover:opacity-80 uppercase">Participants</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <div className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
-                {participants.map((participant) => (
-                  <Link
-                    key={participant.name}
-                    to={`/participants/${participant.id}`}
-                    className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                  >
-                    {participant.name}
-                  </Link>
-                ))}
+              <div className="grid w-[800px] p-6 bg-[#FAF7F1]">
+                <div className="grid grid-cols-3 gap-8">
+                  {participants.map((participant) => (
+                    <Link
+                      key={participant.name}
+                      to={`/participants/${participant.id}`}
+                      className="block py-1.5 hover:opacity-80"
+                    >
+                      {participant.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </NavigationMenuContent>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Link to="/maps" className="text-sm font-medium">
-              Maps
+            <Link to="/maps" className="hover:opacity-80 uppercase">
+              Map
             </Link>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Link to="/blog" className="text-sm font-medium">
+            <Link to="/blog" className="hover:opacity-80 uppercase">
               Blog
             </Link>
           </NavigationMenuItem>
