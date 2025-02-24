@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +40,9 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Ensure Satisfy font is applied */
+.font-satisfy {
+  font-family: 'Satisfy', cursive !important;
 }
