@@ -22,7 +22,7 @@ export const DesktopNavigation = () => {
     <div className="hidden md:block w-full">
       <div className="flex justify-center items-center w-full">
         <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px] w-full">
-          <NavigationMenuList className="gap-6 justify-center w-full">
+          <NavigationMenuList className="gap-3 justify-center w-full">
             <NavigationMenuItem className="text-center">
               <Link to="/" className={linkClasses("/")}>
                 Welcome
