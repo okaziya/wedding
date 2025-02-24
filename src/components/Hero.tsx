@@ -28,7 +28,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-wedding-background">
+    <div className="pt-24 flex flex-col items-center justify-center bg-wedding-background">
       <div className="w-full max-w-xl mx-auto px-4 text-center space-y-12">
         <img src={upperOrnament} width={328} alt="Upper ornament" className="mx-auto" />
 
