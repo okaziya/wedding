@@ -16,9 +16,10 @@ export default {
       colors: {
         wedding: {
           primary: "rgba(177, 75, 87, 1)",
-          secondary: " rgba(223, 152, 12, 1)",
+          secondary: "rgba(223, 152, 12, 1)",
           accent: "rgba(87, 30, 37, 1)",
-          background: "rgba(250, 247, 241, 1)", 
+          background: "rgba(250, 247, 241, 1)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -66,8 +67,6 @@ export default {
           "Courier New",
           "monospace",
         ],
-        merriweather: ["Merriweather", "serif"],
-        satisfy: ["Satisfy", "cursive"],
       },
       borderRadius: {
         lg: "var(--radius)",
