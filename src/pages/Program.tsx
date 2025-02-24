@@ -48,11 +48,11 @@ const Program = () => {
   return (
     <div className="min-h-screen pt-24 px-4 bg-wedding-background">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-playfair mb-12 text-center">Event Program</h1>
+        <h1 className="text-4xl font-merriweather mb-12 text-center">Event Program</h1>
         <div className="space-y-12">
           {schedule.map((day) => (
             <div key={day.date} className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg">
-              <h2 className="text-2xl font-playfair mb-4">{day.date}</h2>
+              <h2 className="text-2xl font-merriweather mb-4">{day.date}</h2>
               <div className="space-y-4">
                 {day.events.map((event) => (
                   <div key={event.time} className="flex items-start space-x-4">

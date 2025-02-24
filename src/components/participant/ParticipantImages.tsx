@@ -22,7 +22,11 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
   return (
     <div className="w-full max-w-2xl">
       <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-lg bg-muted">
-        <img src={image} alt={title} className="object-cover w-full h-full" />
+        <img
+          src={image}
+          alt={title}
+          className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px]"
+        />
       </AspectRatio>
     </div>
   );
