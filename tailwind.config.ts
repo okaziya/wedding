@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -57,7 +56,6 @@ export default {
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
-        satisfy: ["Satisfy", "cursive"],
         inter: ["Inter", "sans-serif"],
         mono: [
           "ui-monospace",
