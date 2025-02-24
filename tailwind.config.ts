@@ -15,10 +15,10 @@ export default {
     extend: {
       colors: {
         wedding: {
-          primary: "#E7F4D7", // Swedish meadow green
-          secondary: "#FFE5D9", // Midsummer sunset
-          accent: "#B8C0FF", // Swedish bluebell
-          background: "#F9F7F7", // Nordic light
+          primary: "rgba(177, 75, 87, 1)",
+          secondary: "rgba(223, 152, 12, 1)",
+          accent: "rgba(87, 30, 37, 1)",
+          background: "rgba(250, 247, 241, 1)",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

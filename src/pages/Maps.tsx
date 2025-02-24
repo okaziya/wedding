@@ -1,6 +1,6 @@
 const Maps = () => {
   return (
-    <div className="min-h-screen pt-24 px-4">
+    <div className="min-h-screen pt-24 px-4 bg-wedding-background">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-playfair mb-12 text-center">Maps</h1>
         <div className="flex justify-center">

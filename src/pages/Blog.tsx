@@ -1,6 +1,6 @@
 const Blog = () => {
   return (
-    <div className="min-h-screen pt-24 pb-24 px-4">
+    <div className="min-h-screen pt-24 pb-24 px-4 bg-wedding-background">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-playfair mb-12 text-center">Blog</h1>
 
