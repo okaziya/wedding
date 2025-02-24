@@ -13,22 +13,26 @@ const CloseIcon = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="no
 export const MobileNavigation = () => {
   return <div className="md:hidden">
       <Sheet>
-        <SheetTrigger asChild>
-          <Button variant="ghost" size="icon" className="text-[#B14B57] p-0 w-fit">
-            <span className="font-[Merriweather] mr-2">MENU</span>
-            <MenuIcon />
-          </Button>
-        </SheetTrigger>
-        <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-[#FAF7F1] border-none py-[14px] overflow-y-auto">
-          <nav className="flex flex-col gap-2 font-[Merriweather] text-[#B14B57] font-bold text-[14px]">
-            <MenuItems onNavigate={() => {}} variant="mobile" />
-          </nav>
-          <SheetClose asChild className="absolute right-6 top-[15px] text-[#B14B57] hover:opacity-80">
-            <button>
-              <CloseIcon />
-            </button>
-          </SheetClose>
-        </SheetContent>
+        {({open, setOpen}) => (
+          <>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="text-[#B14B57] p-0 w-fit">
+                <span className="font-[Merriweather] mr-2">MENU</span>
+                <MenuIcon />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-[#FAF7F1] border-none py-[14px] overflow-y-auto">
+              <nav className="flex flex-col gap-2 font-[Merriweather] text-[#B14B57] font-bold text-[14px]">
+                <MenuItems onNavigate={() => setOpen(false)} variant="mobile" />
+              </nav>
+              <SheetClose asChild className="absolute right-6 top-[15px] text-[#B14B57] hover:opacity-80">
+                <button>
+                  <CloseIcon />
+                </button>
+              </SheetClose>
+            </SheetContent>
+          </>
+        )}
       </Sheet>
     </div>;
 };
