@@ -5,6 +5,9 @@ import { getParticipantDetails } from "@/utils/participantData";
 import { participants } from "@/components/navigation/MenuItems";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import upperOrnametImage from "/images/lm-ornament-upper.png";
+import lowerOrnametImage from "/images/lm-ornament-lower.png";
+
 const Participant = () => {
   const { id } = useParams();
   const details = id ? getParticipantDetails(id) : null;
@@ -25,7 +28,7 @@ const Participant = () => {
   const nextParticipant = participants[nextIndex];
 
   return (
-    <div className="min-h-screen pt-16 md:pt-24 px-4 pb-24">
+    <div className="min-h-screen pt-16 md:pt-24 px-4 pb-24 bg-wedding-background">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between items-center mb-6 mt-8 md:mt-0 gap-4">
           <Link
@@ -45,7 +48,9 @@ const Participant = () => {
         </div>
 
         <div className="flex flex-col items-center gap-6 mt-6 md:mt-0">
-          <h1 className="text-3xl md:text-4xl font-playfair mb-6 md:mb-12 text-center break-words">{details.title}</h1>
+          <img src={upperOrnametImage} alt="Upper ornamet image" width={328} />
+          <h1 className="text-5xl font-satisfy text-center break-words">{details.title}</h1>
+          <img src={lowerOrnametImage} alt="Lower ornamet image" width={174} />
 
           <ParticipantImages images={details.images} image={details.image} title={details.title} />
 

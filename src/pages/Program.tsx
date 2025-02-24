@@ -1,3 +1,5 @@
+import clockImage from "/images/lm-icon-clock.png";
+
 const Program = () => {
   const schedule = [
     {
@@ -10,7 +12,7 @@ const Program = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-24 px-4">
+    <div className="min-h-screen pt-24 px-4 bg-wedding-background">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-playfair mb-12 text-center">Event Program</h1>
         <div className="space-y-12">
@@ -20,6 +22,7 @@ const Program = () => {
               <div className="space-y-4">
                 {day.events.map((event) => (
                   <div key={event.time} className="flex items-center space-x-4">
+                    <img src={clockImage} alt="Clock image" width={24} />
                     <span className="text-lg font-mono w-24">{event.time}</span>
                     <span className="text-lg">{event.description}</span>
                   </div>
