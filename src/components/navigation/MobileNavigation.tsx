@@ -19,7 +19,7 @@ export const MobileNavigation = () => {
             <MenuIcon />
           </Button>
         </SheetTrigger>
-        <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-[#FAF7F1] border-none py-[14px]">
+        <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-[#FAF7F1] border-none py-[14px] overflow-y-auto">
           <nav className="flex flex-col gap-2 font-[Merriweather] text-[#B14B57] font-bold text-[14px]">
             <MenuItems onNavigate={() => {}} variant="mobile" />
           </nav>
