@@ -1,5 +1,5 @@
 
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import {
   NavigationMenu,
@@ -7,29 +7,17 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
   NavigationMenuTrigger,
+  NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import { participants } from "./MenuItems";
 
 export const DesktopNavigation = () => {
   const location = useLocation();
-  const navigate = useNavigate();
 
   const linkClasses = (path: string) => {
     const isActive = location.pathname === path || 
                     (path !== '/' && location.pathname.startsWith(path));
     return `hover:opacity-80 uppercase text-center ${isActive ? 'text-[#571E25]' : ''}`;
-  };
-
-  const handleNavigate = (path: string, event: React.MouseEvent) => {
-    // Stop event propagation to prevent any parent handlers from firing
-    event.preventDefault();
-    event.stopPropagation();
-    // Force close any open menus by clicking outside
-    document.body.click();
-    // Navigate after a short delay to ensure menu closes
-    setTimeout(() => {
-      navigate(path);
-    }, 0);
   };
 
   return (
@@ -70,16 +58,16 @@ export const DesktopNavigation = () => {
                         {participants.slice(0, Math.ceil(participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <button
-                              key={participant.name}
-                              type="button"
-                              onClick={(e) => handleNavigate(participantPath, e)}
-                              className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
-                                location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
-                              }`}
-                            >
-                              {participant.name}
-                            </button>
+                            <NavigationMenuLink asChild key={participant.name}>
+                              <Link
+                                to={participantPath}
+                                className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
+                                  location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
+                                }`}
+                              >
+                                {participant.name}
+                              </Link>
+                            </NavigationMenuLink>
                           );
                         })}
                       </div>
@@ -87,16 +75,16 @@ export const DesktopNavigation = () => {
                         {participants.slice(Math.ceil(participants.length / 3), Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <button
-                              key={participant.name}
-                              type="button"
-                              onClick={(e) => handleNavigate(participantPath, e)}
-                              className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
-                                location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
-                              }`}
-                            >
-                              {participant.name}
-                            </button>
+                            <NavigationMenuLink asChild key={participant.name}>
+                              <Link
+                                to={participantPath}
+                                className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
+                                  location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
+                                }`}
+                              >
+                                {participant.name}
+                              </Link>
+                            </NavigationMenuLink>
                           );
                         })}
                       </div>
@@ -104,16 +92,16 @@ export const DesktopNavigation = () => {
                         {participants.slice(Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <button
-                              key={participant.name}
-                              type="button"
-                              onClick={(e) => handleNavigate(participantPath, e)}
-                              className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
-                                location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
-                              }`}
-                            >
-                              {participant.name}
-                            </button>
+                            <NavigationMenuLink asChild key={participant.name}>
+                              <Link
+                                to={participantPath}
+                                className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
+                                  location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
+                                }`}
+                              >
+                                {participant.name}
+                              </Link>
+                            </NavigationMenuLink>
                           );
                         })}
                       </div>
