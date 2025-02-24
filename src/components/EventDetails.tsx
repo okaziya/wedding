@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { MapPin, Clock } from "lucide-react";
 
@@ -9,7 +10,7 @@ export const EventDetails = () => {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card className="animate-fade-in bg-white">
             <div className="p-6">
-              <h3 className="font-playfair text-2xl mb-4 text-wedding-accent">Reception</h3>
+              <h3 className="font-satisfy font-normal text-3xl mb-4 text-wedding-accent">Reception</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="w-5 h-5 mr-2 text-wedding-secondary" />
@@ -31,7 +32,7 @@ export const EventDetails = () => {
 
           <Card className="animate-fade-in bg-white">
             <div className="p-6">
-              <h3 className="font-playfair text-2xl mb-4 text-wedding-accent">Ceremony</h3>
+              <h3 className="font-satisfy font-normal text-3xl mb-4 text-wedding-accent">Ceremony</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="w-5 h-5 mr-2 text-wedding-secondary" />
