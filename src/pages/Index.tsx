@@ -11,7 +11,7 @@ const Index = () => {
         <img 
           src="/wedding/images/our-story/240614.jpeg" 
           alt="Mats and Liza commitment photo" 
-          className="w-full border-3 border-white rounded-lg"
+          className="w-full border-[3px] border-solid border-white"
         />
       </div>
       <OurStory />
