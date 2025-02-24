@@ -22,8 +22,7 @@ export const DesktopNavigation = () => {
     return `hover:opacity-80 uppercase text-center ${isActive ? 'text-[#571E25]' : ''}`;
   };
 
-  const handleParticipantClick = (e: React.MouseEvent, path: string) => {
-    e.preventDefault();
+  const handleParticipantClick = (path: string) => {
     setIsOpen(undefined);
     navigate(path);
   };
@@ -70,16 +69,15 @@ export const DesktopNavigation = () => {
                         {participants.slice(0, Math.ceil(participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <a
+                            <button
                               key={participant.name}
-                              href={participantPath}
-                              onClick={(e) => handleParticipantClick(e, participantPath)}
-                              className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
+                              onClick={() => handleParticipantClick(participantPath)}
+                              className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
                               {participant.name}
-                            </a>
+                            </button>
                           );
                         })}
                       </div>
@@ -87,16 +85,15 @@ export const DesktopNavigation = () => {
                         {participants.slice(Math.ceil(participants.length / 3), Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <a
+                            <button
                               key={participant.name}
-                              href={participantPath}
-                              onClick={(e) => handleParticipantClick(e, participantPath)}
-                              className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
+                              onClick={() => handleParticipantClick(participantPath)}
+                              className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
                               {participant.name}
-                            </a>
+                            </button>
                           );
                         })}
                       </div>
@@ -104,16 +101,15 @@ export const DesktopNavigation = () => {
                         {participants.slice(Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <a
+                            <button
                               key={participant.name}
-                              href={participantPath}
-                              onClick={(e) => handleParticipantClick(e, participantPath)}
-                              className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
+                              onClick={() => handleParticipantClick(participantPath)}
+                              className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
                               {participant.name}
-                            </a>
+                            </button>
                           );
                         })}
                       </div>
