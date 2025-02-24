@@ -13,7 +13,6 @@ import { useState } from "react";
 
 export const DesktopNavigation = () => {
   const location = useLocation();
-  const [isOpen, setIsOpen] = useState(false);
 
   const linkClasses = (path: string) => {
     const isActive = location.pathname === path || 
@@ -44,7 +43,7 @@ export const DesktopNavigation = () => {
               </Link>
             </NavigationMenuItem>
 
-            <NavigationMenuItem className="text-center">
+            <NavigationMenuItem>
               <NavigationMenuTrigger 
                 className={`hover:opacity-80 uppercase bg-transparent font-bold ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}
               >
@@ -52,7 +51,7 @@ export const DesktopNavigation = () => {
                 <ChevronDown className="w-5 h-5 ml-1 text-[#B14B57]" />
               </NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="fixed left-0 right-0 bg-[#FAF7F1]">
+                <div className="fixed left-0 right-0 bg-[#FAF7F1] shadow-lg">
                   <div className="p-6 w-full">
                     <div className="flex justify-center gap-4 md:gap-6">
                       <div className="flex-1 max-w-[280px] min-w-0 text-center">
