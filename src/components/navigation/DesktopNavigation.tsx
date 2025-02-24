@@ -9,12 +9,10 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { participants } from "./MenuItems";
-import { useState } from "react";
 
 export const DesktopNavigation = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState<string | undefined>(undefined);
 
   const linkClasses = (path: string) => {
     const isActive = location.pathname === path || 
@@ -22,19 +20,10 @@ export const DesktopNavigation = () => {
     return `hover:opacity-80 uppercase text-center ${isActive ? 'text-[#571E25]' : ''}`;
   };
 
-  const handleParticipantClick = (path: string) => {
-    setIsOpen(undefined);
-    navigate(path);
-  };
-
   return (
     <div className="hidden md:block w-full">
       <div className="flex justify-center items-center w-full">
-        <NavigationMenu 
-          className="font-[Merriweather] text-[#B14B57] font-bold text-[14px] w-full"
-          value={isOpen}
-          onValueChange={setIsOpen}
-        >
+        <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px] w-full">
           <NavigationMenuList className="gap-3 justify-center w-full">
             <NavigationMenuItem className="text-center">
               <Link to="/" className={linkClasses("/")}>
@@ -69,15 +58,15 @@ export const DesktopNavigation = () => {
                         {participants.slice(0, Math.ceil(participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <button
+                            <Link
                               key={participant.name}
-                              onClick={() => handleParticipantClick(participantPath)}
+                              to={participantPath}
                               className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
                               {participant.name}
-                            </button>
+                            </Link>
                           );
                         })}
                       </div>
@@ -85,15 +74,15 @@ export const DesktopNavigation = () => {
                         {participants.slice(Math.ceil(participants.length / 3), Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <button
+                            <Link
                               key={participant.name}
-                              onClick={() => handleParticipantClick(participantPath)}
+                              to={participantPath}
                               className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
                               {participant.name}
-                            </button>
+                            </Link>
                           );
                         })}
                       </div>
@@ -101,15 +90,15 @@ export const DesktopNavigation = () => {
                         {participants.slice(Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <button
+                            <Link
                               key={participant.name}
-                              onClick={() => handleParticipantClick(participantPath)}
+                              to={participantPath}
                               className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
                               {participant.name}
-                            </button>
+                            </Link>
                           );
                         })}
                       </div>
