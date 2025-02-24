@@ -46,7 +46,7 @@ export const DesktopNavigation = () => {
 
             <NavigationMenuItem className="text-center">
               <NavigationMenuTrigger 
-                className={`hover:opacity-80 uppercase bg-transparent ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}
+                className={`hover:opacity-80 uppercase bg-transparent font-bold ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}
               >
                 Participants
                 <ChevronDown className="w-5 h-5 ml-1 text-[#B14B57]" />
