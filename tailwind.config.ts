@@ -67,6 +67,8 @@ export default {
           "Courier New",
           "monospace",
         ],
+        merriweather: ["Merriweather", "serif"],
+        satisfy: ["Satisfy", "cursive"],
       },
       borderRadius: {
         lg: "var(--radius)",

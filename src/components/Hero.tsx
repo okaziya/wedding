@@ -1,7 +1,7 @@
-
 import { useEffect, useState } from "react";
 import upperOrnament from "/images/lm-ornament-upper.svg";
 import lowerOrnament from "/images/lm-ornament-lower.svg";
+import weddingDateImage from "/images/lm-wedding-date.png";
 
 export const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -30,23 +30,15 @@ export const Hero = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-wedding-background">
       <div className="w-full max-w-xl mx-auto px-4 text-center space-y-12">
-        <img src={upperOrnament} alt="Upper ornament" className="w-full max-w-md mx-auto" />
-        
+        <img src={upperOrnament} width={328} alt="Upper ornament" className="mx-auto" />
+
         <div className="space-y-8">
           <h1 className="font-satisfy text-6xl md:text-7xl">
-            <span className="text-[#571E25]">Mats</span>{" "}
-            <span className="text-[#DF980C]">&</span>{" "}
+            <span className="text-[#571E25]">Mats</span> <span className="text-[#DF980C]">&</span>{" "}
             <span className="text-[#571E25]">Liza</span>
           </h1>
-          
-          <div className="text-4xl font-satisfy text-[#571E25]">
-            <span>20</span>
-            <span className="relative">
-              14
-              <span className="absolute -top-2 text-lg">/6</span>
-            </span>
-            <span>25</span>
-          </div>
+
+          <img src={weddingDateImage} alt="Wedding date image" width={94} className="mx-auto" />
 
           <div className="flex justify-center gap-16 md:gap-24 text-[#B14B57]">
             {[
@@ -56,13 +48,13 @@ export const Hero = () => {
             ].map(({ value, label }) => (
               <div key={label} className="text-center">
                 <div className="font-satisfy text-5xl">{value}</div>
-                <div className="font-playfair text-sm tracking-wider">{label}</div>
+                <div className="font-merriweather text-sm tracking-wider">{label}</div>
               </div>
             ))}
           </div>
         </div>
 
-        <img src={lowerOrnament} alt="Lower ornament" className="w-full max-w-sm mx-auto" />
+        <img src={lowerOrnament} alt="Lower ornament" width={174} className="mx-auto" />
       </div>
     </div>
   );
