@@ -1,11 +1,13 @@
+
 import { useEffect, useState } from "react";
+import upperOrnament from "/images/lm-ornament-upper.svg";
+import lowerOrnament from "/images/lm-ornament-lower.svg";
 
 export const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0,
   });
 
   useEffect(() => {
@@ -19,7 +21,6 @@ export const Hero = () => {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
       });
     }, 1000);
 
@@ -27,43 +28,41 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: 'url("https://www.resmalsverige.se/upload/articles/tallberg.jpg")', // Tällberg view with traditional houses and Lake Siljan
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-black/20" />
-      </div>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-wedding-background">
+      <div className="w-full max-w-xl mx-auto px-4 text-center space-y-12">
+        <img src={upperOrnament} alt="Upper ornament" className="w-full max-w-md mx-auto" />
+        
+        <div className="space-y-8">
+          <h1 className="font-satisfy text-6xl md:text-7xl">
+            <span className="text-[#571E25]">Mats</span>{" "}
+            <span className="text-[#DF980C]">&</span>{" "}
+            <span className="text-[#571E25]">Liza</span>
+          </h1>
+          
+          <div className="text-4xl font-satisfy text-[#571E25]">
+            <span>20</span>
+            <span className="relative">
+              14
+              <span className="absolute -top-2 text-lg">/6</span>
+            </span>
+            <span>25</span>
+          </div>
 
-      {/* Rain effect */}
-      <div className="absolute inset-0 pointer-events-none">
-        {[...Array(50)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute animate-rain bg-blue-200/10 w-[1px] h-[10px]"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `-${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 2}s`,
-              animationDuration: `${0.8 + Math.random() * 0.3}s`,
-            }}
-          />
-        ))}
-      </div>
-
-      <div className="relative text-center text-white z-10 animate-fade-in">
-        <h1 className="font-mono text-6xl md:text-7xl mb-4">Mats & Liza</h1>
-        <p className="font-mono text-xl mb-8">June 14, 2025</p>
-        <div className="grid grid-cols-4 gap-4 max-w-xl mx-auto">
-          {Object.entries(timeLeft).map(([unit, value]) => (
-            <div key={unit} className="bg-white/20 backdrop-blur-sm p-4 rounded-lg">
-              <div className="font-mono text-3xl">{value}</div>
-              <div className="font-mono text-sm capitalize">{unit}</div>
-            </div>
-          ))}
+          <div className="flex justify-center gap-16 md:gap-24 text-[#B14B57]">
+            {[
+              { value: timeLeft.days, label: "DAYS" },
+              { value: timeLeft.hours, label: "HOURS" },
+              { value: timeLeft.minutes, label: "MINUTES" },
+            ].map(({ value, label }) => (
+              <div key={label} className="text-center">
+                <div className="font-satisfy text-5xl">{value}</div>
+                <div className="font-playfair text-sm tracking-wider">{label}</div>
+              </div>
+            ))}
+          </div>
         </div>
+
+        <img src={lowerOrnament} alt="Lower ornament" className="w-full max-w-sm mx-auto" />
       </div>
     </div>
   );
