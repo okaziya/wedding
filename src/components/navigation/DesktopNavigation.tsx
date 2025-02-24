@@ -48,16 +48,16 @@ export const DesktopNavigation = () => {
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="fixed left-0 right-0 bg-[#FAF7F1]">
-                  <div className="p-6 w-full max-w-7xl mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                      <div className="w-full max-w-[280px] mx-auto text-center">
+                  <div className="p-6 w-full">
+                    <div className="flex justify-center gap-4 md:gap-6">
+                      <div className="flex-1 max-w-[280px] min-w-0 text-center">
                         {participants.slice(0, Math.ceil(participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
                             <Link
                               key={participant.name}
                               to={participantPath}
-                              className={`block h-12 leading-[48px] text-base hover:opacity-80 ${
+                              className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
@@ -66,14 +66,14 @@ export const DesktopNavigation = () => {
                           );
                         })}
                       </div>
-                      <div className="w-full max-w-[280px] mx-auto text-center">
+                      <div className="flex-1 max-w-[280px] min-w-0 text-center">
                         {participants.slice(Math.ceil(participants.length / 3), Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
                             <Link
                               key={participant.name}
                               to={participantPath}
-                              className={`block h-12 leading-[48px] text-base hover:opacity-80 ${
+                              className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
@@ -82,14 +82,14 @@ export const DesktopNavigation = () => {
                           );
                         })}
                       </div>
-                      <div className="w-full max-w-[280px] mx-auto text-center">
+                      <div className="flex-1 max-w-[280px] min-w-0 text-center">
                         {participants.slice(Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
                             <Link
                               key={participant.name}
                               to={participantPath}
-                              className={`block h-12 leading-[48px] text-base hover:opacity-80 ${
+                              className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
