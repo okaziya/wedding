@@ -24,7 +24,7 @@ export const DesktopNavigation = () => {
   return (
     <div className="hidden md:block w-full">
       <div className="flex justify-center items-center w-full">
-        <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px] w-full" value={isOpen ? "participants" : ""} onValueChange={(value) => setIsOpen(!!value)}>
+        <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px] w-full">
           <NavigationMenuList className="gap-3 justify-center w-full">
             <NavigationMenuItem className="text-center">
               <Link to="/" className={linkClasses("/")}>
@@ -47,12 +47,11 @@ export const DesktopNavigation = () => {
             <NavigationMenuItem className="text-center">
               <NavigationMenuTrigger 
                 className={`hover:opacity-80 uppercase bg-transparent ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}
-                onClick={() => setIsOpen(true)}
               >
                 Participants
                 <ChevronDown className="w-5 h-5 ml-1 text-[#B14B57]" />
               </NavigationMenuTrigger>
-              <NavigationMenuContent onPointerDownOutside={() => setIsOpen(false)}>
+              <NavigationMenuContent>
                 <div className="fixed left-0 right-0 bg-[#FAF7F1]">
                   <div className="p-6 w-full">
                     <div className="flex justify-center gap-4 md:gap-6">
@@ -63,7 +62,6 @@ export const DesktopNavigation = () => {
                             <Link
                               key={participant.name}
                               to={participantPath}
-                              onClick={() => setIsOpen(false)}
                               className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
@@ -80,7 +78,6 @@ export const DesktopNavigation = () => {
                             <Link
                               key={participant.name}
                               to={participantPath}
-                              onClick={() => setIsOpen(false)}
                               className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
@@ -97,7 +94,6 @@ export const DesktopNavigation = () => {
                             <Link
                               key={participant.name}
                               to={participantPath}
-                              onClick={() => setIsOpen(false)}
                               className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
