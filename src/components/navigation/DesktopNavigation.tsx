@@ -1,5 +1,5 @@
 
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import {
   NavigationMenu,
@@ -13,12 +13,19 @@ import { useState } from "react";
 
 export const DesktopNavigation = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState<string | undefined>(undefined);
 
   const linkClasses = (path: string) => {
     const isActive = location.pathname === path || 
                     (path !== '/' && location.pathname.startsWith(path));
     return `hover:opacity-80 uppercase text-center ${isActive ? 'text-[#571E25]' : ''}`;
+  };
+
+  const handleParticipantClick = (e: React.MouseEvent, path: string) => {
+    e.preventDefault();
+    setIsOpen(undefined);
+    navigate(path);
   };
 
   return (
@@ -63,16 +70,16 @@ export const DesktopNavigation = () => {
                         {participants.slice(0, Math.ceil(participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <Link
+                            <a
                               key={participant.name}
-                              to={participantPath}
-                              onClick={() => setIsOpen(undefined)}
+                              href={participantPath}
+                              onClick={(e) => handleParticipantClick(e, participantPath)}
                               className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
                               {participant.name}
-                            </Link>
+                            </a>
                           );
                         })}
                       </div>
@@ -80,16 +87,16 @@ export const DesktopNavigation = () => {
                         {participants.slice(Math.ceil(participants.length / 3), Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <Link
+                            <a
                               key={participant.name}
-                              to={participantPath}
-                              onClick={() => setIsOpen(undefined)}
+                              href={participantPath}
+                              onClick={(e) => handleParticipantClick(e, participantPath)}
                               className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
                               {participant.name}
-                            </Link>
+                            </a>
                           );
                         })}
                       </div>
@@ -97,16 +104,16 @@ export const DesktopNavigation = () => {
                         {participants.slice(Math.ceil(2 * participants.length / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
-                            <Link
+                            <a
                               key={participant.name}
-                              to={participantPath}
-                              onClick={() => setIsOpen(undefined)}
+                              href={participantPath}
+                              onClick={(e) => handleParticipantClick(e, participantPath)}
                               className={`block h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
                             >
                               {participant.name}
-                            </Link>
+                            </a>
                           );
                         })}
                       </div>
