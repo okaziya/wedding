@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { MenuItems } from "./MenuItems";
+import { useState } from "react";
 
 const MenuIcon = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M9.25 5C9.25 4.58579 9.58579 4.25 10 4.25H20C20.4142 4.25 20.75 4.58579 20.75 5C20.75 5.41421 20.4142 5.75 20 5.75H10C9.58579 5.75 9.25 5.41421 9.25 5Z" fill="#B14B57" />
@@ -14,9 +15,11 @@ const CloseIcon = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="no
   </svg>;
 
 export const MobileNavigation = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="md:hidden">
-      <Sheet>
+      <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <Button variant="ghost" size="icon" className="text-[#B14B57] p-0 w-fit">
             <span className="font-[Merriweather] mr-2">MENU</span>
@@ -25,7 +28,7 @@ export const MobileNavigation = () => {
         </SheetTrigger>
         <SheetContent side="left" className="w-[300px] sm:w-[400px] bg-[#FAF7F1] border-none py-[14px] overflow-y-auto">
           <nav className="flex flex-col gap-2 font-[Merriweather] text-[#B14B57] font-bold text-[14px]">
-            <MenuItems onNavigate={() => {}} variant="mobile" />
+            <MenuItems onNavigate={() => setOpen(false)} variant="mobile" />
           </nav>
           <SheetClose asChild className="absolute right-6 top-[15px] text-[#B14B57] hover:opacity-80">
             <button>
