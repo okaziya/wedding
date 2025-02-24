@@ -9,12 +9,10 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { participants } from "./MenuItems";
-import { useState } from "react";
 
 export const DesktopNavigation = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const [isOpen, setIsOpen] = useState<string | undefined>(undefined);
 
   const linkClasses = (path: string) => {
     const isActive = location.pathname === path || 
@@ -22,19 +20,22 @@ export const DesktopNavigation = () => {
     return `hover:opacity-80 uppercase text-center ${isActive ? 'text-[#571E25]' : ''}`;
   };
 
-  const handleNavigate = (path: string) => {
-    setIsOpen(undefined);
-    navigate(path);
+  const handleNavigate = (path: string, event: React.MouseEvent) => {
+    // Stop event propagation to prevent any parent handlers from firing
+    event.preventDefault();
+    event.stopPropagation();
+    // Force close any open menus by clicking outside
+    document.body.click();
+    // Navigate after a short delay to ensure menu closes
+    setTimeout(() => {
+      navigate(path);
+    }, 0);
   };
 
   return (
     <div className="hidden md:block w-full">
       <div className="flex justify-center items-center w-full">
-        <NavigationMenu 
-          className="font-[Merriweather] text-[#B14B57] font-bold text-[14px] w-full"
-          value={isOpen}
-          onValueChange={setIsOpen}
-        >
+        <NavigationMenu className="font-[Merriweather] text-[#B14B57] font-bold text-[14px] w-full">
           <NavigationMenuList className="gap-3 justify-center w-full">
             <NavigationMenuItem className="text-center">
               <Link to="/" className={linkClasses("/")}>
@@ -72,7 +73,7 @@ export const DesktopNavigation = () => {
                             <button
                               key={participant.name}
                               type="button"
-                              onClick={() => handleNavigate(participantPath)}
+                              onClick={(e) => handleNavigate(participantPath, e)}
                               className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
@@ -89,7 +90,7 @@ export const DesktopNavigation = () => {
                             <button
                               key={participant.name}
                               type="button"
-                              onClick={() => handleNavigate(participantPath)}
+                              onClick={(e) => handleNavigate(participantPath, e)}
                               className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
@@ -106,7 +107,7 @@ export const DesktopNavigation = () => {
                             <button
                               key={participant.name}
                               type="button"
-                              onClick={() => handleNavigate(participantPath)}
+                              onClick={(e) => handleNavigate(participantPath, e)}
                               className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
                                 location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
                               }`}
