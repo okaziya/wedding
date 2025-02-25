@@ -48,7 +48,7 @@ export const Hero = () => {
             ].map(({ value, label }) => (
               <div key={label} className="text-center">
                 <div className="font-satisfy text-5xl">{value}</div>
-                <div className="font-merriweather text-sm tracking-wider">{label}</div>
+                <div className="font-merriweather text-sm tracking-wider text-[#571E25] font-bold">{label}</div>
               </div>
             ))}
           </div>

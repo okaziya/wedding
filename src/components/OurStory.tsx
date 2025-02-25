@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -13,7 +12,7 @@ export const OurStory = () => {
           We started watching "Part 1: The Promise" (
           <Link
             to="https://www.dailywire.com/episode/1-the-promise"
-            className="text-blue-600 hover:underline"
+            className="text-[#571E25] hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -32,7 +31,7 @@ export const OurStory = () => {
           We continued watching "On Marriage, part 2: Negotiation" (
           <Link
             to="https://www.dailywire.com/episode/negotiation"
-            className="text-blue-600 hover:underline"
+            className="text-[#571E25] hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -162,9 +161,9 @@ export const OurStory = () => {
             <Card key={index} className="mb-8 animate-fade-in bg-white/80 backdrop-blur-sm">
               <div className="p-6">
                 <div className="relative mb-8">
-                  <img 
-                    src="/wedding/images/lm-ornament-flower.svg" 
-                    alt="Decorative flower" 
+                  <img
+                    src="/wedding/images/lm-ornament-flower.svg"
+                    alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
                   <div className="font-satisfy text-xl text-[#B14B57] text-center mb-2">{event.date}</div>
@@ -173,10 +172,10 @@ export const OurStory = () => {
                 </div>
                 {event.image && (
                   <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-lg">
-                    <img 
-                      src={event.image} 
-                      alt={event.title} 
-                      className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px]" 
+                    <img
+                      src={event.image}
+                      alt={event.title}
+                      className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px]"
                     />
                   </AspectRatio>
                 )}

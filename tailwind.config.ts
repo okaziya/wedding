@@ -20,7 +20,7 @@ export default {
           accent: "rgba(87, 30, 37, 1)",
           background: "rgba(250, 247, 241, 1)",
         },
-        border: "hsl(var(--border))",
+        border: "hsla(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",

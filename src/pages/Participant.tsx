@@ -33,14 +33,14 @@ const Participant = () => {
         <div className="flex justify-between items-center mb-6 mt-8 md:mt-0 gap-4">
           <Link
             to={`/participants/${prevParticipant.id}`}
-            className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
+            className="flex items-center gap-2 text-[#B14B57] hover:text-[#571E25]"
           >
             <ChevronLeft className="h-4 w-4 flex-shrink-0" />
             <span className="text-[10px] md:text-sm text-left leading-tight">{prevParticipant.name}</span>
           </Link>
           <Link
             to={`/participants/${nextParticipant.id}`}
-            className="flex items-center gap-2 text-gray-600 hover:text-gray-900"
+            className="flex items-center gap-2 text-[#B14B57] hover:text-[#571E25]"
           >
             <span className="text-[10px] md:text-sm text-right leading-tight">{nextParticipant.name}</span>
             <ChevronRight className="h-4 w-4 flex-shrink-0" />
@@ -61,7 +61,7 @@ const Participant = () => {
 
             {details.accommodation && (
               <ParticipantSection title="Accommodation" content={details.accommodation}>
-                <Link to="/maps" className="text-blue-600 hover:underline mt-2 inline-block">
+                <Link to="/maps" className="text-[#571E25] hover:underline mt-2 inline-block">
                   View Maps
                 </Link>
               </ParticipantSection>

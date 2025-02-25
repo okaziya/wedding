@@ -6,7 +6,7 @@ const Blog = () => {
 
         <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
           <h2 className="text-2xl font-merriweather mb-2">First batch of invites sent via mail</h2>
-          <time className="text-sm text-gray-500 mb-4 block">February 20th, 2025</time>
+          <time className="text-sm text-[#B14B57] mb-4 block">February 20th, 2025</time>
           <p className="text-lg mb-6">
             We received all prints from the supplier, prepared all invitation letters, and handed over the first batch
             to the post office.
@@ -15,13 +15,13 @@ const Blog = () => {
 
         <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
           <h2 className="text-2xl font-merriweather mb-2">Initial designs by @mkl-adsn finalized</h2>
-          <time className="text-sm text-gray-500 mb-4 block">February 17th, 2025</time>
+          <time className="text-sm text-[#B14B57] mb-4 block">February 17th, 2025</time>
           <p className="text-lg mb-6">
             We finalized the area map, invitation cards, new logo, and app installation instructions for print and
             distribution. Designs contributed by{" "}
             <a
               href="https://github.com/mkl-adsn"
-              className="text-blue-600 hover:text-blue-800"
+              className="text-[#571E25] hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -33,7 +33,7 @@ const Blog = () => {
 
         <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
           <h2 className="text-2xl font-merriweather mb-2">All participant pictures and descriptions put in place</h2>
-          <time className="text-sm text-gray-500 mb-4 block">February 6th, 2025</time>
+          <time className="text-sm text-[#B14B57] mb-4 block">February 6th, 2025</time>
           <p className="text-lg mb-6">
             We completed the last participant details for the scope of our big event; everyone now has a picture, a
             welcome message, and a short description for other participants to read.
@@ -42,13 +42,13 @@ const Blog = () => {
 
         <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
           <h2 className="text-2xl font-merriweather mb-2">Made Liza+Mats app installable on iPhone/Android</h2>
-          <time className="text-sm text-gray-500 mb-4 block">January 19th, 2025</time>
+          <time className="text-sm text-[#B14B57] mb-4 block">January 19th, 2025</time>
           <p className="text-lg mb-6">
             Today we completed a series of updates that makes the wedding event app installable on your Android/iPhone
             home screen. Please see setup instructions for{" "}
             <a
               href="https://github.com/okaziya/wedding/blob/main/docs/android.md"
-              className="text-blue-600 hover:text-blue-800"
+              className="text-[#571E25] hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,7 +57,7 @@ const Blog = () => {
             and instructions for{" "}
             <a
               href="https://github.com/okaziya/wedding/blob/main/docs/apple.md"
-              className="text-blue-600 hover:text-blue-800"
+              className="text-[#571E25] hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -69,14 +69,14 @@ const Blog = () => {
 
         <article className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg mb-8">
           <h2 className="text-2xl font-merriweather mb-2">Mats & Liza getting started programming</h2>
-          <time className="text-sm text-gray-500 mb-4 block">January 18th, 2025</time>
+          <time className="text-sm text-[#B14B57] mb-4 block">January 18th, 2025</time>
           <p className="text-lg mb-6">
             Today we built an embryo of something for the wedding. We promise that the URL won't change!
           </p>
           <div className="mt-4">
             <a
               href="https://okaziya.github.io/wedding/"
-              className="text-blue-600 hover:text-blue-800 break-all"
+              className="text-[#571E25] hover:underline break-all"
               target="_blank"
               rel="noopener noreferrer"
             >
