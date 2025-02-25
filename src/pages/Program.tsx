@@ -1,3 +1,4 @@
+
 import clockImage from "/images/lm-icon-clock.png";
 
 const Program = () => {
@@ -47,23 +48,39 @@ const Program = () => {
 
   return (
     <div className="min-h-screen pt-24 px-4 bg-wedding-background">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-merriweather mb-12 text-center">Event Program</h1>
-        <div className="space-y-12">
-          {schedule.map((day) => (
-            <div key={day.date} className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg">
-              <h2 className="text-2xl font-merriweather mb-4">{day.date}</h2>
-              <div className="space-y-4">
-                {day.events.map((event) => (
-                  <div key={event.time} className="flex items-start space-x-4">
-                    <img src={clockImage} alt="Clock image" width={24} />
-                    <span className="text-lg font-mono w-32 flex-shrink-0">{event.time}</span>
-                    <span className="text-lg">{event.description}</span>
-                  </div>
-                ))}
+      <div className="max-w-[900px] mx-auto">
+        <div className="bg-white/80 backdrop-blur-sm rounded-lg p-12">
+          <div className="flex flex-col items-center mb-12">
+            <img 
+              src="/wedding/images/lm-ornament-flower.svg" 
+              alt="Decorative flower" 
+              className="w-8 h-auto mb-4"
+            />
+            <h1 className="font-merriweather text-4xl md:text-5xl text-center text-[#571E25]">Schedule</h1>
+          </div>
+          <div className="space-y-12">
+            {schedule.map((day) => (
+              <div key={day.date} className="bg-white rounded-lg p-6 shadow-sm">
+                <div className="flex flex-col items-center mb-8">
+                  <img 
+                    src="/wedding/images/lm-ornament-flower.svg" 
+                    alt="Decorative flower" 
+                    className="w-6 h-auto mb-4"
+                  />
+                  <h2 className="font-satisfy text-2xl text-[#B14B57] mb-4">{day.date}</h2>
+                </div>
+                <div className="space-y-4">
+                  {day.events.map((event) => (
+                    <div key={event.time} className="flex items-start space-x-4">
+                      <img src={clockImage} alt="Clock image" width={24} className="mt-1 flex-shrink-0" />
+                      <span className="text-lg font-mono w-32 flex-shrink-0">{event.time}</span>
+                      <span className="text-lg font-merriweather">{event.description}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
