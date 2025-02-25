@@ -6,8 +6,6 @@ const Blog = () => {
     <div className="min-h-screen pt-24 px-4 bg-wedding-background">
       <div className="max-w-[900px] mx-auto">
         <div className="flex flex-col items-center mb-12">
-          <img src="/wedding/images/lm-ornament-flower.svg" alt="Decorative flower" className="w-8 h-auto mb-4" />
-
           <img src={upperOrnametImage} alt="Upper ornamet image" width={328} />
           <h1 className="font-satisfy text-4xl md:text-5xl text-center text-[#571E25] py-4">Blog</h1>
           <img src={lowerOrnametImage} alt="Lower ornamet image" width={174} />
