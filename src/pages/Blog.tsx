@@ -12,7 +12,7 @@ const Blog = () => {
         </div>
 
         <div className="space-y-1">
-          <article className="bg-white px-[64px] py-[48px]">
+          <article className="bg-white px-6 md:px-[64px]  py-[48px]">
             <div className="relative">
               <img
                 src="/wedding/images/lm-ornament-flower.svg"
@@ -30,7 +30,7 @@ const Blog = () => {
             </div>
           </article>
 
-          <article className="bg-white px-[64px] py-[48px]">
+          <article className="bg-white px-6 md:px-[64px] py-[48px]">
             <div className="relative">
               <img
                 src="/wedding/images/lm-ornament-flower.svg"
@@ -57,7 +57,7 @@ const Blog = () => {
             </div>
           </article>
 
-          <article className="bg-white px-[64px] py-[48px]">
+          <article className="bg-white px-6 md:px-[64px] py-[48px]">
             <div className="relative">
               <img
                 src="/wedding/images/lm-ornament-flower.svg"
@@ -75,7 +75,7 @@ const Blog = () => {
             </div>
           </article>
 
-          <article className="bg-white px-[64px] py-[48px]">
+          <article className="bg-white px-6 md:px-[64px] py-[48px]">
             <div className="relative">
               <img
                 src="/wedding/images/lm-ornament-flower.svg"
@@ -111,7 +111,7 @@ const Blog = () => {
             </div>
           </article>
 
-          <article className="bg-white px-[64px] py-[48px]">
+          <article className="bg-white px-6 md:px-[64px] py-[48px]">
             <div className="relative">
               <img
                 src="/wedding/images/lm-ornament-flower.svg"

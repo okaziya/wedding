@@ -9,9 +9,8 @@ export const janneDetails: ParticipantDetails = {
     "our close families gathered for the event.",
   description:
     "Mats' father Janne and Ann-Katrin lives 45 minutes west of Sundsvall in Attmarby village, they have two horses, " +
-    "cats and a lot of houses. They like to do repairs their houses, care for the horses, and engage in crafting.\n" +
-    "\n" +
-    "Languages: Swedish and elementary English",
+    "cats and a lot of houses. They like to do repairs their houses, care for the horses, and engage in crafting.",
+  languages: "Swedish and elementary English",
   accommodation:
     'During the event weekend, you will stay in Lundbjörken with Marie and her family. See map under "Maps" page.',
   travelPlans:

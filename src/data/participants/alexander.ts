@@ -12,10 +12,9 @@ export const alexanderDetails: ParticipantDetails = {
     "They met long ago, when Liza was working as a hairdresser and Alexander became her English teacher. Throughout " +
     "the years they have been going on vacation travels to beautiful historical sites in Poland, Hungary, and around " +
     "the Czech Republic. Liza and Alexander love walking and talking together while eating chocolate. Alexander " +
-    "lives in America and he's passionate about art and culture. When he's off work he likes to enjoy the beauty of " +
-    "the world, play the accordion, spend time with his partner Alan, his dog Caroline, and going to the gym.\n" +
-    "\n" +
-    "Languages: English, Russian & German",
+    "lives in America and he's passionate about art, culture and his work as a certified public accountant. When he's off work he likes to enjoy the beauty of " +
+    "the world, play the accordion, spend time with his partner Alan, his dog Caroline, and going to the gym.",
+  languages: "English, Russian & German",
   accommodation:
     'During the event weekend, you will stay in cottage 111 with Boris, Marcin and Miroslav. See map under "Maps" ' +
     "page.",

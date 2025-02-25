@@ -34,13 +34,13 @@ const Participant = () => {
             className="flex items-center gap-2 text-[#B14B57] hover:text-[#571E25]"
           >
             <ChevronLeft className="h-4 w-4 flex-shrink-0" />
-            <span className="text-[10px] md:text-sm text-left leading-tight">{prevParticipant.name}</span>
+            <span className="text-md text-left leading-tight font-merriweather">{prevParticipant.name}</span>
           </Link>
           <Link
             to={`/participants/${nextParticipant.id}`}
             className="flex items-center gap-2 text-[#B14B57] hover:text-[#571E25]"
           >
-            <span className="text-[10px] md:text-sm text-right leading-tight">{nextParticipant.name}</span>
+            <span className="text-md text-right leading-tight font-merriweather">{nextParticipant.name}</span>
             <ChevronRight className="h-4 w-4 flex-shrink-0" />
           </Link>
         </div>
@@ -54,7 +54,7 @@ const Participant = () => {
 
           <div className="space-y-1 w-full">
             {details.welcomeMessage && (
-              <div className="bg-white px-[64px] py-[48px]">
+              <div className="bg-white px-6 md:px-[64px] py-[48px]">
                 <div className="relative">
                   <img
                     src="/wedding/images/lm-ornament-flower.svg"
@@ -68,7 +68,7 @@ const Participant = () => {
             )}
 
             {details.description && (
-              <div className="bg-white px-[64px] py-[48px]">
+              <div className="bg-white px-6 md:px-[64px] py-[48px]">
                 <div className="relative">
                   <img
                     src="/wedding/images/lm-ornament-flower.svg"
@@ -79,12 +79,14 @@ const Participant = () => {
                   <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">
                     {details.description}
                   </p>
+                  <h3 className="font-bold font-merriweather mt-6 mb-2 text-center text-lg">Languages</h3>
+                  <p className="text-center font-merriweather text-gray-600">{details.languages}</p>
                 </div>
               </div>
             )}
 
             {details.accommodation && (
-              <div className="bg-white px-[64px] py-[48px]">
+              <div className="bg-white px-6 md:px-[64px] py-[48px]">
                 <div className="relative">
                   <img
                     src="/wedding/images/lm-ornament-flower.svg"
@@ -103,7 +105,7 @@ const Participant = () => {
             )}
 
             {details.travelPlans && (
-              <div className="bg-white px-[64px] py-[48px]">
+              <div className="bg-white px-6 md:px-[64px] py-[48px]">
                 <div className="relative">
                   <img
                     src="/wedding/images/lm-ornament-flower.svg"
@@ -119,7 +121,7 @@ const Participant = () => {
             )}
 
             {details.packingList && (
-              <div className="bg-white px-[64px] py-[48px]">
+              <div className="bg-white px-6 md:px-[64px] py-[48px]">
                 <div className="relative">
                   <img
                     src="/wedding/images/lm-ornament-flower.svg"
@@ -135,7 +137,7 @@ const Participant = () => {
             )}
 
             {details.contact && (
-              <div className="bg-white px-[64px] py-[48px]">
+              <div className="bg-white px-6 md:px-[64px] py-[48px]">
                 <div className="relative">
                   <img
                     src="/wedding/images/lm-ornament-flower.svg"

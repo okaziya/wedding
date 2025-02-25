@@ -57,7 +57,7 @@ const Program = () => {
         </div>
         <div className="pb-20">
           {schedule.map((day) => (
-            <div key={day.date} className="bg-white rounded-sm px-16 pt-12 pb-16 mb-1">
+            <div key={day.date} className="bg-white rounded-sm px-6 md:px-16 pt-12 pb-16 mb-1">
               <div className="flex flex-col items-center mb-8">
                 <img src="/wedding/images/lm-ornament-flower.svg" alt="Decorative flower" className="w-6 h-auto mb-4" />
                 <h2 className="font-satisfy text-3xl text-[#B14B57] mb-1">{day.date}</h2>

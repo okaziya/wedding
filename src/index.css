@@ -38,6 +38,10 @@
     scroll-behavior: smooth;
   }
 
+  p {
+    @apply text-lg;
+  }
+
   @font-face {
     font-family: 'Merriweather';
     src: url('assets/fonts/Merriweather-Bold.ttf') format('truetype');

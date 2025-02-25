@@ -12,9 +12,8 @@ export const nastyaDetails: ParticipantDetails = {
     "Nastya is my half-sister, she lives on the other side of the Baltic Sea with her husband Kostya and their two " +
     "children Vika, 15 years old, and Sema, 9 years old. Nastya works as a nutritionist and has inspired Liza " +
     "in countless ways, both through her strong and loving family and providing guidance on healthy nutrition and " +
-    "everyday routines.\n" +
-    "\n" +
-    "Languages: Russian and basic English, Kostya also speaks Polish",
+    "everyday routines.\n",
+  languages: "Russian and basic English, Kostya also speaks Polish",
   accommodation:
     "During the ceremony event weekend, your family will stay in cottage 108 together at Siljansnäs Stugby, see map " +
     'under "Maps" page.',

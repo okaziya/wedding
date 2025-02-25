@@ -10,9 +10,8 @@ export const yongtaoDetails: ParticipantDetails = {
   description:
     "Yongtao has been one of Mats' closest friends for 10 years. She lives in the south of Stockholm and has two " +
     "adult sons, Kevin 18 and William 21 years old. During her free time she enjoys dancing, swimming outdoors, and " +
-    "spending time with family.\n" +
-    "\n" +
-    "Languages: Swedish, English, Chinese",
+    "spending time with family.",
+  languages: "Swedish, English, Chinese",
   accommodation:
     "During the event weekend, you will stay in cottage 116 at Siljansnäs Stugby with Liza, Åke, Mats & Jennie. See " +
     'map under "Maps" page.',

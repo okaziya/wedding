@@ -12,9 +12,8 @@ export const iraDetails: ParticipantDetails = {
     "Ira is the mother of Liza and live in the far east. She is a real estate investor, likes to do business and " +
     "travel around the world. On her free time she enjoys swimming, spending time with family and children, and " +
     "going for long walks in the nature. She started learning English as first foreign language due to the wedding " +
-    "pre-announcement before New Year's.\n" +
-    "\n" +
-    "Languages: Russian and basic English",
+    "pre-announcement before New Year's.",
+  languages: "Russian and basic English",
   accommodation:
     'During the event weekend, you will stay in cottage 109 with Lena, Dima and Anna. See map under "Maps" page. ' +
     "Before and after the event, we will arrange so that you live nearby us in Stockholm and Siljansnäs.",

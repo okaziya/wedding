@@ -10,9 +10,8 @@ export const marieDetails: ParticipantDetails = {
   description:
     "Marie and her husband William lives in a house in Uppsala with their two children Hugo 8 years old and Alva 6 " +
     "years. On their free time they enjoy lots of sports activities, everything from dancing and winter sports to " +
-    "soccer and ju-jitsu.\n" +
-    "\n" +
-    "Languages: Swedish & English, additionally German for Marie & William",
+    "soccer and ju-jitsu.",
+  languages: "Swedish & English, additionally German for Marie & William",
   accommodation: "During the event weekend, your family will stay in the family summer cottage in Lundbjörken.",
   travelPlans: "We believe you will arrive by car latest on Friday June 13th and join us at the reception at 17:00.",
   packingList: "Not applicable.",

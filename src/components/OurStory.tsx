@@ -158,7 +158,7 @@ export const OurStory = () => {
         <h2 className="font-satisfy text-4xl md:text-5xl text-center mb-12 text-[#571E25]">Our Story</h2>
         <div className="max-w-[900px] mx-auto">
           {timeline.map((event, index) => (
-            <div key={index} className="mb-1 animate-fade-in bg-white  px-[64px] py-[48px]">
+            <div key={index} className="mb-1 animate-fade-in bg-white md:px-[64px] px-6 py-[48px]">
               <div className="relative ">
                 <img
                   src="/wedding/images/lm-ornament-flower.svg"

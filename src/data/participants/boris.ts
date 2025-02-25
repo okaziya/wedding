@@ -11,9 +11,8 @@ export const borisDetails: ParticipantDetails = {
     "Boris is an old friend of Liza, they got to know each other while she was living in Prague and have been out on " +
     "many inspiring adventures together. Boris lives in Prague and he is travelling a lot (India and Kamchatka, for " +
     "example), or visiting his mother in Israel. He specialize in Venture Capital investments and likes to organize " +
-    "local social events on various intellectual topics.\n" +
-    "\n" +
-    "Languages: English, Russian, Hebrew & Czech",
+    "local social events on various intellectual topics",
+  languages: "English, Russian, Hebrew & Czech",
   accommodation:
     "During the event weekend, you will stay in cottage 111 with Alexander, Marcin and Miroslav. See map under " +
     '"Maps" page.',

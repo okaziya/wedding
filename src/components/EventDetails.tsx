@@ -9,10 +9,10 @@ export const EventDetails = () => {
         <div className="max-w-[900px] mx-auto bg-white p-12 rounded-lg">
           <div className="flex flex-col items-center">
             <img src="/wedding/images/lm-ornament-flower.svg" alt="Decorative flower" className="w-8 h-auto mb-4" />
-            <h2 className="font-merriweather text-center text-[#571E25] text-2xl font-bold">Event Details</h2>
+            <h2 className="font-merriweather text-center text-[#571E25] text-2xl font-bold mb-6">Event Details</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-8">
+            <div className="px-md-8">
               <h3 className="font-satisfy text-3xl mb-6 text-[#B14B57] text-center">Reception</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
@@ -36,7 +36,7 @@ export const EventDetails = () => {
               </div>
             </div>
 
-            <div className="p-8">
+            <div className="px-md-8">
               <h3 className="font-satisfy text-3xl mb-6 text-[#B14B57] text-center">Ceremony</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
