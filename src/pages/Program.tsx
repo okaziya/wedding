@@ -1,5 +1,6 @@
-
 import clockImage from "/images/lm-icon-clock.png";
+import upperOrnametImage from "/images/lm-ornament-upper.png";
+import lowerOrnametImage from "/images/lm-ornament-lower.png";
 
 const Program = () => {
   const schedule = [
@@ -49,40 +50,31 @@ const Program = () => {
   return (
     <div className="min-h-screen pt-24 px-4 bg-wedding-background">
       <div className="max-w-[900px] mx-auto">
-        <div className="flex flex-col items-center mb-12">
-          <img 
-            src="/wedding/images/lm-ornament-flower.svg" 
-            alt="Decorative flower" 
-            className="w-8 h-auto mb-4"
-          />
-          <h1 className="font-merriweather text-4xl md:text-5xl text-center text-[#571E25]">Schedule</h1>
+        <div className="flex flex-col items-center mb-8">
+          <img src={upperOrnametImage} alt="Upper ornamet image" width={328} />
+          <h1 className="font-satisfy text-4xl md:text-5xl text-center text-[#571E25] py-4">Schedule</h1>
+          <img src={lowerOrnametImage} alt="Lower ornamet image" width={174} />
         </div>
-        <div className="bg-white/80 backdrop-blur-sm rounded-lg p-12">
-          <div className="space-y-12">
-            {schedule.map((day) => (
-              <div key={day.date} className="bg-white rounded-lg p-6 shadow-sm">
-                <div className="flex flex-col items-center mb-8">
-                  <img 
-                    src="/wedding/images/lm-ornament-flower.svg" 
-                    alt="Decorative flower" 
-                    className="w-6 h-auto mb-4"
-                  />
-                  <h2 className="font-satisfy text-2xl text-[#B14B57] mb-4">{day.date}</h2>
-                </div>
-                <div className="space-y-6">
-                  {day.events.map((event) => (
-                    <div key={event.time} className="flex flex-col items-center space-y-2">
-                      <div className="flex items-center gap-2">
-                        <img src={clockImage} alt="Clock image" width={24} className="flex-shrink-0" />
-                        <span className="text-lg font-mono">{event.time}</span>
-                      </div>
-                      <span className="text-lg font-merriweather text-center">{event.description}</span>
-                    </div>
-                  ))}
-                </div>
+        <div className="pb-20">
+          {schedule.map((day) => (
+            <div key={day.date} className="bg-white rounded-sm px-16 pt-12 pb-16 mb-1">
+              <div className="flex flex-col items-center mb-8">
+                <img src="/wedding/images/lm-ornament-flower.svg" alt="Decorative flower" className="w-6 h-auto mb-4" />
+                <h2 className="font-satisfy text-3xl text-[#B14B57] mb-1">{day.date}</h2>
               </div>
-            ))}
-          </div>
+              <div className="space-y-7">
+                {day.events.map((event) => (
+                  <div key={event.time} className="flex flex-col items-center space-y-2">
+                    <div className="flex items-center gap-2">
+                      <img src={clockImage} alt="Clock image" width={24} className="flex-shrink-0" />
+                      <span className="text-lg font-merriweather font-bold">{event.time}</span>
+                    </div>
+                    <span className="text-lg font-merriweather text-center">{event.description}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
