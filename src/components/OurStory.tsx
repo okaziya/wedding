@@ -134,7 +134,7 @@ export const OurStory = () => {
       title: "First Christmas Holiday",
       description:
         "Mats, Liza & Åke goes on a 6-day road trip to celebrate first Christmas holidays with family in Siljansnäs.",
-      image: "/wedding/images/our-story/241222.jpeg",
+      image: "/wedding/images/our-story/250118.jpeg",
     },
     {
       date: "December 27th, 2024",
@@ -148,7 +148,7 @@ export const OurStory = () => {
       title: "Booked main event venue for the ceremony",
       description:
         "Booked Roddens Hus as the main venue, as well as a conference room up on the mountain for gathering point next to accommodations in Siljansnäs Stugby",
-      image: "/wedding/images/our-story/250118.jpeg",
+      image: "/wedding/images/our-story/250224.jpeg",
     },
   ];
 
