@@ -1,3 +1,5 @@
+import upperOrnametImage from "/images/lm-ornament-upper.png";
+import lowerOrnametImage from "/images/lm-ornament-lower.png";
 
 const Blog = () => {
   return (
@@ -5,7 +7,9 @@ const Blog = () => {
       <div className="max-w-[900px] mx-auto">
         <div className="flex flex-col items-center mb-12">
           <img src="/wedding/images/lm-ornament-flower.svg" alt="Decorative flower" className="w-8 h-auto mb-4" />
-          <h1 className="font-satisfy text-4xl md:text-5xl text-center text-[#571E25]">Blog</h1>
+          <img src={upperOrnametImage} alt="Upper ornamet image" width={328} />
+          <h1 className="font-satisfy text-4xl md:text-5xl text-center text-[#571E25] py-4">Blog</h1>
+          <img src={lowerOrnametImage} alt="Lower ornamet image" width={174} />
         </div>
 
         <div className="space-y-1">
@@ -21,8 +25,8 @@ const Blog = () => {
               </h2>
               <time className="font-satisfy text-2xl text-[#B14B57] text-center block mb-5">February 20th, 2025</time>
               <p className="font-merriweather text-gray-600 text-center mb-4">
-                We received all prints from the supplier, prepared all invitation letters, and handed over the first batch
-                to the post office.
+                We received all prints from the supplier, prepared all invitation letters, and handed over the first
+                batch to the post office.
               </p>
             </div>
           </article>
@@ -84,8 +88,8 @@ const Blog = () => {
               </h2>
               <time className="font-satisfy text-2xl text-[#B14B57] text-center block mb-5">January 19th, 2025</time>
               <p className="font-merriweather text-gray-600 text-center mb-4">
-                Today we completed a series of updates that makes the wedding event app installable on your Android/iPhone
-                home screen. Please see setup instructions for{" "}
+                Today we completed a series of updates that makes the wedding event app installable on your
+                Android/iPhone home screen. Please see setup instructions for{" "}
                 <a
                   href="https://github.com/okaziya/wedding/blob/main/docs/android.md"
                   className="text-[#571E25] hover:underline"
@@ -144,4 +148,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
