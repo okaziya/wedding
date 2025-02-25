@@ -166,7 +166,7 @@ export const OurStory = () => {
                   className="w-6 h-auto mx-auto mb-4"
                 />
                 <div className="font-satisfy text-2xl text-[#B14B57] text-center mb-5">{event.date}</div>
-                <h3 className="font-merriweather text-xl font-bold text-center mb-4 text-[#571E25]">{event.title}</h3>
+                <h3 className="font-merriweather text-2xl font-bold text-center mb-4 text-[#571E25]">{event.title}</h3>
                 <p className="font-merriweather text-gray-600 text-center mb-4">{event.description}</p>
               </div>
               {event.image && (

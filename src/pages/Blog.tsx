@@ -1,4 +1,3 @@
-
 const Blog = () => {
   return (
     <div className="min-h-screen pt-24 px-4 bg-wedding-background">
@@ -17,12 +16,12 @@ const Blog = () => {
                 className="w-6 h-auto mx-auto mb-4"
               />
               <time className="font-satisfy text-2xl text-[#B14B57] text-center block mb-5">February 20th, 2025</time>
-              <h2 className="font-merriweather text-xl font-bold text-center mb-4 text-[#571E25]">
+              <h2 className="font-merriweather text-2xl font-bold text-center mb-4 text-[#571E25]">
                 First batch of invites sent via mail
               </h2>
               <p className="font-merriweather text-gray-600 text-center mb-4">
-                We received all prints from the supplier, prepared all invitation letters, and handed over the first batch
-                to the post office.
+                We received all prints from the supplier, prepared all invitation letters, and handed over the first
+                batch to the post office.
               </p>
             </div>
           </article>
@@ -35,7 +34,7 @@ const Blog = () => {
                 className="w-6 h-auto mx-auto mb-4"
               />
               <time className="font-satisfy text-2xl text-[#B14B57] text-center block mb-5">February 17th, 2025</time>
-              <h2 className="font-merriweather text-xl font-bold text-center mb-4 text-[#571E25]">
+              <h2 className="font-merriweather text-2xl font-bold text-center mb-4 text-[#571E25]">
                 Initial designs by @mkl-adsn finalized
               </h2>
               <p className="font-merriweather text-gray-600 text-center mb-4">
@@ -62,7 +61,7 @@ const Blog = () => {
                 className="w-6 h-auto mx-auto mb-4"
               />
               <time className="font-satisfy text-2xl text-[#B14B57] text-center block mb-5">February 6th, 2025</time>
-              <h2 className="font-merriweather text-xl font-bold text-center mb-4 text-[#571E25]">
+              <h2 className="font-merriweather text-2xl font-bold text-center mb-4 text-[#571E25]">
                 All participant pictures and descriptions put in place
               </h2>
               <p className="font-merriweather text-gray-600 text-center mb-4">
@@ -80,12 +79,12 @@ const Blog = () => {
                 className="w-6 h-auto mx-auto mb-4"
               />
               <time className="font-satisfy text-2xl text-[#B14B57] text-center block mb-5">January 19th, 2025</time>
-              <h2 className="font-merriweather text-xl font-bold text-center mb-4 text-[#571E25]">
+              <h2 className="font-merriweather text-2xl font-bold text-center mb-4 text-[#571E25]">
                 Made Liza+Mats app installable on iPhone/Android
               </h2>
               <p className="font-merriweather text-gray-600 text-center mb-4">
-                Today we completed a series of updates that makes the wedding event app installable on your Android/iPhone
-                home screen. Please see setup instructions for{" "}
+                Today we completed a series of updates that makes the wedding event app installable on your
+                Android/iPhone home screen. Please see setup instructions for{" "}
                 <a
                   href="https://github.com/okaziya/wedding/blob/main/docs/android.md"
                   className="text-[#571E25] hover:underline"
@@ -116,7 +115,7 @@ const Blog = () => {
                 className="w-6 h-auto mx-auto mb-4"
               />
               <time className="font-satisfy text-2xl text-[#B14B57] text-center block mb-5">January 18th, 2025</time>
-              <h2 className="font-merriweather text-xl font-bold text-center mb-4 text-[#571E25]">
+              <h2 className="font-merriweather text-2xl font-bold text-center mb-4 text-[#571E25]">
                 Mats & Liza getting started programming
               </h2>
               <p className="font-merriweather text-gray-600 text-center mb-4">
@@ -144,4 +143,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
