@@ -13,8 +13,8 @@ const Index = () => {
           className="mt-6 w-full border-[5px] border-solid border-white rounded-[2px]"
         />
       </div>
-      <OurStory />
       <EventDetails />
+      <OurStory />
     </div>
   );
 };
