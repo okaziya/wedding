@@ -49,15 +49,15 @@ const Program = () => {
   return (
     <div className="min-h-screen pt-24 px-4 bg-wedding-background">
       <div className="max-w-[900px] mx-auto">
+        <div className="flex flex-col items-center mb-12">
+          <img 
+            src="/wedding/images/lm-ornament-flower.svg" 
+            alt="Decorative flower" 
+            className="w-8 h-auto mb-4"
+          />
+          <h1 className="font-merriweather text-4xl md:text-5xl text-center text-[#571E25]">Schedule</h1>
+        </div>
         <div className="bg-white/80 backdrop-blur-sm rounded-lg p-12">
-          <div className="flex flex-col items-center mb-12">
-            <img 
-              src="/wedding/images/lm-ornament-flower.svg" 
-              alt="Decorative flower" 
-              className="w-8 h-auto mb-4"
-            />
-            <h1 className="font-merriweather text-4xl md:text-5xl text-center text-[#571E25]">Schedule</h1>
-          </div>
           <div className="space-y-12">
             {schedule.map((day) => (
               <div key={day.date} className="bg-white rounded-lg p-6 shadow-sm">
