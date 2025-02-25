@@ -4,6 +4,8 @@ import { ParticipantImages } from "@/components/participant/ParticipantImages";
 import { getParticipantDetails } from "@/utils/participantData";
 import { participants } from "@/components/navigation/MenuItems";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import upperOrnametImage from "/images/lm-ornament-upper.png";
+import lowerOrnametImage from "/images/lm-ornament-lower.png";
 
 const Participant = () => {
   const { id } = useParams();
@@ -45,11 +47,9 @@ const Participant = () => {
         </div>
 
         <div className="flex flex-col items-center mt-6 md:mt-0">
-          <div className="flex items-center gap-6 mb-12">
-            <img src="/wedding/images/lm-ornament-flower.svg" alt="Left ornament" className="w-8 h-auto" />
-            <h1 className="text-5xl font-satisfy text-center break-words text-[#571E25]">{details.title}</h1>
-            <img src="/wedding/images/lm-ornament-flower.svg" alt="Right ornament" className="w-8 h-auto" />
-          </div>
+          <img src={upperOrnametImage} alt="Upper ornamet image" width={328} />
+          <h1 className="text-5xl font-satisfy text-center break-words text-[#571E25] py-4">{details.title}</h1>
+          <img src={lowerOrnametImage} alt="Lower ornamet image" width={174} />
 
           <ParticipantImages images={details.images} image={details.image} title={details.title} />
 
