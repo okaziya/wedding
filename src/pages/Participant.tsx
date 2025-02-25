@@ -47,7 +47,7 @@ const Participant = () => {
 
         <div className="flex flex-col items-center mt-6 md:mt-0">
           <img src={upperOrnametImage} alt="Upper ornamet image" width={328} />
-          <h1 className="text-5xl font-merriweather text-center break-words text-[#571E25] py-4">{details.title}</h1>
+          <h1 className="text-5xl font-satisfy text-center break-words text-[#571E25] py-4">{details.title}</h1>
           <img src={lowerOrnametImage} alt="Lower ornamet image" width={174} />
 
           <ParticipantImages images={details.images} image={details.image} title={details.title} />
