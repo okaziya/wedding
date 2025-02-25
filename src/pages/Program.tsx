@@ -69,12 +69,14 @@ const Program = () => {
                   />
                   <h2 className="font-satisfy text-2xl text-[#B14B57] mb-4">{day.date}</h2>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-6">
                   {day.events.map((event) => (
-                    <div key={event.time} className="flex items-start space-x-4">
-                      <img src={clockImage} alt="Clock image" width={24} className="mt-1 flex-shrink-0" />
-                      <span className="text-lg font-mono w-32 flex-shrink-0">{event.time}</span>
-                      <span className="text-lg font-merriweather">{event.description}</span>
+                    <div key={event.time} className="flex flex-col items-center space-y-2">
+                      <div className="flex items-center gap-2">
+                        <img src={clockImage} alt="Clock image" width={24} className="flex-shrink-0" />
+                        <span className="text-lg font-mono">{event.time}</span>
+                      </div>
+                      <span className="text-lg font-merriweather text-center">{event.description}</span>
                     </div>
                   ))}
                 </div>
