@@ -44,9 +44,13 @@ const Participant = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col items-center gap-6 mt-6 md:mt-0">
-          <img src="/wedding/images/lm-ornament-flower.svg" alt="Upper ornament" className="w-8 h-auto" />
-          <h1 className="text-5xl font-satisfy text-center break-words text-[#571E25]">{details.title}</h1>
+        <div className="flex flex-col items-center mt-6 md:mt-0">
+          <div className="flex items-center gap-6 mb-12">
+            <img src="/wedding/images/lm-ornament-flower.svg" alt="Left ornament" className="w-8 h-auto" />
+            <h1 className="text-5xl font-satisfy text-center break-words text-[#571E25]">{details.title}</h1>
+            <img src="/wedding/images/lm-ornament-flower.svg" alt="Right ornament" className="w-8 h-auto" />
+          </div>
+
           <ParticipantImages images={details.images} image={details.image} title={details.title} />
 
           <div className="space-y-1 w-full">
