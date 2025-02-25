@@ -9,7 +9,7 @@ interface ParticipantImagesProps {
 export const ParticipantImages = ({ images, image, title }: ParticipantImagesProps) => {
   if (images) {
     return (
-      <div className="w-full max-w-2xl space-y-4">
+      <div className="w-full max-w-[720px] space-y-4">
         {images.map((img, index) => (
           <AspectRatio key={index} ratio={4 / 3} className="overflow-hidden rounded-lg bg-muted">
             <img src={img} alt={`${title} - photo ${index + 1}`} className="object-cover w-full h-full" />
@@ -20,7 +20,7 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
   }
 
   return (
-    <div className="w-full max-w-2xl">
+    <div className="w-full max-w-[720px] py-6">
       <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-lg bg-muted">
         <img
           src={image}

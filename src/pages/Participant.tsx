@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { ParticipantImages } from "@/components/participant/ParticipantImages";
 import { getParticipantDetails } from "@/utils/participantData";
@@ -48,7 +47,7 @@ const Participant = () => {
 
         <div className="flex flex-col items-center mt-6 md:mt-0">
           <img src={upperOrnametImage} alt="Upper ornamet image" width={328} />
-          <h1 className="text-5xl font-satisfy text-center break-words text-[#571E25] py-4">{details.title}</h1>
+          <h1 className="text-5xl font-merriweather text-center break-words text-[#571E25] py-4">{details.title}</h1>
           <img src={lowerOrnametImage} alt="Lower ornamet image" width={174} />
 
           <ParticipantImages images={details.images} image={details.image} title={details.title} />
@@ -62,7 +61,7 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-satisfy text-2xl text-[#571E25] text-center mb-5">Welcome Message</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Welcome Message</h2>
                   <p className="font-merriweather text-gray-600 text-center">{details.welcomeMessage}</p>
                 </div>
               </div>
@@ -76,7 +75,7 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-satisfy text-2xl text-[#571E25] text-center mb-5">Description</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Description</h2>
                   <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">
                     {details.description}
                   </p>
@@ -92,7 +91,7 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-satisfy text-2xl text-[#571E25] text-center mb-5">Accommodation</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Accommodation</h2>
                   <p className="font-merriweather text-gray-600 text-center">{details.accommodation}</p>
                   <div className="text-center mt-4">
                     <Link to="/maps" className="text-[#571E25] hover:underline">
@@ -111,7 +110,9 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-satisfy text-2xl text-[#571E25] text-center mb-5">Anticipated Travel Plans</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">
+                    Anticipated Travel Plans
+                  </h2>
                   <p className="font-merriweather text-gray-600 text-center">{details.travelPlans}</p>
                 </div>
               </div>
@@ -125,7 +126,7 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-satisfy text-2xl text-[#571E25] text-center mb-5">Packing List</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Packing List</h2>
                   <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">
                     {details.packingList}
                   </p>
@@ -141,7 +142,7 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-satisfy text-2xl text-[#571E25] text-center mb-5">Contact</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Contact</h2>
                   <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">{details.contact}</p>
                 </div>
               </div>
@@ -154,4 +155,3 @@ const Participant = () => {
 };
 
 export default Participant;
-
