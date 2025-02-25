@@ -1,34 +1,30 @@
-
-import { Card } from "@/components/ui/card";
-import { MapPin, Clock, CalendarDays } from "lucide-react";
+import clockImage from "/images/lm-icon-clock.png";
+import dateImage from "/images/lm-icon-date.png";
+import placeImage from "/images/lm-icon-place.png";
 
 export const EventDetails = () => {
   return (
-    <section className="py-20 bg-wedding-primary/20" id="details">
+    <section className="py-20 " id="details">
       <div className="container mx-auto px-4">
         <div className="max-w-[900px] mx-auto bg-white p-12 rounded-lg">
-          <div className="flex flex-col items-center mb-12">
-            <img 
-              src="/wedding/images/lm-ornament-flower.svg" 
-              alt="Decorative flower" 
-              className="w-8 h-auto mb-4"
-            />
-            <h2 className="font-merriweather text-4xl md:text-5xl text-center text-[#571E25]">Event Details</h2>
+          <div className="flex flex-col items-center">
+            <img src="/wedding/images/lm-ornament-flower.svg" alt="Decorative flower" className="w-8 h-auto mb-4" />
+            <h2 className="font-merriweather text-center text-[#571E25] text-2xl font-bold">Event Details</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="animate-fade-in bg-white p-8 border-2">
+            <div className="p-8">
               <h3 className="font-satisfy text-3xl mb-6 text-[#B14B57] text-center">Reception</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
-                  <CalendarDays className="w-6 h-6 text-wedding-secondary flex-shrink-0" />
+                  <img src={dateImage} alt="Date image" width={24} />
                   <span className="font-merriweather text-lg">Friday, June 13th</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Clock className="w-6 h-6 text-wedding-secondary flex-shrink-0" />
+                  <img src={clockImage} alt="Clock image" width={24} />
                   <span className="font-merriweather text-lg">17:00</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-6 h-6 text-wedding-secondary flex-shrink-0 mt-1" />
+                  <img src={placeImage} alt="Place image" width={24} />
                   <div className="font-merriweather text-lg">
                     Roddens Hus
                     <br />
@@ -38,21 +34,21 @@ export const EventDetails = () => {
                   </div>
                 </div>
               </div>
-            </Card>
+            </div>
 
-            <Card className="animate-fade-in bg-white p-8 border-2">
+            <div className="p-8">
               <h3 className="font-satisfy text-3xl mb-6 text-[#B14B57] text-center">Ceremony</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-3">
-                  <CalendarDays className="w-6 h-6 text-wedding-secondary flex-shrink-0" />
+                  <img src={dateImage} alt="Date image" width={24} />
                   <span className="font-merriweather text-lg">Saturday, June 14th</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Clock className="w-6 h-6 text-wedding-secondary flex-shrink-0" />
+                  <img src={clockImage} alt="Clock image" width={24} />
                   <span className="font-merriweather text-lg">15:00 CET</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-6 h-6 text-wedding-secondary flex-shrink-0 mt-1" />
+                  <img src={placeImage} alt="Place image" width={24} />
                   <div className="font-merriweather text-lg">
                     Siljansnäs kyrka
                     <br />
@@ -62,7 +58,7 @@ export const EventDetails = () => {
                   </div>
                 </div>
               </div>
-            </Card>
+            </div>
           </div>
         </div>
       </div>

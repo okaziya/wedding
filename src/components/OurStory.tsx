@@ -153,34 +153,32 @@ export const OurStory = () => {
   ];
 
   return (
-    <section className="py-20 bg-wedding-background" id="our-story">
+    <section className="pb-20 bg-wedding-background" id="our-story">
       <div className="container mx-auto px-4">
         <h2 className="font-satisfy text-4xl md:text-5xl text-center mb-12 text-[#571E25]">Our Story</h2>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-[900px] mx-auto">
           {timeline.map((event, index) => (
-            <Card key={index} className="mb-8 animate-fade-in bg-white/80 backdrop-blur-sm">
-              <div className="p-6">
-                <div className="relative mb-8">
-                  <img
-                    src="/wedding/images/lm-ornament-flower.svg"
-                    alt="Decorative flower"
-                    className="w-6 h-auto mx-auto mb-4"
-                  />
-                  <div className="font-satisfy text-xl text-[#B14B57] text-center mb-2">{event.date}</div>
-                  <h3 className="font-merriweather text-2xl text-center mb-4 text-[#571E25]">{event.title}</h3>
-                  <p className="font-merriweather text-gray-600 text-center mb-4">{event.description}</p>
-                </div>
-                {event.image && (
-                  <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-lg">
-                    <img
-                      src={event.image}
-                      alt={event.title}
-                      className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px]"
-                    />
-                  </AspectRatio>
-                )}
+            <div key={index} className="mb-1 animate-fade-in bg-white  px-[64px] py-[48px]">
+              <div className="relative ">
+                <img
+                  src="/wedding/images/lm-ornament-flower.svg"
+                  alt="Decorative flower"
+                  className="w-6 h-auto mx-auto mb-4"
+                />
+                <div className="font-satisfy text-2xl text-[#B14B57] text-center mb-5">{event.date}</div>
+                <h3 className="font-merriweather text-xl font-bold text-center mb-4 text-[#571E25]">{event.title}</h3>
+                <p className="font-merriweather text-gray-600 text-center mb-4">{event.description}</p>
               </div>
-            </Card>
+              {event.image && (
+                <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-lg">
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px]"
+                  />
+                </AspectRatio>
+              )}
+            </div>
           ))}
         </div>
       </div>
