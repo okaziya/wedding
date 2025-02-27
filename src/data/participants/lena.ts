@@ -10,9 +10,8 @@ export const lenaDetails: ParticipantDetails = {
   description:
     "Lena and Liza already created a lot of beautiful photos together in Prague, they also know each other " +
     "personally and enjoy doing thing together. She likes to photograph weddings and live together with her husband " +
-    "and their many cats.\n" +
-    "\n" +
-    "Languages: English, Russian & Czech",
+    "and their many cats.",
+  languages: "English, Russian & Czech",
   accommodation:
     'During the event weekend, you will stay in cottage 109 with Ira, Dima and Anna. See map under "Maps" page.',
   travelPlans:
