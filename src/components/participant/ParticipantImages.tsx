@@ -11,7 +11,6 @@ interface ParticipantImagesProps {
 export const ParticipantImages = ({ images, image, title }: ParticipantImagesProps) => {
   const imageClasses = cn(
     "object-cover w-full h-full",
-    "shadow-[0px_6px_32px_rgba(48,40,24,0.15)]",
     "border-[5px] border-solid border-white rounded-[2px]",
     "bg-transparent"
   );
@@ -27,7 +26,6 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
                   src={img} 
                   alt={`${title} - photo ${index + 1}`} 
                   className={imageClasses}
-                  style={{ boxShadow: "0px 6px 32px rgba(48,40,24,0.15)" }}
                 />
               </div>
             </div>
@@ -46,7 +44,6 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
               src={image}
               alt={title}
               className={imageClasses}
-              style={{ boxShadow: "0px 6px 32px rgba(48,40,24,0.15)" }}
             />
           </div>
         </div>
