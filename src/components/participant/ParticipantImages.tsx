@@ -16,7 +16,7 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
             <img 
               src={img} 
               alt={`${title} - photo ${index + 1}`} 
-              className="object-cover w-full h-full transform rotate-1 shadow-[0_4px_12px_rgba(48,40,24,0.1)]" 
+              className="object-cover w-full h-full transform -rotate-1 shadow-[0_4px_12px_rgba(48,40,24,0.1)]" 
             />
           </AspectRatio>
         ))}
@@ -30,7 +30,7 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
         <img
           src={image}
           alt={title}
-          className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px] transform rotate-1 shadow-[0_4px_12px_rgba(48,40,24,0.1)]"
+          className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px] transform -rotate-1 shadow-[0_4px_12px_rgba(48,40,24,0.1)]"
         />
       </AspectRatio>
     </div>

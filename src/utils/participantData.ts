@@ -1,3 +1,4 @@
+
 import { ParticipantDetails } from "../types/participant";
 import { iraDetails } from "../data/participants/ira";
 import { nastyaDetails } from "../data/participants/nastya";
