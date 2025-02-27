@@ -1,3 +1,4 @@
+
 import { ParticipantDetails } from "@/types/participant.ts";
 
 export const lenaDetails: ParticipantDetails = {
