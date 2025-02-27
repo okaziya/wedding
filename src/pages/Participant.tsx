@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { ParticipantImages } from "@/components/participant/ParticipantImages";
 import { getParticipantDetails } from "@/utils/participantData";
@@ -95,9 +96,12 @@ const Participant = () => {
                   />
                   <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Accommodation</h2>
                   <p className="font-merriweather text-gray-600 text-center">{details.accommodation}</p>
-                  <div className="text-center mt-4">
-                    <Link to="/maps" className="text-[#571E25] hover:underline">
-                      View Maps
+                  <div className="text-center mt-8">
+                    <Link 
+                      to="/maps" 
+                      className="inline-block border border-[rgba(250,247,241,1)] text-[#B14B57] hover:text-[#571E25] px-6 py-[15px] font-merriweather uppercase tracking-wider text-[16px]"
+                    >
+                      VIEW MAPS
                     </Link>
                   </div>
                 </div>
