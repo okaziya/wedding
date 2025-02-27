@@ -29,12 +29,14 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
   return (
     <div className="w-full max-w-[720px] py-6">
       <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-lg bg-muted">
-        <div className="w-full h-full transform -rotate-1">
-          <img
-            src={image}
-            alt={title}
-            className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px] shadow-[0_4px_12px_rgba(48,40,24,0.1)]"
-          />
+        <div className="w-full h-full">
+          <div className="w-full h-full transform -rotate-1">
+            <img
+              src={image}
+              alt={title}
+              className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px] shadow-[0_4px_12px_rgba(48,40,24,0.1)]"
+            />
+          </div>
         </div>
       </AspectRatio>
     </div>
