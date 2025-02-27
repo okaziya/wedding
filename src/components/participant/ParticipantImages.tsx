@@ -11,7 +11,7 @@ interface ParticipantImagesProps {
 export const ParticipantImages = ({ images, image, title }: ParticipantImagesProps) => {
   const imageClasses = cn(
     "object-cover w-full h-full",
-    "shadow-[0_8px_30px_rgba(48,40,24,0.15)]",
+    "shadow-[0px_6px_32px_rgba(48,40,24,0.15)]",
     "border-[5px] border-solid border-white rounded-[2px]",
     "bg-transparent"
   );
