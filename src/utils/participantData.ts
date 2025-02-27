@@ -1,3 +1,4 @@
+
 import { ParticipantDetails } from "../types/participant";
 import { iraDetails } from "../data/participants/ira";
 import { nastyaDetails } from "../data/participants/nastya";
@@ -48,6 +49,7 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
         title: "Not Found",
         role: "404",
         description: "Details unavailable, check the page name!",
+        languages: "N/A",
         contact: "Contact Liza/Mats for technical support",
       };
   }
