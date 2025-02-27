@@ -13,12 +13,14 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
       <div className="w-full max-w-[720px] space-y-4">
         {images.map((img, index) => (
           <AspectRatio key={index} ratio={4 / 3} className="overflow-hidden rounded-lg bg-muted">
-            <div className="w-full h-full transform -rotate-1">
-              <img 
-                src={img} 
-                alt={`${title} - photo ${index + 1}`} 
-                className="object-cover w-full h-full shadow-[0_4px_12px_rgba(48,40,24,0.1)]" 
-              />
+            <div className="w-full h-full">
+              <div className="w-full h-full transform -rotate-1">
+                <img 
+                  src={img} 
+                  alt={`${title} - photo ${index + 1}`} 
+                  className="object-cover w-full h-full shadow-[0_4px_12px_rgba(48,40,24,0.1)]" 
+                />
+              </div>
             </div>
           </AspectRatio>
         ))}
