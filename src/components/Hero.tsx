@@ -29,7 +29,7 @@ export const Hero = () => {
 
   return (
     <div className="pt-24 flex flex-col items-center justify-center bg-wedding-background">
-      <div className="w-full max-w-xl mx-auto px-4 text-center space-y-12">
+      <div className="w-full max-w-xl mx-auto px-4 text-center space-y-6 mb-6 md:my-4 md:mb-4">
         <img src={upperOrnament} width={328} alt="Upper ornament" className="mx-auto" />
 
         <div className="space-y-8">
@@ -40,14 +40,14 @@ export const Hero = () => {
 
           <img src={weddingDateImage} alt="Wedding date image" width={94} className="mx-auto" />
 
-          <div className="flex justify-center gap-16 md:gap-24 text-[#B14B57]">
+          <div className="flex justify-center gap-6  text-[#B14B57]">
             {[
               { value: timeLeft.days, label: "DAYS" },
               { value: timeLeft.hours, label: "HOURS" },
               { value: timeLeft.minutes, label: "MINUTES" },
             ].map(({ value, label }) => (
-              <div key={label} className="text-center">
-                <div className="font-satisfy text-5xl">{value}</div>
+              <div key={label} className="text-center min-w-[80px] h-[58px]">
+                <div className="font-satisfy text-3xl mb-1">{value}</div>
                 <div className="font-merriweather text-sm tracking-wider text-[#571E25] font-bold">{label}</div>
               </div>
             ))}
