@@ -9,5 +9,6 @@ export interface ParticipantDetails {
   packingList?: string;
   images?: string[];
   image?: string;
-  contact?: string | null;
+  contactName?: string;
+  contactNumber?: string;
 }

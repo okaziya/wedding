@@ -61,7 +61,9 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Welcome Message</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">
+                    Welcome Message
+                  </h2>
                   <p className="font-merriweather text-gray-600 text-center">{details.welcomeMessage}</p>
                 </div>
               </div>
@@ -75,7 +77,7 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Description</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">Description</h2>
                   <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">
                     {details.description}
                   </p>
@@ -93,7 +95,9 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Accommodation</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">
+                    Accommodation
+                  </h2>
                   <p className="font-merriweather text-gray-600 text-center">{details.accommodation}</p>
                   <div className="text-center mt-4">
                     <Link to="/maps" className="text-[#571E25] hover:underline">
@@ -112,7 +116,7 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">
                     Anticipated Travel Plans
                   </h2>
                   <p className="font-merriweather text-gray-600 text-center">{details.travelPlans}</p>
@@ -128,7 +132,7 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Packing List</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">Packing List</h2>
                   <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">
                     {details.packingList}
                   </p>
@@ -136,19 +140,22 @@ const Participant = () => {
               </div>
             )}
 
-            {details.contact && (
-              <div className="bg-white px-6 md:px-[64px] py-[48px]">
-                <div className="relative">
-                  <img
-                    src="/wedding/images/lm-ornament-flower.svg"
-                    alt="Decorative flower"
-                    className="w-6 h-auto mx-auto mb-4"
-                  />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Contact</h2>
-                  <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">{details.contact}</p>
-                </div>
+            <div className="bg-white px-6 md:px-[64px] py-[48px]">
+              <div className="relative">
+                <img
+                  src="/wedding/images/lm-ornament-flower.svg"
+                  alt="Decorative flower"
+                  className="w-6 h-auto mx-auto mb-4"
+                />
+                <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">Contact</h2>
+                <p className="font-merriweather text-gray-800 text-center whitespace-pre-line font-bold mb-2">
+                  {details.contactName}
+                </p>
+                <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">
+                  <a href={`https://wa.me/${details.contactNumber.replace(/\D/g, "")}`}>{details.contactNumber}</a>
+                </p>
               </div>
-            )}
+            </div>
           </div>
         </div>
       </div>

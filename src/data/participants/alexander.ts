@@ -21,5 +21,6 @@ export const alexanderDetails: ParticipantDetails = {
     "in Siljansnäs at 17:00 on Friday, June 13th. Looking forward to learning about your detailed travel plans as " +
     "soon as they are available!",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp via Liza, +46 730 500 244",
+  contactName: "WhatsApp via Liza",
+  contactNumber: "+46 730 500 244",
 };

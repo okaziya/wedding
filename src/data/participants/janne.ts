@@ -16,5 +16,6 @@ export const janneDetails: ParticipantDetails = {
     "We believe you will arrive by car on Friday June 13th (or some day before) and attend the wedding reception at " +
     "17:00.",
   packingList: "Not applicable.",
-  contact: "WhatsApp via Mats, +46 730 567 567",
+  contactName: "WhatsApp via Mats",
+  contactNumber: "+46 730 567 567",
 };

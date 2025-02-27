@@ -21,5 +21,6 @@ export const nastyaDetails: ParticipantDetails = {
     "reception by 17:00 on Friday June 13th. Please think about how long you will stay around and let us know about " +
     "your intentions before and after the ceremony.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp via Liza, +46 730 500 244",
+  contactName: "WhatsApp via Liza",
+  contactNumber: "+46 730 500 244",
 };

@@ -15,5 +15,6 @@ export const marieDetails: ParticipantDetails = {
   accommodation: "During the event weekend, your family will stay in the family summer cottage in Lundbjörken.",
   travelPlans: "We believe you will arrive by car latest on Friday June 13th and join us at the reception at 17:00.",
   packingList: "Not applicable.",
-  contact: "WhatsApp via Mats, +46 730 567 567",
+  contactName: "WhatsApp via Mats",
+  contactNumber: "+46 730 567 567",
 };

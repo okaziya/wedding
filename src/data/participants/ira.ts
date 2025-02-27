@@ -22,5 +22,6 @@ export const iraDetails: ParticipantDetails = {
     "transportation from Stockholm to Siljansnäs in conjunction with our own travel schedule. Please think about how " +
     "long you will stay and let us know about your intentions after the ceremony, we will help you with planning!",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp via Liza, +46 730 500 244",
+  contactName: "WhatsApp via Liza",
+  contactNumber: "+46 730 500 244",
 };

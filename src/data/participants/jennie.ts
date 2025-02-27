@@ -17,5 +17,6 @@ export const jennieDetails: ParticipantDetails = {
     "We believe you will head to Leksand with us a few days ahead of the event and help us prepare. Alternatively, " +
     "you might arrive by train from Stockholm to Leksand at 20:41 on Friday June 13th.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp via Mats, +46 730 567 567",
+  contactName: "WhatsApp via Mats",
+  contactNumber: "+46 730 567 567",
 };

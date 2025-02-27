@@ -17,5 +17,6 @@ export const carinDetails: ParticipantDetails = {
   accommodation: "You will live in your house on Långbäcksgattu as per usual.",
   travelPlans: "Not applicable.",
   packingList: "Not applicable.",
-  contact: "WhatsApp via Mats, +46 730 567 567",
+  contactName: "WhatsApp via Mats",
+  contactNumber: "+46 730 567 567",
 };

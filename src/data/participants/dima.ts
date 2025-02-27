@@ -18,5 +18,6 @@ export const dimaDetails: ParticipantDetails = {
     "pick you up by minivan. Looking forward to learning about your detailed travel plans as soon as they are " +
     "available!",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp via Liza, +46 730 500 244",
+  contactName: "WhatsApp via Liza",
+  contactNumber: "+46 730 500 244",
 };
