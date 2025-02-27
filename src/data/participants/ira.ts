@@ -15,7 +15,7 @@ export const iraDetails: ParticipantDetails = {
     "pre-announcement before New Year's.",
   languages: "Russian and basic English",
   accommodation:
-    'During the event weekend, you will stay in cottage 109 with Lena, Dima and Anna. See map under "Maps" page. ' +
+    "During the event weekend, you will stay in cottage 109 with Lena, Dima and Anna.  " +
     "Before and after the event, we will arrange so that you live nearby us in Stockholm and Siljansnäs.",
   travelPlans:
     "We believe you will arrive early in the week before the ceremony, around June 10th. We will arrange for " +

@@ -17,8 +17,7 @@ export const marcinDetails: ParticipantDetails = {
   languages:
     "English, Polish, and Czech (spoken by both). Additionally, Marcin speaks Swedish, Spanish, and " +
     "French, while Miroslav speaks Russian, Belarusian, and Latvian.",
-  accommodation:
-    'During the event weekend, you will stay in cottage 111 with Alexander and Boris. See map under "Maps" page.',
+  accommodation: "During the event weekend, you will stay in cottage 111 with Alexander and Boris. ",
   travelPlans:
     "We believe you will rent a car in Stockholm with Boris and Alexander, and then arrive at the reception in " +
     "Siljansnäs at 17:00 on Friday, June 13th. Looking forward to learning about your detailed travel plans as soon " +
