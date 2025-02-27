@@ -27,6 +27,7 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
                   src={img} 
                   alt={`${title} - photo ${index + 1}`} 
                   className={imageClasses}
+                  style={{ boxShadow: "0px 6px 32px rgba(48,40,24,0.15)" }}
                 />
               </div>
             </div>
@@ -45,6 +46,7 @@ export const ParticipantImages = ({ images, image, title }: ParticipantImagesPro
               src={image}
               alt={title}
               className={imageClasses}
+              style={{ boxShadow: "0px 6px 32px rgba(48,40,24,0.15)" }}
             />
           </div>
         </div>
