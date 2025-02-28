@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { ParticipantImages } from "@/components/participant/ParticipantImages";
 import { getParticipantDetails } from "@/utils/participantData";
@@ -48,7 +47,9 @@ const Participant = () => {
 
         <div className="flex flex-col items-center mt-6 md:mt-0">
           <img src={upperOrnametImage} alt="Upper ornamet image" width={328} />
-          <h1 className="text-5xl font-satisfy text-center break-words text-[#571E25] py-4">{details.title}</h1>
+          <h1 className="text-5xl font-satisfy text-center break-words text-[#571E25] py-4 px-2 overflow-hidden">
+            {details.title}
+          </h1>
           <img src={lowerOrnametImage} alt="Lower ornamet image" width={174} />
 
           <ParticipantImages images={details.images} image={details.image} title={details.title} />
@@ -62,7 +63,9 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Welcome Message</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">
+                    Welcome Message
+                  </h2>
                   <p className="font-merriweather text-gray-600 text-center">{details.welcomeMessage}</p>
                 </div>
               </div>
@@ -76,7 +79,7 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Description</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">Description</h2>
                   <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">
                     {details.description}
                   </p>
@@ -94,11 +97,13 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Accommodation</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">
+                    Accommodation
+                  </h2>
                   <p className="font-merriweather text-gray-600 text-center">{details.accommodation}</p>
                   <div className="text-center mt-8">
-                    <Link 
-                      to="/maps" 
+                    <Link
+                      to="/maps"
                       className="inline-block border border-[rgba(250,247,241,1)] text-[#B14B57] hover:text-[#571E25] px-6 py-[15px] font-merriweather uppercase tracking-wider text-[16px]"
                     >
                       VIEW MAPS
@@ -116,7 +121,7 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">
                     Anticipated Travel Plans
                   </h2>
                   <p className="font-merriweather text-gray-600 text-center">{details.travelPlans}</p>
@@ -132,7 +137,7 @@ const Participant = () => {
                     alt="Decorative flower"
                     className="w-6 h-auto mx-auto mb-4"
                   />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Packing List</h2>
+                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">Packing List</h2>
                   <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">
                     {details.packingList}
                   </p>
@@ -140,19 +145,22 @@ const Participant = () => {
               </div>
             )}
 
-            {details.contact && (
-              <div className="bg-white px-6 md:px-[64px] py-[48px]">
-                <div className="relative">
-                  <img
-                    src="/wedding/images/lm-ornament-flower.svg"
-                    alt="Decorative flower"
-                    className="w-6 h-auto mx-auto mb-4"
-                  />
-                  <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5">Contact</h2>
-                  <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">{details.contact}</p>
-                </div>
+            <div className="bg-white px-6 md:px-[64px] py-[48px]">
+              <div className="relative">
+                <img
+                  src="/wedding/images/lm-ornament-flower.svg"
+                  alt="Decorative flower"
+                  className="w-6 h-auto mx-auto mb-4"
+                />
+                <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">Contact</h2>
+                <p className="font-merriweather text-gray-800 text-center whitespace-pre-line font-bold mb-2">
+                  {details.contactName}
+                </p>
+                <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">
+                  <a href={`https://wa.me/${details.contactNumber.replace(/\D/g, "")}`}>{details.contactNumber}</a>
+                </p>
               </div>
-            )}
+            </div>
           </div>
         </div>
       </div>

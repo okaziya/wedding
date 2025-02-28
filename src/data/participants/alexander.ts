@@ -15,13 +15,12 @@ export const alexanderDetails: ParticipantDetails = {
     "lives in America and he's passionate about art, culture and his work as a certified public accountant. When he's off work he likes to enjoy the beauty of " +
     "the world, play the accordion, spend time with his partner Alan, his dog Caroline, and going to the gym.",
   languages: "English, Russian & German",
-  accommodation:
-    'During the event weekend, you will stay in cottage 111 with Boris, Marcin and Miroslav. See map under "Maps" ' +
-    "page.",
+  accommodation: "During the event weekend, you will stay in cottage 111 with Boris, Marcin and Miroslav.",
   travelPlans:
     "We believe you will rent a car in Stockholm with Marcin, Miroslav and Boris, and then arrive at the reception " +
     "in Siljansnäs at 17:00 on Friday, June 13th. Looking forward to learning about your detailed travel plans as " +
     "soon as they are available!",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
-  contact: "WhatsApp via Liza, +46 730 500 244",
+  contactName: "WhatsApp via Liza",
+  contactNumber: "+46 730 500 244",
 };

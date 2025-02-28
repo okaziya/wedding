@@ -14,10 +14,11 @@ export const coupleDetails: ParticipantDetails = {
     "spend their days working, studying and reading a lot. When they have some time off then they like to go for " +
     "badminton, walk in the forest, and listen to the wind.",
   languages: "Swedish & English, additionally Czech & Russian for Liza",
-  accommodation: 'You will live in cottage 116 with Yongtao and Jennie. See map under "Maps" page.',
+  accommodation: "You will live in cottage 116 with Yongtao and Jennie. ",
   travelPlans:
     "We'll find a minivan and drive up to Leksand right after school ends on Wednesday, June 11th. We need to be " +
     "there a few days ahead to take care of all practicalities surrounding the ceremony.",
   packingList: "Not applicable.",
-  contact: "WhatsApp via Mats +46 730 567 567 or Liza +46 730 500 244",
+  contactName: "WhatsApp via Mats or Liza",
+  contactNumber: "+46 730 567 567, +46 730 500 244",
 };
