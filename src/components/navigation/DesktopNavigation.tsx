@@ -36,7 +36,7 @@ export const DesktopNavigation = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem className="text-center">
-              <Link to="/program" className={linkClasses("/program")}>
+              <Link to="/schedule" className={linkClasses("/schedule")}>
                 Schedule
               </Link>
             </NavigationMenuItem>

@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Navigation } from "./components/Navigation";
 import Index from "./pages/Index";
 import Vision from "./pages/Vision";
-import Program from "./pages/Program";
+import Schedule from "./pages/Schedule.tsx";
 import Map from "./pages/Map.tsx";
 import Blog from "./pages/Blog";
 import Participant from "./pages/Participant";
@@ -23,7 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/vision" element={<Vision />} />
-          <Route path="/program" element={<Program />} />
+          <Route path="/schedule" element={<Schedule />} />
           <Route path="/map" element={<Map />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/participants/:id" element={<Participant />} />

@@ -2,7 +2,7 @@ import clockImage from "/images/lm-icon-clock.png";
 import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";
 
-const Program = () => {
+const Schedule = () => {
   const schedule = [
     {
       date: "Friday, June 13th",
@@ -81,4 +81,4 @@ const Program = () => {
   );
 };
 
-export default Program;
+export default Schedule;

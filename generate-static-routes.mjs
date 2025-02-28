@@ -27,7 +27,7 @@ export const participants = [
 const routes = [
   "/vision",
   ...participants.map((participant) => `/participants/${participant}`),
-  "/program",
+  "/schedule",
   "/map",
   "/blog",
 ];

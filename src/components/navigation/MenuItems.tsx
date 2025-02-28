@@ -42,7 +42,7 @@ export const MenuItems = ({ onNavigate, variant = "desktop" }: MenuItemsProps) =
         <Link to="/vision" className={linkClasses("/vision")} onClick={onNavigate}>
           VISION & MISSION
         </Link>
-        <Link to="/program" className={linkClasses("/program")} onClick={onNavigate}>
+        <Link to="/schedule" className={linkClasses("/schedule")} onClick={onNavigate}>
           SCHEDULE
         </Link>
         <div className="py-2">
@@ -83,7 +83,7 @@ export const MenuItems = ({ onNavigate, variant = "desktop" }: MenuItemsProps) =
       <Link to="/vision" className={linkClasses("/vision")} onClick={onNavigate}>
         VISION & MISSION
       </Link>
-      <Link to="/program" className={linkClasses("/program")} onClick={onNavigate}>
+      <Link to="/schedule" className={linkClasses("/schedule")} onClick={onNavigate}>
         SCHEDULE
       </Link>
       <Link to="/map" className={linkClasses("/map")} onClick={onNavigate}>
