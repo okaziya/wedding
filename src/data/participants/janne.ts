@@ -11,7 +11,7 @@ export const janneDetails: ParticipantDetails = {
     "Mats' father Janne and Ann-Katrin lives 45 minutes west of Sundsvall in Attmarby village, they have two horses, " +
     "cats and a lot of houses. They like to do repairs their houses, care for the horses, and engage in crafting.",
   languages: "Swedish and elementary English",
-  accommodation: "During the event weekend, you will stay in Lundbjörken with Marie and her family. ",
+  accommodation: "During the event weekend, you will stay in Lundbjörken with Marie, William, Hugo and Alva.",
   travelPlans:
     "We believe you will arrive by car on Friday June 13th (or some day before) and attend the wedding reception at " +
     "17:00.",

@@ -14,7 +14,7 @@ export const carinDetails: ParticipantDetails = {
     "long ago, and now it is Mats turn. When not helping out with wedding planning, Carin and Jonny takes an active " +
     "part in the local community and act as cornerstones of the local folk dance group.",
   languages: "Swedish & English, additionally German for Carin",
-  accommodation: "You will live in your house on Långbäcksgattu as per usual.",
+  accommodation: "You will live in your house on Långbäcksgattu 14 as usual.",
   travelPlans: "Not applicable.",
   packingList: "Not applicable.",
   contactName: "WhatsApp via Mats",

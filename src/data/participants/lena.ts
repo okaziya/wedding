@@ -12,7 +12,7 @@ export const lenaDetails: ParticipantDetails = {
     "personally and enjoy doing thing together. She likes to photograph weddings and live together with her husband " +
     "and their many cats.\n",
   languages: "English, Russian & Czech",
-  accommodation: "During the event weekend, you will stay in cottage 109 with Ira, Dima and Anna. ",
+  accommodation: "During the event weekend, you will stay at Siljansnäs Stugby in cottage 109 with Ira, Dima and Anna.",
   travelPlans:
     "We believe you will arrive to Leksand by bus or train early afternoon on Friday, June 13th. Liza will pick you " +
     "up by car on arrival. Please share your exact travel plans when all tickets are booked.",

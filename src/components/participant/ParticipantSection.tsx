@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import flowerOrnametImage from "/images/lm-ornament-flower.png";
+import flowerOrnamentImage from "/images/lm-ornament-flower.png";
 
 interface ParticipantSectionProps {
   title: string;
@@ -10,7 +10,7 @@ interface ParticipantSectionProps {
 export const ParticipantSection = ({ title, content, children }: ParticipantSectionProps) => {
   return (
     <Card className="font-merryweather">
-      <img src={flowerOrnametImage} alt="Flower ornamet image" width={26} />
+      <img src={flowerOrnamentImage} alt="Flower ornamet image" width={26} />
       <CardHeader>
         <CardTitle>{title}</CardTitle>
       </CardHeader>

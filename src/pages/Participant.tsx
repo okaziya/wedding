@@ -3,8 +3,8 @@ import { ParticipantImages } from "@/components/participant/ParticipantImages";
 import { getParticipantDetails } from "@/utils/participantData";
 import { participants } from "@/components/navigation/MenuItems";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import upperOrnametImage from "/images/lm-ornament-upper.png";
-import lowerOrnametImage from "/images/lm-ornament-lower.png";
+import upperOrnamentImage from "/images/lm-ornament-upper.png";
+import lowerOrnamentImage from "/images/lm-ornament-lower.png";
 
 const Participant = () => {
   const { id } = useParams();
@@ -46,11 +46,11 @@ const Participant = () => {
         </div>
 
         <div className="flex flex-col items-center mt-6 md:mt-0">
-          <img src={upperOrnametImage} alt="Upper ornamet image" width={328} />
+          <img src={upperOrnamentImage} alt="Upper ornamet image" width={328} />
           <h1 className="text-5xl font-satisfy text-center break-words text-[#571E25] py-4 px-2 overflow-hidden">
             {details.title}
           </h1>
-          <img src={lowerOrnametImage} alt="Lower ornamet image" width={174} />
+          <img src={lowerOrnamentImage} alt="Lower ornamet image" width={174} />
 
           <ParticipantImages images={details.images} image={details.image} title={details.title} />
 
@@ -103,10 +103,10 @@ const Participant = () => {
                   <p className="font-merriweather text-gray-600 text-center">{details.accommodation}</p>
                   <div className="text-center mt-8">
                     <Link
-                      to="/maps"
+                      to="/map"
                       className="inline-block border border-[rgba(250,247,241,1)] text-[#B14B57] hover:text-[#571E25] px-6 py-[15px] font-merriweather uppercase tracking-wider text-[16px]"
                     >
-                      VIEW MAPS
+                      VIEW MAP
                     </Link>
                   </div>
                 </div>

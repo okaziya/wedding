@@ -15,9 +15,10 @@ export const marcinDetails: ParticipantDetails = {
     "academic specializing in Slavic languages. On their free time they like traveling, cooking food, and meeting " +
     "with friends.",
   languages:
-    "English, Polish, and Czech (spoken by both). Additionally, Marcin speaks Swedish, Spanish, and " +
-    "French, while Miroslav speaks Russian, Belarusian, and Latvian.",
-  accommodation: "During the event weekend, you will stay in cottage 111 with Alexander and Boris. ",
+    "English, Polish, and Czech (spoken by both). Additionally, Marcin speaks Swedish, Spanish, and French, while " +
+    "Miroslav speaks Russian, Belarusian, and Latvian.",
+  accommodation:
+    "During the event weekend, you will stay at Siljansnäs Stugby in cottage 111 with Alexander and Boris.",
   travelPlans:
     "We believe you will rent a car in Stockholm with Boris and Alexander, and then arrive at the reception in " +
     "Siljansnäs at 17:00 on Friday, June 13th. Looking forward to learning about your detailed travel plans as soon " +

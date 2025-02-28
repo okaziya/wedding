@@ -12,7 +12,7 @@ export const marieDetails: ParticipantDetails = {
     "years. On their free time they enjoy lots of sports activities, everything from dancing and winter sports to " +
     "soccer and ju-jitsu.",
   languages: "Swedish & English, additionally German for Marie & William",
-  accommodation: "During the event weekend, your family will stay in the family summer cottage in Lundbjörken.",
+  accommodation: "During the event weekend, your family will stay in Lundbjörken with Janne and Ann-Katrin.",
   travelPlans: "We believe you will arrive by car latest on Friday June 13th and join us at the reception at 17:00.",
   packingList: "Not applicable.",
   contactName: "WhatsApp via Mats",
