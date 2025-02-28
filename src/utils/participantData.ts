@@ -1,4 +1,3 @@
-
 import { ParticipantDetails } from "../types/participant";
 import { iraDetails } from "../data/participants/ira";
 import { nastyaDetails } from "../data/participants/nastya";
@@ -50,7 +49,8 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
         role: "404",
         description: "Details unavailable, check the page name!",
         languages: "N/A",
-        contact: "Contact Liza/Mats for technical support",
+        contactName: "Contact Liza/Mats for technical support",
+        contactNumber: "+46 730 500 244, +46 730 567 567",
       };
   }
 };

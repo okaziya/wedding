@@ -12,7 +12,8 @@ export const jennieDetails: ParticipantDetails = {
     "animals. She has a son, Tiberius, and spends her time reading, working, traveling and volunteering for " +
     "different NGOs.",
   languages: "Swedish & English",
-  accommodation: "During the event weekend, you will stay in cottage 116 with Yongtao, Liza, Mats & Åke. ",
+  accommodation:
+    "During the event weekend, you will stay at Siljansnäs Stugby in cottage 116 with Yongtao, Liza, Mats & Åke.",
   travelPlans:
     "We believe you will head to Leksand with us a few days ahead of the event and help us prepare. Alternatively, " +
     "you might arrive by train from Stockholm to Leksand at 20:41 on Friday June 13th.",

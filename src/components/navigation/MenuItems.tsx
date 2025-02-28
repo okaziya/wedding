@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 
 interface ParticipantMapping {
@@ -30,11 +29,10 @@ interface MenuItemsProps {
 export const MenuItems = ({ onNavigate, variant = "desktop" }: MenuItemsProps) => {
   const location = useLocation();
   const linkClasses = (path: string) => {
-    const isActive = location.pathname === path || 
-                    (path !== '/' && location.pathname.startsWith(path));
-    return `block py-2 hover:opacity-80 ${isActive ? 'text-[#571E25]' : ''}`;
+    const isActive = location.pathname === path || (path !== "/" && location.pathname.startsWith(path));
+    return `block py-2 hover:opacity-80 ${isActive ? "text-[#571E25]" : ""}`;
   };
-  
+
   if (variant === "mobile") {
     return (
       <>
@@ -57,7 +55,7 @@ export const MenuItems = ({ onNavigate, variant = "desktop" }: MenuItemsProps) =
                   key={participant.name}
                   to={participantPath}
                   className={`block py-1.5 hover:opacity-80 ${
-                    location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
+                    location.pathname === participantPath ? "text-[#571E25]" : "text-[#B14B57]"
                   }`}
                   onClick={onNavigate}
                 >
@@ -67,7 +65,7 @@ export const MenuItems = ({ onNavigate, variant = "desktop" }: MenuItemsProps) =
             })}
           </div>
         </div>
-        <Link to="/maps" className={linkClasses("/maps")} onClick={onNavigate}>
+        <Link to="/map" className={linkClasses("/map")} onClick={onNavigate}>
           MAP
         </Link>
         <Link to="/blog" className={linkClasses("/blog")} onClick={onNavigate}>
@@ -88,7 +86,7 @@ export const MenuItems = ({ onNavigate, variant = "desktop" }: MenuItemsProps) =
       <Link to="/program" className={linkClasses("/program")} onClick={onNavigate}>
         SCHEDULE
       </Link>
-      <Link to="/maps" className={linkClasses("/maps")} onClick={onNavigate}>
+      <Link to="/map" className={linkClasses("/map")} onClick={onNavigate}>
         MAP
       </Link>
       <Link to="/blog" className={linkClasses("/blog")} onClick={onNavigate}>

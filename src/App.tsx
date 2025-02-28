@@ -7,7 +7,7 @@ import { Navigation } from "./components/Navigation";
 import Index from "./pages/Index";
 import Vision from "./pages/Vision";
 import Program from "./pages/Program";
-import Maps from "./pages/Maps";
+import Map from "./pages/Map.tsx";
 import Blog from "./pages/Blog";
 import Participant from "./pages/Participant";
 
@@ -24,7 +24,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/vision" element={<Vision />} />
           <Route path="/program" element={<Program />} />
-          <Route path="/maps" element={<Maps />} />
+          <Route path="/map" element={<Map />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/participants/:id" element={<Participant />} />
           <Route path="*" element={<Navigate to="/" replace />} />

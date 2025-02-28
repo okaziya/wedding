@@ -28,7 +28,7 @@ const routes = [
   "/vision",
   ...participants.map((participant) => `/participants/${participant}`),
   "/program",
-  "/maps",
+  "/map",
   "/blog",
 ];
 

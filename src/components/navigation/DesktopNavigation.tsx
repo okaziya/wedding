@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import {
@@ -15,9 +14,8 @@ export const DesktopNavigation = () => {
   const location = useLocation();
 
   const linkClasses = (path: string) => {
-    const isActive = location.pathname === path || 
-                    (path !== '/' && location.pathname.startsWith(path));
-    return `hover:opacity-80 uppercase text-center ${isActive ? 'text-[#571E25]' : ''}`;
+    const isActive = location.pathname === path || (path !== "/" && location.pathname.startsWith(path));
+    return `hover:opacity-80 uppercase text-center ${isActive ? "text-[#571E25]" : ""}`;
   };
 
   return (
@@ -44,8 +42,8 @@ export const DesktopNavigation = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem>
-              <NavigationMenuTrigger 
-                className={`hover:opacity-80 uppercase bg-transparent font-bold ${location.pathname.includes('/participants') ? 'text-[#571E25]' : ''}`}
+              <NavigationMenuTrigger
+                className={`hover:opacity-80 uppercase bg-transparent font-bold ${location.pathname.includes("/participants") ? "text-[#571E25]" : ""}`}
               >
                 Participants
                 <ChevronDown className="w-5 h-5 ml-1 text-[#B14B57]" />
@@ -62,7 +60,7 @@ export const DesktopNavigation = () => {
                               <Link
                                 to={participantPath}
                                 className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
-                                  location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
+                                  location.pathname === participantPath ? "text-[#571E25]" : "text-[#B14B57]"
                                 }`}
                               >
                                 {participant.name}
@@ -72,31 +70,33 @@ export const DesktopNavigation = () => {
                         })}
                       </div>
                       <div className="flex-1 max-w-[280px] min-w-0 text-center">
-                        {participants.slice(Math.ceil(participants.length / 3), Math.ceil(2 * participants.length / 3)).map((participant) => {
-                          const participantPath = `/participants/${participant.id}`;
-                          return (
-                            <NavigationMenuLink asChild key={participant.name}>
-                              <Link
-                                to={participantPath}
-                                className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
-                                  location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
-                                }`}
-                              >
-                                {participant.name}
-                              </Link>
-                            </NavigationMenuLink>
-                          );
-                        })}
+                        {participants
+                          .slice(Math.ceil(participants.length / 3), Math.ceil((2 * participants.length) / 3))
+                          .map((participant) => {
+                            const participantPath = `/participants/${participant.id}`;
+                            return (
+                              <NavigationMenuLink asChild key={participant.name}>
+                                <Link
+                                  to={participantPath}
+                                  className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
+                                    location.pathname === participantPath ? "text-[#571E25]" : "text-[#B14B57]"
+                                  }`}
+                                >
+                                  {participant.name}
+                                </Link>
+                              </NavigationMenuLink>
+                            );
+                          })}
                       </div>
                       <div className="flex-1 max-w-[280px] min-w-0 text-center">
-                        {participants.slice(Math.ceil(2 * participants.length / 3)).map((participant) => {
+                        {participants.slice(Math.ceil((2 * participants.length) / 3)).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
                             <NavigationMenuLink asChild key={participant.name}>
                               <Link
                                 to={participantPath}
                                 className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
-                                  location.pathname === participantPath ? 'text-[#571E25]' : 'text-[#B14B57]'
+                                  location.pathname === participantPath ? "text-[#571E25]" : "text-[#B14B57]"
                                 }`}
                               >
                                 {participant.name}
@@ -112,7 +112,7 @@ export const DesktopNavigation = () => {
             </NavigationMenuItem>
 
             <NavigationMenuItem className="text-center">
-              <Link to="/maps" className={linkClasses("/maps")}>
+              <Link to="/map" className={linkClasses("/map")}>
                 Map
               </Link>
             </NavigationMenuItem>

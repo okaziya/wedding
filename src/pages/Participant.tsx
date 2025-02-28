@@ -103,10 +103,10 @@ const Participant = () => {
                   <p className="font-merriweather text-gray-600 text-center">{details.accommodation}</p>
                   <div className="text-center mt-8">
                     <Link
-                      to="/maps"
+                      to="/map"
                       className="inline-block border border-[rgba(250,247,241,1)] text-[#B14B57] hover:text-[#571E25] px-6 py-[15px] font-merriweather uppercase tracking-wider text-[16px]"
                     >
-                      VIEW MAPS
+                      VIEW MAP
                     </Link>
                   </div>
                 </div>

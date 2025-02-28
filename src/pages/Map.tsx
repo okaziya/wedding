@@ -1,8 +1,8 @@
-const Maps = () => {
+const Map = () => {
   return (
     <div className="min-h-screen pt-24 px-4 bg-wedding-background">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-merriweather mb-12 text-center">Maps</h1>
+        <h1 className="text-4xl font-merriweather mb-12 text-center">Map</h1>
         <div className="flex justify-center">
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-lg w-full max-w-[595px]">
             {" "}
@@ -23,4 +23,4 @@ const Maps = () => {
   );
 };
 
-export default Maps;
+export default Map;
