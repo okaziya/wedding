@@ -15,26 +15,27 @@ const Vision = () => {
         <div className="bg-white px-6 md:px-16 pt-12 pb-16 mb-8 rounded-sm">
           <div className="relative">
             <p className="mb-4 font-merriweather">
-              <span className="font-bold">Our vision for this event</span> is to gather our closest family and friends
-              to celebrate our deep commitment to building the future together as a couple. We celebrate Faith, Loyalty,
-              and Unending Dedication to overcoming life's challenges until they're finished, one day at a time.
+              <span className="font-bold font-satisfy text-3xl text-[#B14B57] mr-2">Our vision for this event</span> is
+              to gather our closest family and friends to celebrate our deep commitment to building the future together
+              as a couple. We celebrate Faith, Loyalty, and Unending Dedication to overcoming life's challenges until
+              they're finished, one day at a time.
             </p>
 
             <p className="mb-6 font-merriweather ">
-              <span className="font-bold">The mission for this event</span> is to create a meet-and-greet for our close
-              friends and family. The location is set to Mats' home village, where his ancestors lived and thrived for
-              generations. We hope you will enjoy the peaceful atmosphere, the closeness to nature and God's blessings
-              over all of us.
+              <span className="font-bold font-satisfy text-3xl text-[#B14B57] mr-2">The mission for this event</span> is
+              to create a meet-and-greet for our close friends and family. The location is set to Mats' home village,
+              where his ancestors lived and thrived for generations. We hope you will enjoy the peaceful atmosphere, the
+              closeness to nature and God's blessings over all of us.
             </p>
 
-            <div className="max-w-md mx-auto mt-16">
+            <div className="max-w-md mx-auto mt-8 md:mt-16">
               <img
                 src="/wedding/images/lm-ornament-flower.svg"
                 alt="Decorative flower"
                 className="w-8 h-auto mx-auto mb-4"
               />
               <p className="font-bold mb-2 font-merriweather text-center text-[#571E25] text-2xl">What to expect:</p>
-              <ul className="list-disc pl-6 space-y-2 text-xl font-merriweather text-gray-600 mt-8">
+              <ul className="list-disc pl-2 md:pl-6 space-y-2 text-xl font-merriweather text-gray-600 mt-8">
                 <li className="flex  items-center before:content-['•'] before:text-[#DF980C] before:text-3xl before:mr-3 before:inline-block">
                   <span>Out-doorsy activities and fun</span>
                 </li>
