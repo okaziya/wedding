@@ -30,7 +30,7 @@ const Vision = () => {
             
             <div className="max-w-md mx-auto">
               <p className="font-bold mb-2 font-merriweather text-center">What to expect:</p>
-              <ul className="list-disc pl-5 space-y-1 font-merriweather">
+              <ul className="pl-5 space-y-2 font-merriweather marker:text-[#DF980C] marker:text-lg">
                 <li>Out-doorsy activities and fun</li>
                 <li>Healthy and tasty foods</li>
                 <li>Kindness and respect for our differences</li>
