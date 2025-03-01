@@ -90,7 +90,7 @@ export const OurStory = () => {
       date: "August 2nd, 2024",
       title: "Family on Church Camp",
       description: "Liza getting introduced to Mats' church during a weekend at Drakudden",
-      image: "/wedding/images/our-story/240802.jpeg",
+      image: "/wedding/images/our-story/240802b.jpeg",
     },
     {
       date: "August 5th, 2024",
