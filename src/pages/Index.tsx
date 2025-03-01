@@ -1,4 +1,3 @@
-
 import { Hero } from "@/components/Hero";
 import { OurStory } from "@/components/OurStory";
 import { EventDetails } from "@/components/EventDetails";
@@ -16,8 +15,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-wedding-background">
       <Hero />
-      <div className="max-w-[750px] mx-auto px-4 mb-6">
-        <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-lg">
+      <div className="max-w-[750px] mx-auto px-4 mb-6 mt-6">
+        <AspectRatio ratio={4 / 3} className="rounded-lg">
           <div className="w-full h-full">
             <div className="w-full h-full transform -rotate-1">
               <img
