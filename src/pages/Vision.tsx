@@ -1,8 +1,16 @@
-import { Card, CardContent } from "@/components/ui/card";
 import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";
+import { AspectRatio } from "@/components/ui/aspect-ratio.tsx";
+import { cn } from "@/lib/utils.ts";
 
 const Vision = () => {
+  const imageClasses = cn(
+    "object-cover w-full h-full",
+    "border-[5px] border-solid border-white rounded-[2px]",
+    "shadow-[0px_6px_32px_rgba(48,40,24,0.15)]",
+    "bg-transparent"
+  );
+
   return (
     <div className="min-h-screen pt-24 pb-12 bg-wedding-background">
       <div className="max-w-3xl mx-auto px-4">
@@ -12,7 +20,21 @@ const Vision = () => {
           <img src={lowerOrnamentImage} alt="Lower ornament image" width={174} />
         </div>
 
-        <div className="bg-white px-6 md:px-16 pt-12 pb-16 mb-8 rounded-sm">
+        <div className="max-w-[750px] mx-auto px-4 mb-6 mt-6">
+          <AspectRatio ratio={4 / 3} className="rounded-lg">
+            <div className="w-full h-full">
+              <div className="w-full h-full transform -rotate-1">
+                <img
+                  src="/wedding/images/our-story/240620.jpeg"
+                  alt="Mats and Liza commitment photo"
+                  className={imageClasses}
+                />
+              </div>
+            </div>
+          </AspectRatio>
+        </div>
+
+        <div className="bg-white px-6 md:px-16 pt-12 pb-16 mb-8 rounded-sm mt-16">
           <div className="relative">
             <p className="mb-4 font-merriweather">
               <span className="font-bold">Our vision for this event</span> is to gather our closest family and friends
