@@ -30,12 +30,22 @@ const Vision = () => {
             
             <div className="max-w-md mx-auto">
               <p className="font-bold mb-2 font-merriweather text-center">What to expect:</p>
-              <ul className="pl-5 space-y-2 font-merriweather marker:text-[#DF980C] marker:text-lg">
-                <li>Out-doorsy activities and fun</li>
-                <li>Healthy and tasty foods</li>
-                <li>Kindness and respect for our differences</li>
-                <li>No drugs/alcohol</li>
-                <li>Child-friendly atmosphere</li>
+              <ul className="list-disc pl-6 space-y-2 font-merriweather">
+                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-xl before:mr-2 before:inline-block">
+                  <span>Out-doorsy activities and fun</span>
+                </li>
+                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-xl before:mr-2 before:inline-block">
+                  <span>Healthy and tasty foods</span>
+                </li>
+                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-xl before:mr-2 before:inline-block">
+                  <span>Kindness and respect for our differences</span>
+                </li>
+                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-xl before:mr-2 before:inline-block">
+                  <span>No drugs/alcohol</span>
+                </li>
+                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-xl before:mr-2 before:inline-block">
+                  <span>Child-friendly atmosphere</span>
+                </li>
               </ul>
             </div>
           </div>
