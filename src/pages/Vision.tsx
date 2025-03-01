@@ -31,19 +31,19 @@ const Vision = () => {
             <div className="max-w-md mx-auto">
               <p className="font-bold mb-2 font-merriweather text-center">What to expect:</p>
               <ul className="list-disc pl-6 space-y-2 font-merriweather">
-                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-xl before:mr-2 before:inline-block">
+                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-2xl before:mr-3 before:inline-block">
                   <span>Out-doorsy activities and fun</span>
                 </li>
-                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-xl before:mr-2 before:inline-block">
+                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-2xl before:mr-3 before:inline-block">
                   <span>Healthy and tasty foods</span>
                 </li>
-                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-xl before:mr-2 before:inline-block">
+                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-2xl before:mr-3 before:inline-block">
                   <span>Kindness and respect for our differences</span>
                 </li>
-                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-xl before:mr-2 before:inline-block">
+                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-2xl before:mr-3 before:inline-block">
                   <span>No drugs/alcohol</span>
                 </li>
-                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-xl before:mr-2 before:inline-block">
+                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-2xl before:mr-3 before:inline-block">
                   <span>Child-friendly atmosphere</span>
                 </li>
               </ul>
