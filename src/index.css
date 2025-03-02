@@ -42,6 +42,12 @@
     @apply text-lg;
   }
 
+  @media (prefers-contrast: more) {
+    body {
+      @apply text-6xl;
+    }
+  }
+
   @font-face {
     font-family: "Merriweather";
     src: url("assets/fonts/Merriweather-Bold.ttf") format("truetype");
