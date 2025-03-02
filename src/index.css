@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -46,6 +47,31 @@
     body {
       @apply text-6xl;
     }
+  }
+
+  /* Custom scrollbar styles */
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 0.375rem;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: rgba(250, 247, 241, 0.8);
+    border-radius: 0.25rem;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(177, 75, 87, 0.6);
+    border-radius: 0.25rem;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(177, 75, 87, 0.8);
+  }
+
+  /* For Firefox */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(177, 75, 87, 0.6) rgba(250, 247, 241, 0.8);
   }
 
   @font-face {
