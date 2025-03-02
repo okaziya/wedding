@@ -1,7 +1,6 @@
-
 const Map = () => {
   return (
-    <div className="min-h-screen pt-24 px-4 bg-wedding-background pb-20">
+    <div className="min-h-screen pt-24 px-4 bg-wedding-background pb-6 md:pb-12">
       <div className="max-w-6xl mx-auto">
         <div className="flex md:justify-center md:overflow-auto overflow-x-scroll custom-scrollbar">
           <div className="w-full min-w-[904px]">
