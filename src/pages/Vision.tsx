@@ -1,3 +1,4 @@
+
 import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";
 import { AspectRatio } from "@/components/ui/aspect-ratio.tsx";
@@ -6,8 +7,8 @@ import { cn } from "@/lib/utils.ts";
 const Vision = () => {
   const imageClasses = cn(
     "object-cover w-full h-full",
-    "border-[5px] border-solid border-white rounded-[2px]",
-    "shadow-[0px_6px_32px_rgba(48,40,24,0.15)]",
+    "border-[0.3rem] border-solid border-white rounded-[0.125rem]",
+    "shadow-[0px_0.375rem_2rem_rgba(48,40,24,0.15)]",
     "bg-transparent"
   );
 
@@ -57,7 +58,7 @@ const Vision = () => {
               />
               <p className="font-bold mb-2 font-merriweather text-center text-[#571E25] text-2xl">What to expect:</p>
               <ul className="list-disc pl-2 md:pl-6 space-y-2 text-xl font-merriweather text-gray-600 mt-8">
-                <li className="flex  items-center before:content-['•'] before:text-[#DF980C] before:text-3xl before:mr-3 before:inline-block">
+                <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-3xl before:mr-3 before:inline-block">
                   <span>Out-doorsy activities and fun</span>
                 </li>
                 <li className="flex items-center before:content-['•'] before:text-[#DF980C] before:text-3xl before:mr-3 before:inline-block">

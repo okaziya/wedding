@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -158,7 +159,7 @@ export const OurStory = () => {
         <h2 className="font-satisfy text-4xl md:text-5xl text-center mb-12 text-[#571E25]">Our Story</h2>
         <div className="max-w-[900px] mx-auto">
           {timeline.map((event, index) => (
-            <div key={index} className="mb-1 animate-fade-in bg-white md:px-[64px] px-6 py-[48px]">
+            <div key={index} className="mb-1 animate-fade-in bg-white md:px-16 px-6 py-12">
               <div className="relative ">
                 <img
                   src="/wedding/images/lm-ornament-flower.svg"
@@ -174,7 +175,7 @@ export const OurStory = () => {
                   <img
                     src={event.image}
                     alt={event.title}
-                    className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px]"
+                    className="object-cover w-full h-full border-[0.3rem] border-solid border-white rounded-[0.125rem]"
                   />
                 </AspectRatio>
               )}
