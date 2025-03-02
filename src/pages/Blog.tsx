@@ -14,7 +14,7 @@ const Blog = () => {
         </div>
 
         <div className="space-y-1">
-          <article className="bg-white px-6 md:px-[64px]  py-[48px]">
+          <article className="bg-white px-6 md:px-[4rem] py-[3rem]">
             <div className="relative">
               <img
                 src="/wedding/images/lm-ornament-flower.svg"
@@ -34,14 +34,14 @@ const Blog = () => {
                   <img
                     src="/wedding/images/our-story/250220.jpeg"
                     alt="Invitation letters"
-                    className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px]"
+                    className="object-cover w-full h-full border-[0.3125rem] border-solid border-white rounded-[0.125rem]"
                   />
                 </AspectRatio>
               </div>
             </div>
           </article>
 
-          <article className="bg-white px-6 md:px-[64px] py-[48px]">
+          <article className="bg-white px-6 md:px-[4rem] py-[3rem]">
             <div className="relative">
               <img
                 src="/wedding/images/lm-ornament-flower.svg"
@@ -68,7 +68,7 @@ const Blog = () => {
             </div>
           </article>
 
-          <article className="bg-white px-6 md:px-[64px] py-[48px]">
+          <article className="bg-white px-6 md:px-[4rem] py-[3rem]">
             <div className="relative">
               <img
                 src="/wedding/images/lm-ornament-flower.svg"
@@ -86,7 +86,7 @@ const Blog = () => {
             </div>
           </article>
 
-          <article className="bg-white px-6 md:px-[64px] py-[48px]">
+          <article className="bg-white px-6 md:px-[4rem] py-[3rem]">
             <div className="relative">
               <img
                 src="/wedding/images/lm-ornament-flower.svg"
@@ -122,7 +122,7 @@ const Blog = () => {
             </div>
           </article>
 
-          <article className="bg-white px-6 md:px-[64px] py-[48px]">
+          <article className="bg-white px-6 md:px-[4rem] py-[3rem]">
             <div className="relative">
               <img
                 src="/wedding/images/lm-ornament-flower.svg"
