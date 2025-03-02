@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,16 +31,26 @@
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground font-mono;
+  html {
+    font-size: 100%; /* This allows the text to scale with user preferences */
+    scroll-behavior: smooth;
   }
 
-  html {
-    scroll-behavior: smooth;
+  body {
+    @apply bg-background text-foreground font-mono;
+    font-size: 1rem; /* Base size that will scale with user preferences */
+    -webkit-text-size-adjust: 100%; /* Prevent iOS from automatically adjusting text sizes */
   }
 
   p {
     @apply text-lg;
+  }
+
+  /* Media query to adjust base font size on smaller screens */
+  @media (max-width: 640px) {
+    html {
+      font-size: 100%; /* Keep 100% to maintain user preferences */
+    }
   }
 
   @font-face {
