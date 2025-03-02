@@ -1,5 +1,7 @@
+
 import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Blog = () => {
   return (
@@ -27,6 +29,15 @@ const Blog = () => {
                 We received all prints from the supplier, prepared all invitation letters, and handed over the first
                 batch to the post office.
               </p>
+              <div className="mt-6">
+                <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-lg">
+                  <img
+                    src="/wedding/images/our-story/250220.jpeg"
+                    alt="Invitation letters"
+                    className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px]"
+                  />
+                </AspectRatio>
+              </div>
             </div>
           </article>
 
