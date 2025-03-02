@@ -1,4 +1,3 @@
-
 import clockImage from "/images/lm-icon-clock.png";
 import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";
@@ -49,24 +48,24 @@ const Schedule = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-6rem px-1rem bg-wedding-background">
+    <div className="min-h-screen pt-24 px-4 bg-wedding-background">
       <div className="max-w-[900px] mx-auto">
-        <div className="flex flex-col items-center mb-2rem">
+        <div className="flex flex-col items-center mb-8">
           <img src={upperOrnamentImage} alt="Upper ornamet image" width={328} />
-          <h1 className="font-satisfy text-4xl md:text-5xl text-center text-[#571E25] py-1rem">Schedule</h1>
+          <h1 className="font-satisfy text-4xl md:text-5xl text-center text-[#571E25] py-4">Schedule</h1>
           <img src={lowerOrnamentImage} alt="Lower ornamet image" width={174} />
         </div>
-        <div className="pb-5rem">
+        <div className="pb-20">
           {schedule.map((day) => (
-            <div key={day.date} className="bg-white rounded-sm px-1.5rem md:px-4rem pt-3rem pb-4rem mb-0.25rem">
-              <div className="flex flex-col items-center mb-2rem">
-                <img src="/wedding/images/lm-ornament-flower.svg" alt="Decorative flower" className="w-1.5rem h-auto mb-1rem" />
-                <h2 className="font-satisfy text-3xl text-[#B14B57] mb-0.25rem">{day.date}</h2>
+            <div key={day.date} className="bg-white rounded-sm px-6 md:px-16 pt-12 pb-16 mb-1">
+              <div className="flex flex-col items-center mb-8">
+                <img src="/wedding/images/lm-ornament-flower.svg" alt="Decorative flower" className="w-6 h-auto mb-4" />
+                <h2 className="font-satisfy text-3xl text-[#B14B57] mb-1">{day.date}</h2>
               </div>
-              <div className="space-y-1.75rem">
+              <div className="space-y-7">
                 {day.events.map((event) => (
-                  <div key={event.time} className="flex flex-col items-center space-y-0.5rem">
-                    <div className="flex items-center gap-0.5rem">
+                  <div key={event.time} className="flex flex-col items-center space-y-2">
+                    <div className="flex items-center gap-2">
                       <img src={clockImage} alt="Clock image" width={24} className="flex-shrink-0" />
                       <span className="text-lg font-merriweather font-bold">{event.time}</span>
                     </div>
