@@ -49,8 +49,8 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
         role: "404",
         description: "Details unavailable, check the page name!",
         languages: "N/A",
-        contactName: "Contact Liza/Mats for technical support",
-        contactNumber: "+46 730 500 244, +46 730 567 567",
+        contactName: "WhatsApp via Mats",
+        contactNumber: "+46 730 567 567",
       };
   }
 };

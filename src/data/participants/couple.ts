@@ -19,6 +19,6 @@ export const coupleDetails: ParticipantDetails = {
     "We'll find a minivan and drive up to Leksand right after school ends on Wednesday, June 11th. We need to be " +
     "there a few days ahead to take care of all practicalities surrounding the ceremony.",
   packingList: "Not applicable.",
-  contactName: "WhatsApp via Mats or Liza",
-  contactNumber: "+46 730 567 567, +46 730 500 244",
+  contactName: "WhatsApp via Mats",
+  contactNumber: "+46 730 567 567",
 };
