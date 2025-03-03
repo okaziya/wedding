@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -149,6 +150,13 @@ export const OurStory = () => {
       description:
         "Booked Roddens Hus as the main venue, as well as a conference room up on the mountain for gathering point next to accommodations in Siljansnäs Stugby",
       image: "/wedding/images/our-story/250224.jpeg",
+    },
+    {
+      date: "January 26th, 2025",
+      title: "Liza completes ski school",
+      description:
+        "After 4 skiing lessons with Lidingö Freeskiers, Liza is ready to roll, join in on skiing trips like a Nordic beast.",
+      image: "/wedding/images/our-story/250222a.jpeg",
     },
   ];
 
