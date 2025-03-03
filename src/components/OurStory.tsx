@@ -158,6 +158,13 @@ export const OurStory = () => {
         "After 4 skiing lessons with Lidingö Freeskiers, Liza is ready to roll, join in on skiing trips like a Nordic beast.",
       image: "/wedding/images/our-story/250222a.jpeg",
     },
+    {
+      date: "February 22nd, 2025",
+      title: "Fourth birthday, Alva 6 years and Carin 60+",
+      description:
+        "Celebrating cousin Alva's 6th birthday and grandma Carin's 67th birthday with family in Siljansnäs.",
+      image: "/wedding/images/our-story/250222b.jpeg",
+    },
   ];
 
   return (
