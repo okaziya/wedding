@@ -32,6 +32,7 @@
   }
 
   body {
+    overflow-x: hidden;
     @apply bg-background text-foreground font-mono;
   }
 
@@ -43,11 +44,6 @@
     @apply text-lg;
   }
 
-  @media (prefers-contrast: more) {
-    body {
-      @apply text-6xl;
-    }
-  }
 
   /* Custom scrollbar styles */
   .custom-scrollbar::-webkit-scrollbar {
