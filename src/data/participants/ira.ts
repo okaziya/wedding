@@ -19,8 +19,9 @@ export const iraDetails: ParticipantDetails = {
     "and after the event, we will arrange for accommodation in Stockholm and Siljansnäs.",
   travelPlans:
     "We believe you will arrive early in the week before the ceremony, around June 10th. We will arrange for " +
-    "transportation from Stockholm to Siljansnäs in conjunction with our own travel schedule. Please think about how " +
-    "long you will stay and let us know about your intentions after the ceremony, we will help you with planning!",
+    "transportation from Stockholm to Siljansnäs in conjunction with our own travel schedule. After the ceremony " +
+    "weekend you will travel back to Stockholm on Monday 16th with Mats, Liza, and Åke. Please think about " +
+    "additional things you would like to do after this event and let us know; we will help you with planning!",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contactName: "WhatsApp via Liza",
   contactNumber: "+46 730 500 244",
