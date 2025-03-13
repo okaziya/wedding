@@ -1,11 +1,10 @@
-
 import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Blog = () => {
   return (
-    <div className="min-h-screen pt-24 px-4 bg-wedding-background">
+    <div className="min-h-screen pt-24 px-4 bg-wedding-background pb-20">
       <div className="max-w-[900px] mx-auto">
         <div className="flex flex-col items-center mb-12">
           <img src={upperOrnamentImage} alt="Upper ornamet image" width={328} />
