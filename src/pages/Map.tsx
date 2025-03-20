@@ -1,4 +1,4 @@
-import build_info from "../../public/build-info.json";
+import build_info from "@/build-info.json";
 
 const Map = () => {
   console.log(

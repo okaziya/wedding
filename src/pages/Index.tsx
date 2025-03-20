@@ -1,4 +1,4 @@
-import build_info from "../../public/build-info.json";
+import build_info from "@/build-info.json";
 import { Hero } from "@/components/Hero";
 import { OurStory } from "@/components/OurStory";
 import { EventDetails } from "@/components/EventDetails";

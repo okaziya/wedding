@@ -14,6 +14,7 @@ dist-ssr
 
 # Uncommitable
 public/build-info.json
+src/build-info.json
 
 # Editor directories and files
 .vscode/*

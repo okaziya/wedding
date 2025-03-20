@@ -1,4 +1,4 @@
-import build_info from "../../public/build-info.json";
+import build_info from "@/build-info.json";
 import { useParams, Link } from "react-router-dom";
 import { ParticipantImages } from "@/components/participant/ParticipantImages";
 import { getParticipantDetails } from "@/utils/participantData";

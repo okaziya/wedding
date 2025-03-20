@@ -1,4 +1,4 @@
-import build_info from "../../public/build-info.json";
+import build_info from "@/build-info.json";
 import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";
 import { AspectRatio } from "@/components/ui/aspect-ratio.tsx";

@@ -1,4 +1,4 @@
-import build_info from "../../public/build-info.json";
+import build_info from "@/build-info.json";
 import clockImage from "/images/lm-icon-clock.png";
 import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";

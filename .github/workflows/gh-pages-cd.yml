@@ -42,7 +42,7 @@ jobs:
       - name: Inject Build Info
         run: |
           # Overwrite build-info.json in source root dir
-          cat <<EOF > ./public/build-info.json
+          cat <<EOF > ./src/build-info.json
           {
             "GITHUB_ACTOR": "${{ needs.build_info.outputs.GITHUB_ACTOR }}",
             "GITHUB_SHA_SHORT": "${{ needs.build_info.outputs.GITHUB_SHA_SHORT }}",
@@ -50,6 +50,8 @@ jobs:
             "BUILD_TIMESTAMP": "${{ needs.build_info.outputs.BUILD_TIMESTAMP }}"
           }
           EOF
+          # Expose <hostname>/wedding/build-info.json as a static file
+          cp -vf ./src/build-info.json ./public/build-info.json
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
