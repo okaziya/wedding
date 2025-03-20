@@ -16,6 +16,7 @@ export const participants: ParticipantMapping[] = [
   { name: "Liza's friend Boris", id: "boris" },
   { name: "Liza's friend Marcin", id: "marcin" },
   { name: "Mats' friend Yongtao", id: "yongtao" },
+  { name: "Mats' friend Oscar", id: "oscar" },
   { name: "Mats' friend Jennie", id: "jennie" },
   { name: "Wedding Couple, Liza+Mats", id: "couple" },
   { name: "Photographer Lena", id: "lena" },
