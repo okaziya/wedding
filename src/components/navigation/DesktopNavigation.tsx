@@ -55,7 +55,7 @@ export const DesktopNavigation = () => {
                   <div className="p-6 w-full">
                     <div className="flex justify-center gap-4 lg:gap-6">
                       <div className="flex-1 max-w-[280px] min-w-0 text-center">
-                        {participants.slice(0, Math.ceil(participants.length / 3)).map((participant) => {
+                        {participants.slice(0, 5).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
                             <NavigationMenuLink asChild key={participant.name}>
@@ -73,7 +73,7 @@ export const DesktopNavigation = () => {
                       </div>
                       <div className="flex-1 max-w-[280px] min-w-0 text-center">
                         {participants
-                          .slice(Math.ceil(participants.length / 3), Math.ceil((2 * participants.length) / 3))
+                          .slice(5, 9)
                           .map((participant) => {
                             const participantPath = `/participants/${participant.id}`;
                             return (
@@ -91,7 +91,7 @@ export const DesktopNavigation = () => {
                           })}
                       </div>
                       <div className="flex-1 max-w-[280px] min-w-0 text-center">
-                        {participants.slice(Math.ceil((2 * participants.length) / 3)).map((participant) => {
+                        {participants.slice(9).map((participant) => {
                           const participantPath = `/participants/${participant.id}`;
                           return (
                             <NavigationMenuLink asChild key={participant.name}>

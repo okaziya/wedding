@@ -19,6 +19,7 @@ export const participants = [
   "marcin",
   "yongtao",
   "jennie",
+  "oscar",
   "couple",
   "lena",
 ];

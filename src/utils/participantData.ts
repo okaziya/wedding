@@ -12,6 +12,7 @@ import { lenaDetails } from "../data/participants/lena";
 import { alexanderDetails } from "../data/participants/alexander";
 import { borisDetails } from "../data/participants/boris";
 import { marcinDetails } from "../data/participants/marcin";
+import { oscarDetails } from "../data/participants/oscar.ts";
 
 export const getParticipantDetails = (participantId: string): ParticipantDetails => {
   console.log("Getting details for participant:", participantId);
@@ -29,6 +30,8 @@ export const getParticipantDetails = (participantId: string): ParticipantDetails
       return dimaDetails;
     case "jennie":
       return jennieDetails;
+    case "oscar":
+      return oscarDetails;
     case "janne":
       return janneDetails;
     case "carin":
