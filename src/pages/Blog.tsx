@@ -1,8 +1,12 @@
+import build_info from "../../public/build-info.json";
 import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const Blog = () => {
+  console.log(
+    `Render Blog page with revision ${build_info.GITHUB_SHA_SHORT} (${build_info.COMMIT_URL}), built at ${build_info.BUILD_TIMESTAMP} by ${build_info.GITHUB_ACTOR}`
+  );
   return (
     <div className="min-h-screen pt-24 px-4 bg-wedding-background pb-20">
       <div className="max-w-[900px] mx-auto">

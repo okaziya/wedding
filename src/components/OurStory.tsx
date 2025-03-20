@@ -1,5 +1,3 @@
-
-import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
