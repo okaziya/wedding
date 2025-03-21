@@ -10,6 +10,7 @@ import Schedule from "./pages/Schedule.tsx";
 import Map from "./pages/Map.tsx";
 import Blog from "./pages/Blog";
 import Participant from "./pages/Participant";
+import { BuildInfoFooter } from "@/components/BuildInfoFooter.tsx";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/participants/:id" element={<Participant />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        <BuildInfoFooter />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

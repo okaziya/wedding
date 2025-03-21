@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Uncommitable
+public/build-info.json
+src/build-info.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

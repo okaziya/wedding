@@ -72,23 +72,21 @@ export const DesktopNavigation = () => {
                         })}
                       </div>
                       <div className="flex-1 max-w-[280px] min-w-0 text-center">
-                        {participants
-                          .slice(5, 9)
-                          .map((participant) => {
-                            const participantPath = `/participants/${participant.id}`;
-                            return (
-                              <NavigationMenuLink asChild key={participant.name}>
-                                <Link
-                                  to={participantPath}
-                                  className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
-                                    location.pathname === participantPath ? "text-[#571E25]" : "text-[#B14B57]"
-                                  }`}
-                                >
-                                  {participant.name}
-                                </Link>
-                              </NavigationMenuLink>
-                            );
-                          })}
+                        {participants.slice(5, 9).map((participant) => {
+                          const participantPath = `/participants/${participant.id}`;
+                          return (
+                            <NavigationMenuLink asChild key={participant.name}>
+                              <Link
+                                to={participantPath}
+                                className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
+                                  location.pathname === participantPath ? "text-[#571E25]" : "text-[#B14B57]"
+                                }`}
+                              >
+                                {participant.name}
+                              </Link>
+                            </NavigationMenuLink>
+                          );
+                        })}
                       </div>
                       <div className="flex-1 max-w-[280px] min-w-0 text-center">
                         {participants.slice(9).map((participant) => {
