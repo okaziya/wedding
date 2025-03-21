@@ -1,4 +1,3 @@
-import build_info from "@/build-info.json";
 import { Hero } from "@/components/Hero";
 import { OurStory } from "@/components/OurStory";
 import { EventDetails } from "@/components/EventDetails";
@@ -6,9 +5,6 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { cn } from "@/lib/utils";
 
 const Index = () => {
-  console.log(
-    `Render Welcome page with revision ${build_info.GITHUB_SHA_SHORT} (${build_info.COMMIT_URL}), built at ${build_info.BUILD_TIMESTAMP} by ${build_info.GITHUB_ACTOR}`
-  );
   const imageClasses = cn(
     "object-cover w-full h-full",
     "border-[5px] border-solid border-white rounded-[2px]",

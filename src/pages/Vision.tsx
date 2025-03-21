@@ -1,13 +1,9 @@
-import build_info from "@/build-info.json";
 import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";
 import { AspectRatio } from "@/components/ui/aspect-ratio.tsx";
 import { cn } from "@/lib/utils.ts";
 
 const Vision = () => {
-  console.log(
-    `Render Vision & Mission page with revision ${build_info.GITHUB_SHA_SHORT} (${build_info.COMMIT_URL}), built at ${build_info.BUILD_TIMESTAMP} by ${build_info.GITHUB_ACTOR}`
-  );
   const imageClasses = cn(
     "object-cover w-full h-full",
     "border-[5px] border-solid border-white rounded-[2px]",

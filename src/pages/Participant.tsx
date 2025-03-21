@@ -1,4 +1,3 @@
-import build_info from "@/build-info.json";
 import { useParams, Link } from "react-router-dom";
 import { ParticipantImages } from "@/components/participant/ParticipantImages";
 import { getParticipantDetails } from "@/utils/participantData";
@@ -8,9 +7,6 @@ import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";
 
 const Participant = () => {
-  console.log(
-    `Render Participant page with revision ${build_info.GITHUB_SHA_SHORT} (${build_info.COMMIT_URL}), built at ${build_info.BUILD_TIMESTAMP} by ${build_info.GITHUB_ACTOR}`
-  );
   const { id } = useParams();
   const details = id ? getParticipantDetails(id) : null;
 

@@ -1,12 +1,8 @@
-import build_info from "@/build-info.json";
 import clockImage from "/images/lm-icon-clock.png";
 import upperOrnamentImage from "/images/lm-ornament-upper.png";
 import lowerOrnamentImage from "/images/lm-ornament-lower.png";
 
 const Schedule = () => {
-  console.log(
-    `Render Schedule page with revision ${build_info.GITHUB_SHA_SHORT} (${build_info.COMMIT_URL}), built at ${build_info.BUILD_TIMESTAMP} by ${build_info.GITHUB_ACTOR}`
-  );
   const schedule = [
     {
       date: "Friday, June 13th",

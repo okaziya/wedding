@@ -1,9 +1,4 @@
-import build_info from "@/build-info.json";
-
 const Map = () => {
-  console.log(
-    `Render Map page with revision ${build_info.GITHUB_SHA_SHORT} (${build_info.COMMIT_URL}), built at ${build_info.BUILD_TIMESTAMP} by ${build_info.GITHUB_ACTOR}`
-  );
   return (
     <div className="min-h-screen pt-24 px-4 bg-wedding-background pb-6 md:pb-12">
       <div className="max-w-6xl mx-auto">
