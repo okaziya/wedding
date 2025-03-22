@@ -32,16 +32,26 @@ const Schedule = () => {
         { time: "08:00–09:00", description: "Common breakfast in the Stugbyn conference room" },
         { time: "09:30–10:30", description: "Guided circle training at Roddens Hus (bring gym clothes!)" },
         {
-          time: "10:30–11:30",
-          description: "Accommodation check-out for participants staying in the Siljansnäs Stugby cottages",
-        },
-        {
           time: "12:00–13:00",
           description: "Lunch at Roddens Hus (outdoorsy casual clothes, it can rain out on the sea)",
         },
         {
-          time: "13:00–16:00",
+          time: "13:00–15:00",
           description: "Presentation about the local church boats followed by rowing on the Siljan sea",
+        },
+        {
+          time: "15:00–15:30",
+          description: "Farewell fika at Roddens Hus, weekend ended!",
+        },
+      ],
+    },
+    {
+      date: "Monday, June 16th",
+      events: [
+        { time: "08:00–09:00", description: "Optional breakfast in the conference room" },
+        {
+          time: "09:30–10:30",
+          description: "Check-out for participants staying in the Siljansnäs Stugby cottages",
         },
       ],
     },
