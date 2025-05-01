@@ -27,7 +27,8 @@ const Blog = () => {
               <p className="font-merriweather text-gray-600 text-center mb-4">
                 We re-visited Roddens Hus to do some research with the meals catering and conducted real-world
                 simulations with table arrangements. We also updated participant pages for Dima & Anna, Boris, and
-                Yongtao with respect confirmed travel plans.
+                Yongtao with respect confirmed travel plans. Additionally, we added an introduction to traditional
+                Dalarna folk dancing to the schedule.
               </p>
               <div className="mt-6">
                 <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-lg">
