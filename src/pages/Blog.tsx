@@ -20,6 +20,34 @@ const Blog = () => {
                 alt="Decorative flower"
                 className="w-6 h-auto mx-auto mb-4"
               />
+              <time className="font-satisfy text-2xl text-[#B14B57] text-center block mb-5">May 1st, 2025</time>
+              <h2 className="font-merriweather text-2xl font-bold text-center mb-4 text-[#571E25]">
+                Wedding dinner planning finalized + travel plans documented
+              </h2>
+              <p className="font-merriweather text-gray-600 text-center mb-4">
+                We re-visited Roddens Hus to do some research with the meals catering and conducted real-world
+                simulations with table arrangements. We also updated participant pages for Dima & Anna, Boris, and
+                Yongtao with respect confirmed travel plans.
+              </p>
+              <div className="mt-6">
+                <AspectRatio ratio={4 / 3} className="overflow-hidden rounded-lg">
+                  <img
+                    src="/wedding/images/our-story/250501.jpeg"
+                    alt="Planning dinner with catering company"
+                    className="object-cover w-full h-full border-[5px] border-solid border-white rounded-[2px]"
+                  />
+                </AspectRatio>
+              </div>
+            </div>
+          </article>
+
+          <article className="bg-white px-6 md:px-[64px]  py-[48px]">
+            <div className="relative">
+              <img
+                src="/wedding/images/lm-ornament-flower.svg"
+                alt="Decorative flower"
+                className="w-6 h-auto mx-auto mb-4"
+              />
               <time className="font-satisfy text-2xl text-[#B14B57] text-center block mb-5">February 20th, 2025</time>
               <h2 className="font-merriweather text-2xl font-bold text-center mb-4 text-[#571E25]">
                 First batch of invites sent via mail
