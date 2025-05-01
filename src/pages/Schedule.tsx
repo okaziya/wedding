@@ -18,9 +18,14 @@ const Schedule = () => {
       date: "Saturday, June 14th",
       events: [
         { time: "08:00–09:00", description: "Common breakfast in the Stugbyn conference room" },
+        {
+          time: "10:30–11:30",
+          description: "Intro to traditional Dalarna folk dancing at Roddens Hus by Mats' parents",
+        },
         { time: "11:30–12:30", description: "Lunch at Roddens Hus" },
         { time: "15:00–15:30", description: "Ceremony at Siljansnäs church" },
-        { time: "15:30–16:00", description: "Liza & Mats in photography session with Lena" },
+        { time: "15:30–16:00", description: "Collective photography session with Lena" },
+        // { time: "16:00–17:00", description: "Planting a tree with farmor, PENDING CONFIRMATION" },
         { time: "17:30–19:30", description: "Main wedding dinner at Roddens Hus" },
         { time: "19:30–21:30", description: "Games and tournaments!" },
         { time: "21:30–22:00", description: "Everyone goes to their accommodations and sleep" },
