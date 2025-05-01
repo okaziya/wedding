@@ -14,8 +14,9 @@ export const dimaDetails: ParticipantDetails = {
   languages: "Czech, English & Russian",
   accommodation: "During the event weekend, you will stay at Siljansnäs Stugby in cottage 109 with Ira and Lena.",
   travelPlans:
-    "We believe you will arrive by train from Stockholm to Leksand at 20:41 on Friday June 13th, where Liza will " +
-    "pick you up by minivan. You will stay until Monday 16th and then go back to Stockholm.",
+    "We believe you will arrive to Arlanda airport at 13:50, go to Stockholm and travel by train to Leksand, " +
+    "arriving at 20:41 on Friday, June 13th. Liza will pick you up by minivan at the Leksand train station. You will " +
+    "stay until Monday 16th and then go by train back to Arlanda, departing from Leksand at 08:59 or 13:01.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contactName: "WhatsApp via Liza",
   contactNumber: "+46 730 500 244",
