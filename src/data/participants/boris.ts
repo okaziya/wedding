@@ -16,8 +16,8 @@ export const borisDetails: ParticipantDetails = {
   accommodation:
     "During the event weekend, you will stay at Siljansnäs Stugby in cottage 111 with Alexander, Marcin and Miroslav.",
   travelPlans:
-    "We believe you will arrive to Arlanda airport at 12:20, go to Stockholm and rent a car with Marcin, Miroslav " +
-    "and Alexander, and then arrive at the reception in Siljansnäs at 17:00 on Friday, June 13th. You will stay " +
+    "We believe you will arrive to Arlanda airport at 12:20, go to Stockholm and rent a car with Marcin and " +
+    "Miroslav, and then arrive at the reception in Siljansnäs at 21:00 on Friday, June 13th. You will stay " +
     "until Monday 16th and then go back to Stockholm by car at 11:00 with Liza, Mats, Åke, and Ira.",
   packingList: "- Raincoat\n- Swimming clothes\n- Outdoor clothes\n- Comfortable shoes",
   contactName: "WhatsApp via Liza",
