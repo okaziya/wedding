@@ -23,7 +23,7 @@ const Schedule = () => {
           description: "Intro to traditional Dalarna folk dancing at Roddens Hus by Mats' parents",
         },
         { time: "11:30–12:30", description: "Lunch at Roddens Hus" },
-        { time: "15:00–15:30", description: "Ceremony at Siljansnäs church" },
+        { time: "14:45–15:30", description: "Ceremony at Siljansnäs church" },
         { time: "15:30–16:00", description: "Collective photography session with Lena" },
         // { time: "16:00–17:00", description: "Planting a tree with farmor, PENDING CONFIRMATION" },
         { time: "17:30–19:30", description: "Main wedding dinner at Roddens Hus" },
