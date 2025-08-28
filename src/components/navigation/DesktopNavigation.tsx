@@ -61,7 +61,9 @@ export const DesktopNavigation = () => {
                                 key={participant.name}
                                 to={`/participants/${participant.id}`}
                                 className={`block w-full h-12 leading-[48px] text-base truncate hover:opacity-80 ${
-                                  location.pathname === `/participants/${participant.id}` ? "text-[#571E25]" : "text-[#B14B57]"
+                                  location.pathname === `/participants/${participant.id}`
+                                    ? "text-[#571E25]"
+                                    : "text-[#B14B57]"
                                 }`}
                               >
                                 {participant.name}
@@ -86,7 +88,9 @@ export const DesktopNavigation = () => {
                                 key={participant.name}
                                 to={`/participants/${participant.id}`}
                                 className={`block w-full h-12 leading-[48px] text-base truncate hover:opacity-80 ${
-                                  location.pathname === `/participants/${participant.id}` ? "text-[#571E25]" : "text-[#B14B57]"
+                                  location.pathname === `/participants/${participant.id}`
+                                    ? "text-[#571E25]"
+                                    : "text-[#B14B57]"
                                 }`}
                               >
                                 {participant.name}
@@ -111,7 +115,9 @@ export const DesktopNavigation = () => {
                                 key={participant.name}
                                 to={`/participants/${participant.id}`}
                                 className={`block w-full h-12 leading-[48px] text-base truncate hover:opacity-80 ${
-                                  location.pathname === `/participants/${participant.id}` ? "text-[#571E25]" : "text-[#B14B57]"
+                                  location.pathname === `/participants/${participant.id}`
+                                    ? "text-[#571E25]"
+                                    : "text-[#B14B57]"
                                 }`}
                               >
                                 {participant.name}

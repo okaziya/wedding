@@ -63,10 +63,7 @@ export const MenuItems = ({ onNavigate, variant = "desktop" }: MenuItemsProps) =
                 );
               }
               return (
-                <div
-                  key={participant.name}
-                  className="block py-1.5 text-gray-400 cursor-not-allowed"
-                >
+                <div key={participant.name} className="block py-1.5 text-gray-400 cursor-not-allowed">
                   {participant.name}
                 </div>
               );

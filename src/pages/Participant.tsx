@@ -94,7 +94,9 @@ const Participant = () => {
                       alt="Decorative flower"
                       className="w-6 h-auto mx-auto mb-4"
                     />
-                    <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">Description</h2>
+                    <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">
+                      Description
+                    </h2>
                     <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">
                       {details.description}
                     </p>
@@ -152,7 +154,9 @@ const Participant = () => {
                       alt="Decorative flower"
                       className="w-6 h-auto mx-auto mb-4"
                     />
-                    <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">Packing List</h2>
+                    <h2 className="font-merriweather text-2xl text-[#571E25] text-center mb-5 font-bold">
+                      Packing List
+                    </h2>
                     <p className="font-merriweather text-gray-600 text-center whitespace-pre-line">
                       {details.packingList}
                     </p>
