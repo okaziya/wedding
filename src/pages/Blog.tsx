@@ -85,12 +85,12 @@ const Blog = () => {
                   links above will only take you to a "404 Not Found" page. Send Mats or Liza the email address
                   associated with your account, then visit{" "}
                   <a
-                    href="https://photos.google.com/u/1/updates"
+                    href="https://photos.google.com/updates"
                     className="text-[#571E25] hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    https://photos.google.com/u/1/updates
+                    https://photos.google.com/updates
                   </a>{" "}
                   to make sure you're authenticated and granted access, and <strong>only then</strong> you can open the
                   photo album links successfully.
