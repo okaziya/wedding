@@ -13,6 +13,96 @@ const Blog = () => {
         </div>
 
         <div className="space-y-1">
+          <article className="bg-white px-6 md:px-[64px] py-[48px]">
+            <div className="relative">
+              <img
+                src="/wedding/images/lm-ornament-flower.svg"
+                alt="Decorative flower"
+                className="w-6 h-auto mx-auto mb-4"
+              />
+              <time className="font-satisfy text-2xl text-[#B14B57] text-center block mb-5">August 28th, 2025</time>
+              <h2 className="font-merriweather text-2xl font-bold text-center mb-4 text-[#571E25]">
+                Photo books distributed and digital photos available! 🙂
+              </h2>
+              <p className="font-merriweather text-gray-600 text-center mb-6">
+                Our photographer Lena has captured beautiful moments from our celebration. Once you've been granted
+                access, you can view them in the Google Photos albums below:
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="text-center">
+                  <a
+                    href="https://photos.google.com/share/AF1QipM9YjJjCvEWtxVTXszFTyyE0LHCVJlYReAydNstF9Y81hHMJ3Eom70SNBlBphqZrQ"
+                    className="inline-block bg-[#B14B57] hover:bg-[#571E25] text-white px-4 py-2 font-merriweather text-sm transition-colors rounded mb-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Part 1 - Print Quality
+                  </a>
+                  <p className="font-merriweather text-gray-500 text-xs">High-resolution photos</p>
+                </div>
+
+                <div className="text-center">
+                  <a
+                    href="https://photos.google.com/share/AF1QipP2DEF-a3iu1D9VxpOLjKszT_ggg_LSJckTs-QmOx2ZSdBus6L-s7wJZVfaTkM1nQ"
+                    className="inline-block bg-[#B14B57] hover:bg-[#571E25] text-white px-4 py-2 font-merriweather text-sm transition-colors rounded mb-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Part 1 - Web Quality
+                  </a>
+                  <p className="font-merriweather text-gray-500 text-xs">Optimized for viewing</p>
+                </div>
+
+                <div className="text-center">
+                  <a
+                    href="https://photos.google.com/share/AF1QipMdUklYXDwHphCFMHwBG5c-QlJ9T1zBLvMukVuO-FR93acrO9c1rLEPvGDD4wN_hA"
+                    className="inline-block bg-[#B14B57] hover:bg-[#571E25] text-white px-4 py-2 font-merriweather text-sm transition-colors rounded mb-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Part 2 - Print Quality
+                  </a>
+                  <p className="font-merriweather text-gray-500 text-xs">High-resolution photos</p>
+                </div>
+
+                <div className="text-center">
+                  <a
+                    href="https://photos.google.com/share/AF1QipMPqA8DqkAzXxXcHXHGApcaknO6ROHItO1BYFI67ZT1GOQUCrOCU8cNuuJ6GqUB2Q"
+                    className="inline-block bg-[#B14B57] hover:bg-[#571E25] text-white px-4 py-2 font-merriweather text-sm transition-colors rounded mb-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Part 2 - Web Quality
+                  </a>
+                  <p className="font-merriweather text-gray-500 text-xs">Optimized for viewing</p>
+                </div>
+              </div>
+
+              <div className="bg-[#FAF7F1] p-4 rounded border">
+                <p className="font-merriweather text-gray-600 text-sm text-center">
+                  If you are not logged in with a Google/YouTube account that is granted access to the photo albums, the
+                  links above will only take you to a "404 Not Found" page. Send Mats or Liza the email address
+                  associated with your account, then visit{" "}
+                  <a
+                    href="https://photos.google.com/u/1/updates"
+                    className="text-[#571E25] hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://photos.google.com/u/1/updates
+                  </a>{" "}
+                  to make sure you're authenticated and granted access, and <strong>only then</strong> you can open the
+                  photo album links successfully.
+                </p>
+                <p className="font-merriweather text-gray-600 text-sm text-center mt-3">
+                  <strong>Note</strong>: If you have some event photos you would like to have added to a shared album
+                  here, send them to Liza and ask for a blog update featuring your album!
+                </p>
+              </div>
+            </div>
+          </article>
+
           <article className="bg-white px-6 md:px-[64px]  py-[48px]">
             <div className="relative">
               <img
