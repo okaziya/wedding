@@ -13,8 +13,8 @@ export const coupleDetails: ParticipantDetails = {
     "Mats, Liza and 8-year-old Åke lives in a cozy place called Norra Djurgårdsstaden in central Stockholm. They " +
     "spend their days working, studying and reading a lot. When they have some time off then they like to go for " +
     "badminton, walk in the forest, and listen to the wind.",
-  languages: "Swedish & English, additionally Czech & Russian for Liza",
-  accommodation: "You will stay at Siljansnäs Stugby in cottage 116 with Yongtao and Jennie.",
+  languages: "Swedish & English",
+  accommodation: "You will stay at Siljansnäs Stugby in cottage 116 with Jennie.",
   travelPlans:
     "We'll find a minivan and drive up to Leksand right after school ends on Wednesday, June 11th. We need to be " +
     "there a few days ahead to take care of all practicalities surrounding the ceremony.",

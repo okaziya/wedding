@@ -6,7 +6,6 @@ import {
   NavigationMenuItem,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import { participants } from "./MenuItems";
 
@@ -56,52 +55,76 @@ export const DesktopNavigation = () => {
                     <div className="flex justify-center gap-4 lg:gap-6">
                       <div className="flex-1 max-w-[280px] min-w-0 text-center">
                         {participants.slice(0, 5).map((participant) => {
-                          const participantPath = `/participants/${participant.id}`;
-                          return (
-                            <NavigationMenuLink asChild key={participant.name}>
+                          if (participant.id === "couple") {
+                            return (
                               <Link
-                                to={participantPath}
-                                className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
-                                  location.pathname === participantPath ? "text-[#571E25]" : "text-[#B14B57]"
+                                key={participant.name}
+                                to={`/participants/${participant.id}`}
+                                className={`block w-full h-12 leading-[48px] text-base truncate hover:opacity-80 ${
+                                  location.pathname === `/participants/${participant.id}` ? "text-[#571E25]" : "text-[#B14B57]"
                                 }`}
                               >
                                 {participant.name}
                               </Link>
-                            </NavigationMenuLink>
+                            );
+                          }
+                          return (
+                            <div
+                              key={participant.name}
+                              className="block w-full h-12 leading-[48px] text-base truncate text-gray-400 cursor-not-allowed"
+                            >
+                              {participant.name}
+                            </div>
                           );
                         })}
                       </div>
                       <div className="flex-1 max-w-[280px] min-w-0 text-center">
                         {participants.slice(5, 9).map((participant) => {
-                          const participantPath = `/participants/${participant.id}`;
-                          return (
-                            <NavigationMenuLink asChild key={participant.name}>
+                          if (participant.id === "couple") {
+                            return (
                               <Link
-                                to={participantPath}
-                                className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
-                                  location.pathname === participantPath ? "text-[#571E25]" : "text-[#B14B57]"
+                                key={participant.name}
+                                to={`/participants/${participant.id}`}
+                                className={`block w-full h-12 leading-[48px] text-base truncate hover:opacity-80 ${
+                                  location.pathname === `/participants/${participant.id}` ? "text-[#571E25]" : "text-[#B14B57]"
                                 }`}
                               >
                                 {participant.name}
                               </Link>
-                            </NavigationMenuLink>
+                            );
+                          }
+                          return (
+                            <div
+                              key={participant.name}
+                              className="block w-full h-12 leading-[48px] text-base truncate text-gray-400 cursor-not-allowed"
+                            >
+                              {participant.name}
+                            </div>
                           );
                         })}
                       </div>
                       <div className="flex-1 max-w-[280px] min-w-0 text-center">
                         {participants.slice(9).map((participant) => {
-                          const participantPath = `/participants/${participant.id}`;
-                          return (
-                            <NavigationMenuLink asChild key={participant.name}>
+                          if (participant.id === "couple") {
+                            return (
                               <Link
-                                to={participantPath}
-                                className={`block w-full h-12 leading-[48px] text-base hover:opacity-80 truncate ${
-                                  location.pathname === participantPath ? "text-[#571E25]" : "text-[#B14B57]"
+                                key={participant.name}
+                                to={`/participants/${participant.id}`}
+                                className={`block w-full h-12 leading-[48px] text-base truncate hover:opacity-80 ${
+                                  location.pathname === `/participants/${participant.id}` ? "text-[#571E25]" : "text-[#B14B57]"
                                 }`}
                               >
                                 {participant.name}
                               </Link>
-                            </NavigationMenuLink>
+                            );
+                          }
+                          return (
+                            <div
+                              key={participant.name}
+                              className="block w-full h-12 leading-[48px] text-base truncate text-gray-400 cursor-not-allowed"
+                            >
+                              {participant.name}
+                            </div>
                           );
                         })}
                       </div>

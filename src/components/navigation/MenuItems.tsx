@@ -50,18 +50,25 @@ export const MenuItems = ({ onNavigate, variant = "desktop" }: MenuItemsProps) =
           <div className="mb-2 uppercase">Participants</div>
           <div className="pl-4">
             {participants.map((participant) => {
-              const participantPath = `/participants/${participant.id}`;
+              if (participant.id === "couple") {
+                return (
+                  <Link
+                    key={participant.name}
+                    to={`/participants/${participant.id}`}
+                    className={`block py-1.5 hover:opacity-80 ${linkClasses(`/participants/${participant.id}`)}`}
+                    onClick={onNavigate}
+                  >
+                    {participant.name}
+                  </Link>
+                );
+              }
               return (
-                <Link
+                <div
                   key={participant.name}
-                  to={participantPath}
-                  className={`block py-1.5 hover:opacity-80 ${
-                    location.pathname === participantPath ? "text-[#571E25]" : "text-[#B14B57]"
-                  }`}
-                  onClick={onNavigate}
+                  className="block py-1.5 text-gray-400 cursor-not-allowed"
                 >
                   {participant.name}
-                </Link>
+                </div>
               );
             })}
           </div>
