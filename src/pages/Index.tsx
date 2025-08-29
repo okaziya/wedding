@@ -20,8 +20,8 @@ const Index = () => {
           <div className="w-full h-full">
             <div className="w-full h-full transform -rotate-1">
               <img
-                src="/wedding/images/our-story/240614.jpeg"
-                alt="Mats and Liza commitment photo"
+                src="/wedding/images/our-story/250614d.jpeg"
+                alt="Mats and Liza wedding ceremony photo"
                 className={imageClasses}
               />
             </div>
