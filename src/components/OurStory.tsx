@@ -167,7 +167,7 @@ export const OurStory = () => {
       date: "April 12th, 2025",
       title: "Completing things together",
       description:
-        "Planning the wedding, working together, and helping out on various projects around us; Liza and Mats cement the habit of completing things jointly and successfully.",
+        "Planning the wedding, working together, and helping out with various projects around. Liza and Mats cement the habit of completing things jointly and successfully.",
       image: "/wedding/images/our-story/250412.jpeg",
     },
     {
@@ -195,7 +195,7 @@ export const OurStory = () => {
       date: "June 14th, 2025",
       title: "Liza and Mats pledge allegiance",
       description:
-        "On the 1-year day of the marriage commitment, Mats and Liza swear loyalty to each other — until death — in front of God and all their closest family & friends.",
+        "On the anniversary of the marriage commitment, Mats and Liza swear loyalty to each other— until death —in front of God and all their closest friends and family.",
       image: "/wedding/images/our-story/250614a.jpeg",
     },
   ];
