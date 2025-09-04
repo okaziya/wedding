@@ -93,21 +93,21 @@ export const OurStory = () => {
     },
     {
       date: "August 5th, 2024",
-      title: "Liza start studying Swedish",
+      title: "Liza starts studying Swedish",
       description: "First Swedish A1 course at Folkuniversitetet",
       image: "/wedding/images/our-story/240805.jpeg",
     },
     {
       date: "September 14th, 2024",
       title: "Road trip, meeting with Mats' father",
-      description: "Liza, Mats & Åke goes on a road trip up north to visit Mats' father Janne over the weekend.",
+      description: "Liza, Mats & Åke go on a road trip up north to visit Mats' father Janne over the weekend.",
       image: "/wedding/images/our-story/240914.jpeg",
     },
     {
       date: "September 28th, 2024",
       title: "Road trip, meeting with Mats' friends",
       description:
-        "Liza, Mats & Åke goes on a road trip down south to visit Mats' friends in Undenäs over the weekend.",
+        "Liza, Mats & Åke go on a road trip down south to visit Mats' friends in Undenäs over the weekend.",
       image: "/wedding/images/our-story/240928.jpeg",
     },
     {
@@ -162,6 +162,41 @@ export const OurStory = () => {
       description:
         "Celebrating cousin Alva's 6th birthday and grandma Carin's 67th birthday with family in Siljansnäs.",
       image: "/wedding/images/our-story/250222b.jpeg",
+    },
+    {
+      date: "April 12th, 2025",
+      title: "Completing things together",
+      description:
+        "Planning the wedding, working together, and helping out on various projects around us; Liza and Mats cement the habit of completing things jointly and successfully.",
+      image: "/wedding/images/our-story/250412.jpeg",
+    },
+    {
+      date: "April 20th, 2025",
+      title: "First Easter Holiday",
+      description:
+        "Mats, Liza & Åke celebrate first Easter together, where Mats offers his funny dreads to Liza's scissors!",
+      image: "/wedding/images/our-story/250420.jpeg",
+    },
+    {
+      date: "April 30th, 2025",
+      title: "First Valborg Celebration",
+      description:
+        "Mats, Liza & Åke celebrate the first Valborg together with family in Siljansnäs (an ancient/pre-Christian Scandinavian tradition).",
+      image: "/wedding/images/our-story/250430.jpeg",
+    },
+    {
+      date: "May 31st, 2025",
+      title: "Formalities finished!",
+      description:
+        "Liza and Mats get the last formalities in place, everything ready for the wedding!",
+      image: "/wedding/images/our-story/250531b.jpeg",
+    },
+    {
+      date: "June 14th, 2025",
+      title: "Liza and Mats pledge allegiance",
+      description:
+        "On the 1-year day of the marriage commitment, Mats and Liza swear loyalty to each other — until death — in front of God and all their closest family & friends.",
+      image: "/wedding/images/our-story/250614a.jpeg",
     },
   ];
 
