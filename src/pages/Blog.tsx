@@ -44,7 +44,7 @@ const Blog = () => {
 
                 <div className="text-center">
                   <a
-                    href="https://photos.google.com/share/AF1QipP2DEF-a3iu1D9VxpOLjKszT_ggg_LSJckTs-QmOx2ZSdBus6L-s7wJZVfaTkM1nQ"
+                    href="https://photos.google.com/u/5/share/AF1QipM9YjJjCvEWtxVTXszFTyyE0LHCVJlYReAydNstF9Y81hHMJ3Eom70SNBlBphqZrQ"
                     className="inline-block bg-[#B14B57] hover:bg-[#571E25] text-white px-4 py-2 font-merriweather text-sm transition-colors rounded mb-2"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -56,7 +56,7 @@ const Blog = () => {
 
                 <div className="text-center">
                   <a
-                    href="https://photos.google.com/share/AF1QipMdUklYXDwHphCFMHwBG5c-QlJ9T1zBLvMukVuO-FR93acrO9c1rLEPvGDD4wN_hA"
+                    href="https://photos.google.com/u/5/share/AF1QipMdUklYXDwHphCFMHwBG5c-QlJ9T1zBLvMukVuO-FR93acrO9c1rLEPvGDD4wN_hA"
                     className="inline-block bg-[#B14B57] hover:bg-[#571E25] text-white px-4 py-2 font-merriweather text-sm transition-colors rounded mb-2"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const Blog = () => {
 
                 <div className="text-center">
                   <a
-                    href="https://photos.google.com/share/AF1QipMPqA8DqkAzXxXcHXHGApcaknO6ROHItO1BYFI67ZT1GOQUCrOCU8cNuuJ6GqUB2Q"
+                    href="https://photos.google.com/u/5/share/AF1QipMPqA8DqkAzXxXcHXHGApcaknO6ROHItO1BYFI67ZT1GOQUCrOCU8cNuuJ6GqUB2Q"
                     className="inline-block bg-[#B14B57] hover:bg-[#571E25] text-white px-4 py-2 font-merriweather text-sm transition-colors rounded mb-2"
                     target="_blank"
                     rel="noopener noreferrer"
